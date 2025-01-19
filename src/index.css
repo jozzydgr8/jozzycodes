@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+    
+}
+:root{
+    --background-color: white;
+    --different-background: rgb(192, 192, 192);
+    --text-color: #000957;
+    --bold-color:#344CB7;
+    --faint-color:#577BC1;
+    --icon-color:#454047;
+
+}
+.dark-theme{
+    --background-color:#454047;
+    --different-background:#5c555f;
+    --text-color: white;
+    --bold-color:#577BC1;
+    --faint-color:#344CB7;
+    --icon-color:white;
+}
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+}
+button{
+    background: var(--bold-color);
+    color: var(--background-color);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+.custom-underline{
+    position: relative;
+    display: inline-block;
+}
+.custom-underline::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--text-color);
+    border-radius: 10px;
+    transform: translateY(50%);
+}
+h1{
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+h1, h3, small{
+    font-family: "Poppins", serif;
+  
+  font-style: normal;
+}
+h3{
+    font-weight: 600;
+}
+ small{
+    font-weight: 500;
+}
+
+
+
+img{
+    width: 80%;
+}
+.navbar-brand, .nav-link{
+    color: var(--text-color);
+}
+.navbar-brand{
+    width: 10%;
+
+}
+
+
+nav .container-fluid{
+    padding: 0 7%;
+}
+section > .container-fluid{
+    padding:4% 7% ;
+}
+
+
+.philosophy-section{
+    background:linear-gradient(to bottom, var(--background-color), var(--different-background));
+}
+
+.whatsappIcon{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: var(--different-background);
+    color: var(--text-color);
+    border-radius: 250px;
+    padding-right: 30px;
+    text-decoration: none;
+  }
+  .whatsappIcon img{
+    width: 50px;
+    height: 50px;
+    
+  }
+
+
+.link-icons{
+    position: absolute;
+    position: fixed;
+    right: 2.3rem;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: var(--icon-color);
+}
+.link-icons::after{
+    content: "";
+    width: 2px;
+    height: 2rem;
+    background: var(--icon-color);;
+}
+
+.footer-section{
+    background:#454047;
+    color: white;
+}
+.footer-icon{
+    width: 35%;
+}
+.logos img{
+    width: 110px;
+    height: 110px;
+    margin: 10px 0;
+}
