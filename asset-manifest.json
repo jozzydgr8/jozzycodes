@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/jozzycodes/static/css/main.ede49d87.css",
+    "main.js": "/jozzycodes/static/js/main.bd9332a4.js",
+    "static/js/453.703d1e80.chunk.js": "/jozzycodes/static/js/453.703d1e80.chunk.js",
+    "static/media/personImage.png": "/jozzycodes/static/media/personImage.88d77ff491452fa2d4f7.png",
+    "static/media/person2Image.png": "/jozzycodes/static/media/person2Image.eaede58c89078211051d.png",
+    "static/media/coding.jpg": "/jozzycodes/static/media/coding.ead978a8d514e95baabd.jpg",
+    "static/media/logo-black.png": "/jozzycodes/static/media/logo-black.ecf25cd3d80fdadf33af.png",
+    "static/media/white-logo.png": "/jozzycodes/static/media/white-logo.5e5848b52fb50890ef4f.png",
+    "index.html": "/jozzycodes/index.html",
+    "main.ede49d87.css.map": "/jozzycodes/static/css/main.ede49d87.css.map",
+    "main.bd9332a4.js.map": "/jozzycodes/static/js/main.bd9332a4.js.map",
+    "453.703d1e80.chunk.js.map": "/jozzycodes/static/js/453.703d1e80.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ede49d87.css",
+    "static/js/main.bd9332a4.js"
+  ]
+}
