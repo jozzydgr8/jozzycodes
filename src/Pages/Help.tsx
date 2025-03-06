@@ -8,7 +8,7 @@ export const Help = ()=>{
                         <h1>Get in Touch</h1>
                         <p>We will analyze your request and come up with
                         the best proposal for you</p>
-                        <button>
+                        <button className="btn">
                         get started
                         </button>
                     </div>

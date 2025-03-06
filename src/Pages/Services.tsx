@@ -30,7 +30,7 @@ export const Services = ()=>{
                     </div>
                     <div className="col-md-4">
                     <ion-icon style={{fontSize:"40px"}} name="search-outline"></ion-icon>
-                         <h3>Search engine optimization</h3>
+                         <h3>Website Maintenance</h3>
                          <p style={{padding:"15px 60px 30px 0px"}}>
                             We provide tailored SEO (Search Engine Optimization) services to help your website rank
                             higher on search engines like Google, Bing, and Yahoo. With our expertise, we optimize your website to increase 

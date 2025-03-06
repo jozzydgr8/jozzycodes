@@ -1,15 +1,15 @@
 import PersonImage from '../assets/person2Image.png'
 export const Reason = ()=>{
     return (
-        <section>
+        <section id='reason'>
             <div className="container-fluid">
             
                 <div className="row">
 
-                    <div className="col-md-6">
-                        <img src={PersonImage} alt='person'/>
+                    <div className="col-md-6 " style={{display:'flex', justifyContent:'center'}}>
+                        <div className='reasonImage'></div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 centerDiv">
                         <small>Solve Problems</small>
                         <h1>Why choose us?</h1>
                         <p style={{marginTop:"40px"}} >
@@ -22,7 +22,7 @@ export const Reason = ()=>{
                         
                         </p>
                         <br/> <br/>
-                        <button>Discover More</button>
+                        <button className='btn'>Discover More</button>
                     </div>
                 </div>
                 
