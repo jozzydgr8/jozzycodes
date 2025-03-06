@@ -2,44 +2,64 @@ export const Services = ()=>{
     return(
         <section>
             <div className="container-fluid">
+                <h3 style={{textAlign:'center'}}>Our Services</h3><br/>
                 <div className="row">
                     <div className="col-md-4">
-                        <ion-icon style={{fontSize:"40px"}} name="settings-outline"></ion-icon>
-                        <h3>Custom Website <br/> development</h3>
-                        <p style={{padding:"15px 60px 30px 0px"}}>
+                        
+                        <div className="service-grid">
+                        <h4><ion-icon style={{fontSize:'35px'}} name="code-slash-outline"></ion-icon><br/>Custom Website development</h4>
+                        <p>
                         We specialize in creating tailor-made websites that perfectly align with your business goals.
                         Our custom website development services are designed to provide unique, scalable,
                         and responsive web solutions
                         that give your business a competitive edge.
 
                         <br/><br/>
-                        <b>Discover more</b>
+                        <button className="btn">Discover more</button>
                         </p>
+                        </div>
+                        <br/><br/>
                     </div>
                     <div className="col-md-4">
-                    <ion-icon style={{fontSize:"40px"}} name="code-slash-outline"></ion-icon>
-                        <h3>E-commerce <br/> Solutions</h3>
-                        <p style={{padding:"15px 60px 30px 0px"}}>
-                        We provide comprehensive e-commerce solutions that enable businesses to sell online effectively 
-                        and efficiently. Whether you're starting a new online store or uograding your current one, we offer custom 
-                        e-commerce development to help you grow a business and enhance your customer experience.
+                    
+                        <div className="service-grid">
+                        <h4><ion-icon style={{fontSize:'35px'}} name="cart-outline"></ion-icon><br/>E-commerce Solutions</h4>
+                        <p >
+                        We help businesses sell online easily with our complete e-commerce solutions.
+                         Whether you're starting a new online store or improving an existing one,
+                          we create custom websites that make it simple for customers to order products, book hotel rooms,
+                           or schedule services. Our goal is to make online shopping smooth for both you and your customers,
+                            helping your business grow while providing a great experience for buyers.
 
                         <br/><br/>
-                        <b>Discover more <ion-icon name="arrow-forward-outline"></ion-icon></b>
+                        <button className="btn">Discover more</button>
                         </p>
+                        </div>
+                        <br/><br/>
                     </div>
                     <div className="col-md-4">
-                    <ion-icon style={{fontSize:"40px"}} name="search-outline"></ion-icon>
-                         <h3>Website Maintenance</h3>
-                         <p style={{padding:"15px 60px 30px 0px"}}>
-                            We provide tailored SEO (Search Engine Optimization) services to help your website rank
-                            higher on search engines like Google, Bing, and Yahoo. With our expertise, we optimize your website to increase 
-                            visibility, drive organic traffic, and boost conversions, ensuring your business reaches it's 
-                            full potential online.
+                        <div className="service-grid">
+                        <h4><ion-icon style={{fontSize:'35px'}} name="settings-outline"></ion-icon><br/>Website Maintenance</h4>
+                         <p>
+                         We take care of everything your website needs to stay online and run smoothly.
+                          From hosting and domain management to security updates and performance optimization,
+                           we handle it all—so you can focus on your business while we keep your website fast,
+                            secure, and up to date.
+
+
+
+
+
+
+
+
 
                             <br/><br/>
-                        <b>Discover more</b>
+                        <button className="btn">Discover more</button>
                          </p>
+                        </div>
+                        <br/><br/>
+                       
                     </div>
                 </div>
             </div>

@@ -19,13 +19,16 @@ export const Header = ()=>{
                         </h1>
                         <span className='custom-underline'></span> <br/>
                         <p>
-                            We design user-friendly, responsive, and
+                            We build user-friendly, responsive, and
                             professional websites tailored to your business needs,
                             ensuring your online presence stands out and delivers exceptional results to your audience.
                             <br/> <br/>
-                            
+                            Want to give us a shot? 
                         </p>
-                        Want to give us a shot? <b>Get in Touch</b> <br/> <br/>
+                        
+                        <div>
+                        <button className='btn'>Message Us</button>
+                        </div> <br/> <br/>
                        
                     </div>
                     <div className="col-md-8 header-grid">

@@ -17,20 +17,36 @@
     --background-color:#454047;
     --different-background:#5c555f;
     --text-color: white;
-    --bold-color:#577BC1;
-    --faint-color:#344CB7;
+    --faint-color:#577BC1;
+    --bold-color:#344CB7;
     --icon-color:white;
 }
 body{
     background: var(--background-color);
     color: var(--text-color);
+    font-family: "Average Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+h3,h4{
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+        
+      
+      
 }
 .btn {
-    background: #000957;
+    background: var(--bold-color);
     color: white;
 }
 .btn:hover{
-    background: #344CB7;
+    background: #2d419e;
     color: white;
 }
 .backgroundImage{
@@ -86,6 +102,10 @@ section > .container-fluid{
 .header-grid{
     display: flex;
     justify-content: end;
+    align-items: center;
+    /* background: var(--different-background); */
+    border-radius: 20px;
+    
 }
 .headerImageDiv{
     background-image: url('./assets//personImage.png');
@@ -95,7 +115,7 @@ section > .container-fluid{
 .reasonImage, .headerImageDiv{
     background-size: contain;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 400px;
     width: 85%;
     background-repeat: no-repeat;
 }
@@ -107,7 +127,7 @@ section > .container-fluid{
         justify-content: center;
     }
     .headerImageDiv, .reasonImage{
-        height: 40vh;
+        height: 300px;
     }
 }
 
@@ -168,6 +188,14 @@ section > .container-fluid{
     }
 }
 
+.service-grid{
+    background: var(--faint-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8%;
+}
+
 .footer-section{
     background:#454047;
     color: white;
@@ -188,7 +216,7 @@ section > .container-fluid{
 
 .logo-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     gap: 10px;
   }
   .logo-display{

@@ -5,7 +5,7 @@ export const Help = ()=>{
                 <div className="row">
                     <div className="col-md-6">
                         <small>let's help you</small>
-                        <h1>Get in Touch</h1>
+                        <h3>Get in Touch</h3>
                         <p>We will analyze your request and come up with
                         the best proposal for you</p>
                         <button className="btn">

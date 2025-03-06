@@ -44,7 +44,7 @@ export const Philosophy = ()=>{
                         <small>
                             WE SOLVE PROBLEMS
                         </small>
-                        <h3>We are a professional software agency</h3>
+                        <h3>We are Experts in building and managing websites for business growth</h3>
                         <br/>
                         
                         <div>
