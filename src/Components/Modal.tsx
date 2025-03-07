@@ -1,13 +1,17 @@
-import { NavLink } from "react-router-dom"
 import { Portal } from "./Portal"
-import discount from '../assets/discount.jpg'
 import ConfettiEffect from "./Confetti"
+import { useNavigate } from "react-router-dom"
 
 type ModalProps = {
     isOpen: boolean,
     onClose: ()=>void
 }
 export const Modal = ({isOpen, onClose}:ModalProps)=>{
+    const navigate = useNavigate()
+    const navigatePricing = ()=>{
+        onClose();
+        navigate('/pricing')
+    }
     if (!isOpen) return null
     return(
         <Portal>
@@ -16,11 +20,11 @@ export const Modal = ({isOpen, onClose}:ModalProps)=>{
       
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <div>
-          <button onClick={onClose}>Close</button>
+          <button className="closeButton" onClick={onClose}><ion-icon name="close-circle-outline"></ion-icon></button>
           <h3>Discount</h3>
           <p>Take Advantage of Our Discount Prices 🎉</p>
           </div>
-          <NavLink className={'modalbutton'} to={'/prices'}> Click here to View Prices</NavLink>
+          <button onClick={navigatePricing} className={'modalbutton'}> Click here to View Prices</button>
          
         </div>
       </div>

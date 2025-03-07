@@ -11,13 +11,12 @@ export const Layout = ()=>{
         // Check if modal has been shown before
         const hasSeenModal = localStorage.getItem("hasSeenModal");
     
-        if (hasSeenModal) {
+        if (!hasSeenModal) {
           // Show modal after 3 seconds
           const timer = setTimeout(() => {
             setIsModalOpen(true);
             localStorage.setItem("hasSeenModal", "true"); // Cache modal display
           }, 3000);
-    
           // Cleanup timeout on unmount
           return () => clearTimeout(timer);
         }

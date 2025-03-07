@@ -42,6 +42,7 @@ export const Pricing = ()=>{
                                 <button className="btn">Get Started</button>
                             </div>
                         </div>
+                        * Billed as ₦70,000 yearly (renewal)
                         <br/>
                     </div>
                    
@@ -96,6 +97,7 @@ export const Pricing = ()=>{
                                 <button className="btn">Get Started</button>
                             </div>
                         </div>
+                        * Billed as ₦100,000 yearly (renewal)
                         <br/>
                     </div>
                     
