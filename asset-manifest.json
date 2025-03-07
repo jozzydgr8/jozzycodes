@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jozzycodes/static/css/main.10d84abb.css",
-    "main.js": "/jozzycodes/static/js/main.b8d520c0.js",
+    "main.css": "/jozzycodes/static/css/main.a49e992c.css",
+    "main.js": "/jozzycodes/static/js/main.3bdb8dae.js",
     "static/js/453.703d1e80.chunk.js": "/jozzycodes/static/js/453.703d1e80.chunk.js",
     "static/media/personImage.png": "/jozzycodes/static/media/personImage.88d77ff491452fa2d4f7.png",
     "static/media/canva-logo.png": "/jozzycodes/static/media/canva-logo.8a5c718408ce713439ec.png",
@@ -18,12 +18,12 @@
     "static/media/africa-magic-logo.png": "/jozzycodes/static/media/africa-magic-logo.8792103c5284bd36fc0d.png",
     "static/media/github-logo.png": "/jozzycodes/static/media/github-logo.53acfa909a1067e75b5c.png",
     "index.html": "/jozzycodes/index.html",
-    "main.10d84abb.css.map": "/jozzycodes/static/css/main.10d84abb.css.map",
-    "main.b8d520c0.js.map": "/jozzycodes/static/js/main.b8d520c0.js.map",
+    "main.a49e992c.css.map": "/jozzycodes/static/css/main.a49e992c.css.map",
+    "main.3bdb8dae.js.map": "/jozzycodes/static/js/main.3bdb8dae.js.map",
     "453.703d1e80.chunk.js.map": "/jozzycodes/static/js/453.703d1e80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d84abb.css",
-    "static/js/main.b8d520c0.js"
+    "static/css/main.a49e992c.css",
+    "static/js/main.3bdb8dae.js"
   ]
 }
