@@ -28,17 +28,25 @@ body{
     font-weight: 300;
     font-style: normal;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 h1{
     font-family: "Poppins", sans-serif;
-    font-weight: 900;
+    
     font-style: normal;
+}
+h1, h3{
+    font-weight: 900;
+}
+h4{
+    font-weight: 500;
 }
 h3,h4{
     font-family: "Mukta Vaani", sans-serif;
-    font-weight: 900;
     font-style: normal;
         
-      
       
 }
 .btn {
@@ -234,4 +242,34 @@ section > .container-fluid{
       height: 50px;
     }
   
+  }
+
+  .pricing-grid{
+    background: var(--different-background);
+    padding: 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pricing-grid ul{
+    list-style: none;
+    padding: 0;
+  }
+  .pricing-grid ul li{
+    padding: 5px;
+  }
+  .pricing-grid ul li::before{
+    content: "✔"; 
+    margin-right: 8px;
+  color: var(--icon-color); 
+  font-size: 1.1em; 
+  font-weight: 300;
+  }
+  .discount{
+    background: var(--faint-color);
+    width: 45%;
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
   }
