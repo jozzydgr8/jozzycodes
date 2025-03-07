@@ -27,7 +27,7 @@ export const Header = ()=>{
                         </p>
                         
                         <div>
-                        <button className='btn'>Message Us</button>
+                        <button className='btn'>Contact Us</button>
                         </div> <br/> <br/>
                        
                     </div>

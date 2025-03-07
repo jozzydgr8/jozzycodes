@@ -39,7 +39,7 @@ export const Pricing = ()=>{
                             </ul>
 
                             <div>
-                                <button className="btn">Message us</button>
+                                <button className="btn">Get Started</button>
                             </div>
                         </div>
                         <br/>
@@ -93,7 +93,7 @@ export const Pricing = ()=>{
                                 </li>
                             </ul>
                             <div>
-                                <button className="btn">Message us</button>
+                                <button className="btn">Get Started</button>
                             </div>
                         </div>
                         <br/>
@@ -106,7 +106,9 @@ export const Pricing = ()=>{
                             For businesses that need more than a standard website,
                              custom solutions with features like membership systems, dashboards, and integrations tailored to your needs.
                             </p>
-                            <button className="btn">Let's talk</button>
+                            <div>
+                            <button className="btn">Contact Us</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export const Services = ()=>{
     return(
         <section>
@@ -15,7 +17,7 @@ export const Services = ()=>{
                         that give your business a competitive edge.
 
                         <br/><br/>
-                        <button className="btn">Discover more</button>
+                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </p>
                         </div>
                         <br/><br/>
@@ -32,7 +34,7 @@ export const Services = ()=>{
                             helping your business grow while providing a great experience for buyers.
 
                         <br/><br/>
-                        <button className="btn">Discover more</button>
+                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </p>
                         </div>
                         <br/><br/>
@@ -55,7 +57,7 @@ export const Services = ()=>{
 
 
                             <br/><br/>
-                        <button className="btn">Discover more</button>
+                        <div className="service-link">Discover more<ion-icon name="arrow-forward-outline"></ion-icon></div>
                          </p>
                         </div>
                         <br/><br/>
