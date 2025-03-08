@@ -75,6 +75,13 @@ h4 {
     height: 400px;
     width: 85%;
 }
+/* Header Section */
+.header-grid {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 20px;
+}
 
 .headerImageDiv {
     background-image: url('./assets//personImage.png');
@@ -133,13 +140,7 @@ nav .container-fluid, section > .container-fluid, .modal-overlay {
     padding: 4% 7%;
 }
 
-/* Header Section */
-.header-grid {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    border-radius: 20px;
-}
+
 
 /* Section Backgrounds */
 #philosophy {
@@ -214,6 +215,10 @@ nav .container-fluid, section > .container-fluid, .modal-overlay {
 
 .footer-icon {
     width: 35%;
+}
+footer small{
+    color: var(--different-background);
+    text-transform: capitalize;
 }
 
 .logoDiv {

@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom"
 import { Navbar } from "./Components/Navbar"
 import { useEffect, useState } from "react"
 import { SocialIcon } from "./Components/SocialIcon";
-import { Footer } from "./Pages/Footer";
+import { Footer } from "./Components/Footer";
 import { Modal } from "./Components/Modal";
 import ScrollToTop from "./ScrollToTop";
 
@@ -12,7 +12,7 @@ export const Layout = ()=>{
         
         const hasSeenModal = localStorage.getItem("hasSeenModal");
     
-        if (hasSeenModal) {
+        if (!hasSeenModal) {
           
           const timer = setTimeout(() => {
             setIsModalOpen(true);

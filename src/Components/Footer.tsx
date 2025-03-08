@@ -13,7 +13,9 @@ export const Footer = ()=>{
                         <img src={lightIcon} alt='jozzy_codes logo' className='footer-icon heading'/>
                         <div>
                             Fb./ <a href='https://www.instagram.com/jozzycodes/'>Ig./</a> Tw./ Ln. / <a href='https://wa.link/ubp14t' target='blank'>Whatsapp</a>
+                       
                         </div>
+                        <br/>
                         </div>
                         <div className="col-md-3 " style={{display:'flex', gap:'25px',flexDirection:'column'}}>
                             <small className='heading'>Get in touch?</small>
@@ -32,14 +34,16 @@ export const Footer = ()=>{
 
 
                             
-
+                            <br/>
                         </div>
+
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}}>
                             <small className='heading'>Quick Links</small>
                             <a href='/#philosophy' >About Us</a> 
                             <NavLink to={'pricing'}>Website Development</NavLink> 
                             <a href='/#services'>Our Services</a>
                             <a>Refund Policy</a>
+                            <br/>
 
                         </div>
 

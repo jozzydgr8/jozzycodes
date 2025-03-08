@@ -1,11 +1,9 @@
-
 import { NavLink } from 'react-router-dom'
 import darkLogo from '../assets/logo-black.png'
 import lightLogo from '../assets/white-logo.png'
 import { clickRenderProps } from '../Types'
 
 export const Navbar = ({clicked, onClick}:clickRenderProps)=>{
-  console.log(clicked)
     return(
 
                 <>
