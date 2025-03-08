@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.css": "/jozzycodes/static/css/main.807ee2d2.css",
-    "main.js": "/jozzycodes/static/js/main.70cbec49.js",
-    "static/js/453.703d1e80.chunk.js": "/jozzycodes/static/js/453.703d1e80.chunk.js",
-    "static/media/personImage.png": "/jozzycodes/static/media/personImage.88d77ff491452fa2d4f7.png",
-    "static/media/canva-logo.png": "/jozzycodes/static/media/canva-logo.8a5c718408ce713439ec.png",
-    "static/media/codingdesktop.jpg": "/jozzycodes/static/media/codingdesktop.aada07a8f1f5e87f526c.jpg",
-    "static/media/person2Image.png": "/jozzycodes/static/media/person2Image.eaede58c89078211051d.png",
-    "static/media/Blossom-cake-logo.png": "/jozzycodes/static/media/Blossom-cake-logo.baba554ec5afdf398233.png",
-    "static/media/discount.jpg": "/jozzycodes/static/media/discount.321818fbdebffaefae69.jpg",
-    "static/media/logo-black.png": "/jozzycodes/static/media/logo-black.ecf25cd3d80fdadf33af.png",
-    "static/media/white-logo.png": "/jozzycodes/static/media/white-logo.5e5848b52fb50890ef4f.png",
-    "static/media/bolt-logo.png": "/jozzycodes/static/media/bolt-logo.238457f7e57a26f2d742.png",
-    "static/media/uba-logo.png": "/jozzycodes/static/media/uba-logo.5d6cf117f7b29ad3aad6.png",
-    "static/media/grandeur-tech-logo.png": "/jozzycodes/static/media/grandeur-tech-logo.80d2f6e6273b52cc5aab.png",
-    "static/media/toyota-logo.png": "/jozzycodes/static/media/toyota-logo.d2c62bd0db1548e36ed6.png",
-    "static/media/jumia-logo.png": "/jozzycodes/static/media/jumia-logo.1f1a09f69bc3b45825f4.png",
-    "static/media/africa-magic-logo.png": "/jozzycodes/static/media/africa-magic-logo.8792103c5284bd36fc0d.png",
-    "static/media/github-logo.png": "/jozzycodes/static/media/github-logo.53acfa909a1067e75b5c.png",
+    "main.css": "/jozzycodes/static/css/main.abd18dff.css",
+    "main.js": "/jozzycodes/static/js/main.d854840b.js",
+    "static/js/453.29530a15.chunk.js": "/jozzycodes/static/js/453.29530a15.chunk.js",
+    "static/media/codingdesktop.jpg": "/jozzycodes/static/media/codingdesktop.df17c52772553f915aa0.jpg",
+    "static/media/person-one.jpeg": "/jozzycodes/static/media/person-one.9a7eb1577b0759cb80fe.jpeg",
+    "static/media/personImage.png": "/jozzycodes/static/media/personImage.ad28abca4e5d94f6762a.png",
+    "static/media/discount.jpg": "/jozzycodes/static/media/discount.e4d2385f892be7b93648.jpg",
+    "static/media/canva-logo.png": "/jozzycodes/static/media/canva-logo.a5f9704757274e42e364.png",
+    "static/media/Blossom-cake-logo.png": "/jozzycodes/static/media/Blossom-cake-logo.0a31880364bc0a79a49c.png",
+    "static/media/logo-black.png": "/jozzycodes/static/media/logo-black.05fc5f5f833f41cc7958.png",
+    "static/media/white-logo.png": "/jozzycodes/static/media/white-logo.6850dd37c549b8c3c082.png",
+    "static/media/bolt-logo.png": "/jozzycodes/static/media/bolt-logo.982092c441609f275e1e.png",
     "index.html": "/jozzycodes/index.html",
-    "main.807ee2d2.css.map": "/jozzycodes/static/css/main.807ee2d2.css.map",
-    "main.70cbec49.js.map": "/jozzycodes/static/js/main.70cbec49.js.map",
-    "453.703d1e80.chunk.js.map": "/jozzycodes/static/js/453.703d1e80.chunk.js.map"
+    "main.abd18dff.css.map": "/jozzycodes/static/css/main.abd18dff.css.map",
+    "main.d854840b.js.map": "/jozzycodes/static/js/main.d854840b.js.map",
+    "453.29530a15.chunk.js.map": "/jozzycodes/static/js/453.29530a15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.807ee2d2.css",
-    "static/js/main.70cbec49.js"
+    "static/css/main.abd18dff.css",
+    "static/js/main.d854840b.js"
   ]
 }
