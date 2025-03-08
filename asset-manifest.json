@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jozzycodes/static/css/main.abd18dff.css",
-    "main.js": "/jozzycodes/static/js/main.d854840b.js",
+    "main.css": "/jozzycodes/static/css/main.982f1aac.css",
+    "main.js": "/jozzycodes/static/js/main.7f88b60b.js",
     "static/js/453.29530a15.chunk.js": "/jozzycodes/static/js/453.29530a15.chunk.js",
     "static/media/codingdesktop.jpg": "/jozzycodes/static/media/codingdesktop.df17c52772553f915aa0.jpg",
     "static/media/person-one.jpeg": "/jozzycodes/static/media/person-one.9a7eb1577b0759cb80fe.jpeg",
@@ -13,12 +13,12 @@
     "static/media/white-logo.png": "/jozzycodes/static/media/white-logo.6850dd37c549b8c3c082.png",
     "static/media/bolt-logo.png": "/jozzycodes/static/media/bolt-logo.982092c441609f275e1e.png",
     "index.html": "/jozzycodes/index.html",
-    "main.abd18dff.css.map": "/jozzycodes/static/css/main.abd18dff.css.map",
-    "main.d854840b.js.map": "/jozzycodes/static/js/main.d854840b.js.map",
+    "main.982f1aac.css.map": "/jozzycodes/static/css/main.982f1aac.css.map",
+    "main.7f88b60b.js.map": "/jozzycodes/static/js/main.7f88b60b.js.map",
     "453.29530a15.chunk.js.map": "/jozzycodes/static/js/453.29530a15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd18dff.css",
-    "static/js/main.d854840b.js"
+    "static/css/main.982f1aac.css",
+    "static/js/main.7f88b60b.js"
   ]
 }
