@@ -1,4 +1,4 @@
-import PersonImage from '../assets/person2Image.png'
+
 export const Reason = ()=>{
     return (
         <section id='reason'>
@@ -11,8 +11,9 @@ export const Reason = ()=>{
                     </div>
                     <div className="col-md-6 centerDiv">
                         <small>Solve Problems</small>
-                        <h3>Why choose us?</h3>
-                        <p style={{marginTop:"40px"}} >
+                        <h3 className='animate-right'>Why choose us?</h3>
+                        <br/>
+                        <p>
                         We build professional, user-friendly,
                          and high-performing websites tailored to your business needs.
                           From design and development to hosting, domain management, and ongoing maintenance,
@@ -23,8 +24,8 @@ export const Reason = ()=>{
                         
                         </p>
                         <br/> <br/>
-                        <div>
-                        <button className='btn'>Let's Talk</button>
+                        <div className='animate-up' >
+                            <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Let's Talk</button></a>
                         </div>
                     </div>
                 </div>

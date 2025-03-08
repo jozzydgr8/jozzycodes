@@ -4,20 +4,21 @@ import { useEffect, useState } from "react"
 import { SocialIcon } from "./Components/SocialIcon";
 import { Footer } from "./Pages/Footer";
 import { Modal } from "./Components/Modal";
+import ScrollToTop from "./ScrollToTop";
 
 export const Layout = ()=>{
     const [isModalOpen, setIsModalOpen]= useState(false);
     useEffect(() => {
-        // Check if modal has been shown before
+        
         const hasSeenModal = localStorage.getItem("hasSeenModal");
     
-        if (!hasSeenModal) {
-          // Show modal after 3 seconds
+        if (hasSeenModal) {
+          
           const timer = setTimeout(() => {
             setIsModalOpen(true);
-            localStorage.setItem("hasSeenModal", "true"); // Cache modal display
-          }, 3000);
-          // Cleanup timeout on unmount
+            localStorage.setItem("hasSeenModal", "true"); 
+          }, 5000);
+          
           return () => clearTimeout(timer);
         }
       }, []);
@@ -32,6 +33,7 @@ export const Layout = ()=>{
     
     return(
         <>
+        <ScrollToTop/>
         <SocialIcon/>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         <Navbar clicked={darkTheme} onClick={toggletheme}/>

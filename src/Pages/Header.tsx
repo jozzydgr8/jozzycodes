@@ -1,11 +1,11 @@
-import PersonImage from '../assets/personImage.png'
+import { useEffect } from 'react';
 export const Header = ()=>{
-    const imageStyle = {
-        backgroundImage:`url(${PersonImage})`,
-         height:'40vh',
-         backgroundSize:'cover',
-         backgroundPosition:'center center'
-    }
+    useEffect(()=>{
+        var container = document.querySelector('.headerWrite');
+        
+        container?.classList.add('sectionAnimationDown');
+    },[])
+
     return(
         <section id='header'>
             <div className="container-fluid">
@@ -13,8 +13,8 @@ export const Header = ()=>{
                 
                     
                     <div className="col-md-4 centerDiv">
-                        <small>We are innovative!</small><br/>
-                        <h1 >
+                        <small>code, create, captivate</small><br/>
+                        <h1 className='headerWrite'>
                             Your Trusted Partner for Stunning,<br/> User-Friendly Websites
                         </h1>
                         <span className='custom-underline'></span> <br/>
@@ -27,7 +27,8 @@ export const Header = ()=>{
                         </p>
                         
                         <div>
-                        <button className='btn'>Contact Us</button>
+                            <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Contact Us</button></a>
+                        
                         </div> <br/> <br/>
                        
                     </div>

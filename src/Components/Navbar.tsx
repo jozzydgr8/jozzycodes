@@ -27,14 +27,14 @@ export const Navbar = ({clicked, onClick}:clickRenderProps)=>{
                         </li>
                         
                         <li className="nav-item">
-                        <NavLink to={''} className={'nav-link'}>Features</NavLink>
+                        <a href={'/#services'} className={'nav-link'}>Features</a>
                         </li>
                         <li className="nav-item">
                           <NavLink className={'nav-link'} to={'pricing'}>Pricing</NavLink>
                         {/* <a className="nav-link" href="#">Pricing</a> */}
                         </li>
                         <li className="nav-item">
-                          <a><button className='btn'> Contact Us </button></a>
+                        <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Contact Us</button></a>
                           {/* <a><button className='btn' onClick={onClick}> Toggle Night </button></a> */}
                         
                         </li>

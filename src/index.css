@@ -1,73 +1,108 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding:0;
-    
-}
-:root{
+:root {
+    /* Theme Colors */
     --background-color: white;
     --different-background: #F5F5F5;
     --text-color: #000957;
-    --bold-color:#344CB7;
-    --faint-color:#577BC1;
-    --icon-color:#454047;
+    --bold-color: #344CB7;
+    --faint-color: #577BC1;
+    --icon-color: #454047;
+}
 
-}
-.dark-theme{
-    --background-color:#454047;
-    --different-background:#5c555f;
+.dark-theme {
+    --background-color: #454047;
+    --different-background: #5c555f;
     --text-color: white;
-    --faint-color:#577BC1;
-    --bold-color:#344CB7;
-    --icon-color:white;
+    --bold-color: #344CB7;
+    --faint-color: #577BC1;
+    --icon-color: white;
 }
-body{
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
     background: var(--background-color);
     color: var(--text-color);
     font-family: "Average Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-h1{
+
+h1, h3 {
+    font-weight: 900;
     font-family: "Poppins", sans-serif;
-    
     font-style: normal;
 }
-h1, h3{
-    font-weight: 900;
-}
-h4{
+
+h4 {
     font-weight: 500;
-}
-h3,h4{
     font-family: "Mukta Vaani", sans-serif;
     font-style: normal;
-        
-      
 }
+
+/* Buttons */
 .btn {
     background: var(--bold-color);
     color: white;
 }
-.btn:hover{
+
+.btn:hover {
     background: #2d419e;
     color: white;
 }
-.backgroundImage{
+
+/* Background Images */
+.backgroundImage {
     background-image: url('./assets/codingdesktop.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 60vh;
 }
-.custom-underline{
+
+.reasonImage, .headerImageDiv {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 85%;
+}
+
+.headerImageDiv {
+    background-image: url('./assets//personImage.png');
+}
+
+.reasonImage {
+    background-image: url('./assets/person-one.jpeg');
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+@media (max-width:750px) {
+    .header-grid {
+        justify-content: center;
+    }
+    .headerImageDiv, .reasonImage {
+        height: 300px;
+    }
+}
+
+/* Underline Effect */
+.custom-underline {
     position: relative;
     display: inline-block;
 }
-.custom-underline::after{
+
+.custom-underline::after {
     content: '';
     position: absolute;
     left: 0;
@@ -79,73 +114,40 @@ h3,h4{
     transform: translateY(50%);
 }
 
-
-
-img{
-    width: 80%;
-}
-.navbar-brand, .nav-link{
+/* Navbar */
+.navbar-brand, .nav-link {
     color: var(--text-color);
 }
-.navbar-brand{
-    width: 10%;
 
+.navbar-brand {
+    width: 10%;
 }
+
 @media (max-width:750px) {
-    .navbar-brand{
+    .navbar-brand {
         width: 30%;
-    
     }
 }
 
-
-
-nav .container-fluid{
-    padding: 1% 7%;
-}
-section > .container-fluid, .modal-overlay{
-    padding:4% 7% ;
+nav .container-fluid, section > .container-fluid, .modal-overlay {
+    padding: 4% 7%;
 }
 
-.header-grid{
+/* Header Section */
+.header-grid {
     display: flex;
     justify-content: end;
     align-items: center;
-    /* background: var(--different-background); */
     border-radius: 20px;
-    
-}
-.headerImageDiv{
-    background-image: url('./assets//personImage.png');
-    
-
-}
-.reasonImage, .headerImageDiv{
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 85%;
-    background-repeat: no-repeat;
-}
-.reasonImage{
-    background-image: url('./assets/person2Image.png');
-}
-@media (max-width:750px) {
-    .header-grid{
-        justify-content: center;
-    }
-    .headerImageDiv, .reasonImage{
-        height: 300px;
-    }
 }
 
-
-
-.philosophy-section{
-    background:linear-gradient(to bottom, var(--background-color), var(--different-background));
+/* Section Backgrounds */
+#philosophy {
+    background: linear-gradient(to bottom, var(--background-color), var(--different-background));
 }
 
-.whatsappIcon{
+/* Floating Icons */
+.whatsappIcon {
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -155,48 +157,48 @@ section > .container-fluid, .modal-overlay{
     border-radius: 250px;
     padding-right: 30px;
     text-decoration: none;
-  }
-  .whatsappIcon img{
+}
+
+.whatsappIcon img {
     width: 50px;
     height: 50px;
-    
-  }
-  @media (max-width:750px) {
+}
+
+@media (max-width:750px) {
     .whatsappIcon img {
         width: 30px;
         height: 30px;
     }
-  }
+}
 
-
-.link-icons{
-    position: absolute;
+.link-icons {
     position: fixed;
     right: 2.3rem;
     bottom: 10rem;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    padding: auto;
     justify-content: center;
     align-items: center;
     gap: 20px;
     font-size: 20px;
     color: var(--icon-color);
 }
-.link-icons::after{
+
+.link-icons::after {
     content: "";
     width: 2px;
     height: 2rem;
-    background: var(--icon-color);;
+    background: var(--icon-color);
 }
+
 @media (max-width:750px) {
-    .link-icons{
+    .link-icons {
         display: none;
     }
 }
 
-.service-grid{
+/* Service Section */
+.service-grid {
     background: var(--faint-color);
     color: white;
     border: none;
@@ -204,83 +206,93 @@ section > .container-fluid, .modal-overlay{
     padding: 8%;
 }
 
-.footer-section{
-    background:#454047;
+/* Footer Section */
+.footer-section {
+    background: #454047;
     color: white;
 }
-.footer-icon{
+
+.footer-icon {
     width: 35%;
 }
 
-.logoDiv{
+.logoDiv {
     width: 30%;
 }
-.centerDiv{
+
+.centerDiv {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-
-.logo-grid{
+/* Logo Grid */
+.logo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-  }
-  .logo-display{
-   margin-bottom: 15px;
+}
+
+.logo-display {
+    margin-bottom: 15px;
     height: 100px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-  }
-  @media (max-width:750px) {
-    .logo-grid{
-      grid-template-columns: repeat(auto-fit,minmax(50px, 1fr));
-    }
-    .logo-display{
-      height: 50px;
-    }
-  
-  }
+}
 
-  .pricing-grid{
+@media (max-width:750px) {
+    .logo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    .logo-display {
+        height: 50px;
+    }
+}
+
+/* Pricing Section */
+.pricing-grid {
     background: var(--different-background);
     padding: 5%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  .pricing-grid ul{
+}
+
+.pricing-grid ul {
     list-style: none;
     padding: 0;
-  }
-  .pricing-grid ul li{
+}
+
+.pricing-grid ul li {
     padding: 5px;
-  }
-  .pricing-grid ul li::before{
-    content: "✔"; 
+}
+
+.pricing-grid ul li::before {
+    content: "✔";
     margin-right: 8px;
-  color: var(--icon-color); 
-  font-size: 1.1em; 
-  font-weight: 300;
-  }
-  .discount{
-    background: var(--faint-color);
-    width: 45%;
+    color: var(--icon-color);
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.discount {
+    color: var(--faint-color);
+    border: solid 1px var(--faint-color);
+    width: 60%;
     padding: 7px;
     border-radius: 7px;
-    color: white;
-  }
+    background: white;
+}
 
-  .service-link{
+.service-link {
     display: flex;
     align-items: center;
     gap: 5px;
-  }
-
-  .modal-overlay {
+}
+/* modal */
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -332,3 +344,27 @@ section > .container-fluid, .modal-overlay{
         color: var(--background-color);
       
  }
+
+/* animations */
+.sectionAnimationLeft{
+    scroll-behavior: smooth;
+    animation: backInLeft;
+    animation-duration: 1.5s;
+  }
+  .sectionAnimationDown{
+    scroll-behavior: smooth;
+    animation:fadeInDownBig;
+    animation-duration: 1.2s;
+  }
+  
+  .sectionAnimationUp{
+    scroll-behavior: smooth;
+    animation:fadeInUpBig;
+    animation-duration: 1.2s;
+  
+  }
+  .sectionAnimationRight{
+    scroll-behavior: smooth;
+    animation: backInRight;
+    animation-duration: 1.2s;
+  }

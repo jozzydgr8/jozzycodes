@@ -1,4 +1,20 @@
 export const Pricing = ()=>{
+    const ecommerceRequest = async ()=>{
+        const message ="Hey there! I came across your website and I'm interested in your e-commerce web development services. I'd love to learn more!"
+        const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
+         window.open(whatsappURL, '_blank');
+    }
+    const businessRequest = async ()=>{
+        const message ="Hey there! I came across your website and I'm interested in your Business web development services. I'd love to learn more!"
+        const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
+         window.open(whatsappURL, '_blank');
+    }
+    const customRequest = async ()=>{
+        const message ="Hey there! I came across your website and I'm interested in your custom website development services. I'd love to learn more!"
+        const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
+         window.open(whatsappURL, '_blank');
+    }
+    
     return(
         <section>
             <div className="container-fluid">
@@ -15,7 +31,7 @@ export const Pricing = ()=>{
                         <div className="pricing-grid">
                             <h4>Business Websites</h4>
                             <p>Showcase your business info, services and contact details</p>
-                            <div className="discount"> <s>₦180K</s> - save 45%</div>
+                            <div className="discount"> <s>₦200K</s> - save 50%</div>
                             <h3>₦100K</h3>
                             <ul>
                                 <li>
@@ -39,7 +55,7 @@ export const Pricing = ()=>{
                             </ul>
 
                             <div>
-                                <button className="btn">Get Started</button>
+                                <button className="btn" onClick={businessRequest}>Get Started</button>
                             </div>
                         </div>
                         * Billed as ₦70,000 yearly (renewal)
@@ -52,7 +68,7 @@ export const Pricing = ()=>{
                             <p>Includes everything in a business website plus online ordering,
                                  payments or booking functionality
                             </p>
-                            <div className="discount"><s>₦275k</s> - save 28%</div>
+                            <div className="discount"><s>₦375k</s> - save 47%</div>
                            <h3>₦200k</h3>
                            <ul>
                                 <li>
@@ -94,7 +110,7 @@ export const Pricing = ()=>{
                                 </li>
                             </ul>
                             <div>
-                                <button className="btn">Get Started</button>
+                                <button className="btn" onClick={ecommerceRequest}>Get Started</button>
                             </div>
                         </div>
                         * Billed as ₦100,000 yearly (renewal)
@@ -109,11 +125,12 @@ export const Pricing = ()=>{
                              custom solutions with features like membership systems, dashboards, and integrations tailored to your needs.
                             </p>
                             <div>
-                            <button className="btn">Contact Us</button>
+                            <button className="btn" onClick={customRequest}>Contact Us</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <br/>
         </section>

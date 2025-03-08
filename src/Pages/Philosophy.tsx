@@ -37,12 +37,12 @@ export const Philosophy = ()=>{
         })
     }
     return(
-        <section className='philosophy-section'>
+        <section id='philosophy'>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6 centerDiv ">
                         <small>
-                            WE SOLVE PROBLEMS
+                            We Solve Problems
                         </small>
                         <h3>We are Experts in building and managing websites for business growth</h3>
                         <br/>

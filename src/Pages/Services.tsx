@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 
 export const Services = ()=>{
     return(
-        <section>
+        <section id="services">
             <div className="container-fluid">
                 <h3 style={{textAlign:'center'}}>Our Services</h3><br/>
                 <div className="row">
@@ -17,8 +17,9 @@ export const Services = ()=>{
                         that give your business a competitive edge.
 
                         <br/><br/>
-                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                        
                         </p>
+                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </div>
                         <br/><br/>
                     </div>
@@ -34,8 +35,9 @@ export const Services = ()=>{
                             helping your business grow while providing a great experience for buyers.
 
                         <br/><br/>
-                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                        
                         </p>
+                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </div>
                         <br/><br/>
                     </div>
@@ -57,8 +59,10 @@ export const Services = ()=>{
 
 
                             <br/><br/>
-                        <div className="service-link">Discover more<ion-icon name="arrow-forward-outline"></ion-icon></div>
+                            
+                        
                          </p>
+                         <div className="service-link"><a href='https://wa.link/ubp14t' target='_blank'>Discover more</a><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </div>
                         <br/><br/>
                        

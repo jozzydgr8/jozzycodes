@@ -8,9 +8,11 @@ export const Help = ()=>{
                         <h3>Get in Touch</h3>
                         <p>We will analyze your request and come up with
                         the best proposal for you</p>
-                        <button className="btn">
-                        get started
+                        <a href="https://wa.link/ubp14t" target="_blank">
+                        <button className="btn animate-left">
+                        Contact Us
                         </button>
+                        </a>
                     </div>
                 </div>
             </div>

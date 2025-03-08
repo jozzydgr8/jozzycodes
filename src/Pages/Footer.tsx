@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import lightIcon from '../assets/white-logo.png';
 const footerStyle={
     
@@ -11,21 +12,21 @@ export const Footer = ()=>{
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}} >
                         <img src={lightIcon} alt='jozzy_codes logo' className='footer-icon heading'/>
                         <div>
-                            Fb./ Ig./ Tw./ Ln. / Whatsapp
+                            Fb./ <a href='https://www.instagram.com/jozzycodes/'>Ig./</a> Tw./ Ln. / <a href='https://wa.link/ubp14t' target='blank'>Whatsapp</a>
                         </div>
                         </div>
                         <div className="col-md-3 " style={{display:'flex', gap:'25px',flexDirection:'column'}}>
                             <small className='heading'>Get in touch?</small>
                             <div>
                             Talk to someone?<br/>
-                            <a href='tel:+2348113828486'>234 811 382 8486</a>
+                            <a href='tel:08113828486'>234 811 382 8486</a>
                             </div>
 
 
                             <div>
-                                Send us a mail? <br/>
-                                <a href='mailto:jozzydgreat1@gmail.com'>
-                                    jozzycodes@gmail.com
+                                Send us a message on whatsApp? <br/>
+                                <a href='https://wa.link/ubp14t' target='_blank'>
+                                    WhatsApp<ion-icon name="logo-whatsapp"></ion-icon>
                                 </a>
                             </div>
 
@@ -35,9 +36,9 @@ export const Footer = ()=>{
                         </div>
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}}>
                             <small className='heading'>Quick Links</small>
-                            <a>About Us</a> 
-                            <a>Web Design</a> 
-                            <a>Our Services</a>
+                            <a href='/#philosophy' >About Us</a> 
+                            <NavLink to={'pricing'}>Website Development</NavLink> 
+                            <a href='/#services'>Our Services</a>
                             <a>Refund Policy</a>
 
                         </div>
@@ -45,8 +46,9 @@ export const Footer = ()=>{
 
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}}>
                             <small className='heading'>Request a Quote</small>
-                            <a>Ecommerce Pricing</a>
-                            <a>Web Design Pricing</a>
+                            <NavLink to={'pricing'}>Ecommerce Pricing</NavLink> 
+                            <NavLink to={'pricing'}>Business Website Pricing</NavLink> 
+                        
                             
                         </div>
                     </div>
