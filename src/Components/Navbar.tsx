@@ -29,7 +29,7 @@ export const Navbar = ({clicked, onClick}:clickRenderProps)=>{
                         </li>
                         
                         <li className="nav-item">
-                          <NavLink className={'nav-link'} to={'pricing'}>Pricing</NavLink>
+                          <NavLink className={'nav-link'} to={'/pricing'}>Pricing</NavLink>
                         {/* <a className="nav-link" href="#">Pricing</a> */}
                         </li>
                         <li className="nav-item">
