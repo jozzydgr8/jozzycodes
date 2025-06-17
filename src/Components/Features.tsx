@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+
 import { advertisement } from "../Data";
 import { FlatButton } from "./FlatButton";
-import { CountdownTimer } from "./CountDown";
+
 
 
 
@@ -19,8 +19,6 @@ export const Features = () => {
               <strong>{ads.urgency}</strong>
               <div><small>**{ads.notice}</small></div>
 
-              {/* Countdown Timer */}
-              <CountdownTimer duration={10 * 24 * 60 * 60} /> {/* 600s = 10 mins */}
 
               <FlatButton title="claim Deal" onCLick={ads.sendRequest} />
             </div>
