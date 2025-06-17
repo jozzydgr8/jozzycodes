@@ -20,7 +20,7 @@ export const Features = () => {
               <div><small>**{ads.notice}</small></div>
 
 
-              <FlatButton title="claim Deal" onCLick={ads.sendRequest} />
+              <FlatButton title="Claim Deal" onCLick={ads.sendRequest} />
             </div>
           ))}
         </div>

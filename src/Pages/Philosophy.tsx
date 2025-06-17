@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import ThinkingPerson from '../assets/coding.jpg'
 import { Phil } from '../Components/Phil';
 import { Mission } from '../Components/Mission';
 
