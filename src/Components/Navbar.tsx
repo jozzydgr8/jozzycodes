@@ -27,9 +27,13 @@ export const Navbar = ({clicked, onClick}:clickRenderProps)=>{
                         <li className="nav-item">
                         <a href={'/#services'} className={'nav-link'}>Features</a>
                         </li>
+                        
                         <li className="nav-item">
                           <NavLink className={'nav-link'} to={'pricing'}>Pricing</NavLink>
                         {/* <a className="nav-link" href="#">Pricing</a> */}
+                        </li>
+                        <li className="nav-item">
+                        <a href={'/#features'} className={'nav-link'}>Claim Deal</a>
                         </li>
                         <li className="nav-item">
                         <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Contact Us</button></a>

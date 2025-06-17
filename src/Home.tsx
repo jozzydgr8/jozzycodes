@@ -1,3 +1,4 @@
+import { Features } from "./Components/Features"
 import { Header } from "./Pages/Header"
 import { Help } from "./Pages/Help"
 import { Logo } from "./Pages/Logo"
@@ -10,6 +11,7 @@ export const Home = ()=>{
         <>
         <Header/>
         <Services />
+        <Features/>
         <Philosophy/>
         <Reason/>
         <Logo/>

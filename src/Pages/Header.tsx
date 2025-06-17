@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { FlatButton } from '../Components/FlatButton';
+import { CountdownTimer } from '../Components/CountDown';
 export const Header = ()=>{
     useEffect(()=>{
         var container = document.querySelector('.headerWrite');
@@ -26,10 +28,17 @@ export const Header = ()=>{
                             Want to give us a shot? 
                         </p>
                         
-                        <div>
+                        {/* <div>
                             <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Contact Us</button></a>
                         
-                        </div> <br/> <br/>
+                        </div> */}
+
+                        <div>
+                            <a href='/#features'><FlatButton title='Claim Deal' onCLick={()=>console.log('claim deal')}/>
+                            </a>
+                            <CountdownTimer/>
+                        </div>
+                        <br/> <br/> 
                        
                     </div>
                     <div className="col-md-8 header-grid">

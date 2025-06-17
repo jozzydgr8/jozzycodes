@@ -40,3 +40,20 @@ export const Logos = [
         image:jozzycodes
     }
 ]
+
+
+export const advertisement= [
+    {
+        title: '₦50K Website – Limited Offer',
+        desc: 'Professional website + FREE domain & hosting (1 year) for just ₦50,000',
+        urgency: 'Limited spots available!',
+        catch: 'Perfect for businesses that want to establish an online presence.',
+        notice: 'Not applicable for e-commerce, booking, or advanced custom features.',
+        sendRequest : async ()=>{
+        const message ="Hello, I'm interested in the ₦50,000 website Promo. I'd like to know what's included and how to get started."
+        const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
+         window.open(whatsappURL, '_blank');
+    }
+    }
+
+]
