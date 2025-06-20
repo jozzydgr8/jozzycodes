@@ -1,12 +1,11 @@
 export const SocialIcon: React.FC = () => {
     return (
         <div className="link-icons">
-            {/* <ion-icon name="logo-instagram" style={{ fontSize: '40px', color: '#E4405F' }}></ion-icon> */}
-            <ion-icon name="logo-instagram" ></ion-icon>
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <ion-icon name="logo-facebook"></ion-icon>
+           
+            <a href="https://www.instagram.com/jozzycodes/"  target='_blank'><ion-icon name="logo-instagram" ></ion-icon></a>
+            <a  href='https://wa.link/b8xq56' target='_blank'><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="https://x.com/jozzycodes"  target='_blank'><ion-icon name="logo-twitter" ></ion-icon></a>
+            <a href="https://web.facebook.com/profile.php?id=61559970704850"  target='_blank'><ion-icon name="logo-facebook"></ion-icon></a>
         </div>
     );
 };

@@ -6,7 +6,7 @@ export const Logo = ()=>{
             <div className="container-fluid" >
                 <div className="logo-grid" >
                     {Logos.map((data, index)=>(
-                        <a key={index}>
+                        <a key={index} href={`${data?.url}`}>
                             <div className="logo-display" style={{backgroundImage:`url(${data.image})`}}>
 
                             </div>
