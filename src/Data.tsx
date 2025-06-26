@@ -11,22 +11,28 @@ import taycleanLogo from './assets/Tayclean_logo.png'
 export const Logos = [
     
     {
-        image:ubaLogo
+        image:ubaLogo,
+        url:'https://www.ubagroup.com/'
     },
     {
-        image:boltLogo
+        image:boltLogo,
+        url:'https://bolt.eu/en/'
     },
     {
-        image:toyotaLogo
+        image:toyotaLogo,
+        url:'https://www.toyota.com/'
     },
     {
-        image:jumiaLogo
+        image:jumiaLogo,
+        url:'https://jozzycodes.com/'
     },
     {
-        image:grandeurLogo
+        image:grandeurLogo,
+        url:'https://jozzycodes.com/'
     },
     {
-        image:githubLogo
+        image:githubLogo,
+        url:'https://jozzycodes.com/'
     },
     {
         image:blossomCakes,
@@ -37,10 +43,12 @@ export const Logos = [
         url:'https://taycleaningsservices.com/'
     },
     {
-        image:africaMagicLogo
+        image:africaMagicLogo,
+        url:'https://jozzycodes.com/'
     },
     {
-        image:jozzycodes
+        image:jozzycodes,
+        url:'https://jozzycodes.com/'
     }
 ]
 
