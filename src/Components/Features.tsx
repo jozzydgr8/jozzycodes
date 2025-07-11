@@ -1,11 +1,12 @@
 
-import { advertisement } from "../Data";
+
+import { advertisement } from "../Types";
 import { FlatButton } from "./FlatButton";
 
 
 
 
-export const Features = () => {
+export const Features = ({advertisement}:advertisement) => {
   return (
     <section id="features">
       <div className="container-fluid">

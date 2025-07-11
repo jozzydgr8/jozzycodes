@@ -5,13 +5,14 @@ import { Logo } from "./Pages/Logo"
 import { Philosophy } from "./Pages/Philosophy"
 import { Reason } from "./Pages/Reason"
 import { Services } from "./Pages/Services"
+import { advertisement } from "./Types"
 
-export const Home = ()=>{
+export const Home = ({advertisement}:advertisement)=>{
     return(
         <>
         <Header/>
         <Services />
-        <Features/>
+        <Features advertisement={advertisement}/>
         <Philosophy/>
         <Reason/>
         <Logo/>

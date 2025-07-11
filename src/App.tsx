@@ -1,10 +1,14 @@
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
 import { Layout } from './Layout';
 import { Home } from './Home';
 import { Pricing } from './Pages/Pricing';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { GeoRedirector } from './GeoRedirector';
+import { globalAdvertisement, localAdvertisement } from './Data';
+import { globalPricingPlans, pricingPlans } from './PricingData';
 
 function App() {
+  const [loading, setLoading] = useState(false);
   useEffect(()=>{
     const animation = ()=>{
       var leftAnimate = document.querySelectorAll('.animate-left');
@@ -49,18 +53,33 @@ function App() {
     window.addEventListener('scroll', animation);
   },[]);
 
+  if(loading){
+    return <>..loading</>
+  }
+
   const router = createBrowserRouter(createRoutesFromElements(
     <>
-    <Route path='/' element={<Layout/>}>
-      <Route index element={<Home/>}/>
-      <Route path='pricing' element={<Pricing/>} />
+    
+    <Route path='/' element={<Layout setLoading={setLoading} />}>
+      <Route index element={<Home advertisement={localAdvertisement}/>}/>
+      <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} />
+
+    </Route>
+    <Route path='/gb' element={<Layout setLoading={setLoading}/>}>
+    <Route index element={<Home advertisement={globalAdvertisement}/>}/>
+    <Route path='pricing' element={ <Pricing pricingPlans={globalPricingPlans}/>}/>
 
     </Route>
     </>
   ))
   return (
-    <div className="App">
-      <RouterProvider router={router}/>
+      <div className="App">
+      
+      {loading ? (
+        <>..loading</>
+      ) : (
+        <RouterProvider router={router} />
+      )}
     </div>
   );
 }

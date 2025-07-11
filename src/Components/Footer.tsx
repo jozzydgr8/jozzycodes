@@ -1,9 +1,10 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import lightIcon from '../assets/white-logo.png';
-const footerStyle={
-    
-}
+import { getBasePath } from '../getBasePath';
+
 export const Footer = ()=>{
+    const location = useLocation();
+    const basePath =getBasePath(location.pathname)
     return (
         <section className='footer-section'>
             <div className="container-fluid">
@@ -21,7 +22,9 @@ export const Footer = ()=>{
                             <small className='heading'>Get in touch?</small>
                             <div>
                             Talk to someone?<br/>
-                            <a href='tel:08113828486'>234 811 382 8486</a>
+                            <a href='tel:08113828486'>Call Us
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </a>
                             </div>
 
 
@@ -40,7 +43,7 @@ export const Footer = ()=>{
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}}>
                             <small className='heading'>Quick Links</small>
                             <a href='/#philosophy' >About Us</a> 
-                            <NavLink to={'pricing'}>Website Development</NavLink> 
+                            <NavLink to={`${basePath}pricing`}>Website Development</NavLink> 
                             <a href='/#services'>Our Services</a>
                             <a>Refund Policy</a>
                             <br/>
@@ -50,14 +53,14 @@ export const Footer = ()=>{
 
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}}>
                             <small className='heading'>Request a Quote</small>
-                            <NavLink to={'pricing'}>Ecommerce Pricing</NavLink> 
-                            <NavLink to={'pricing'}>Business Website Pricing</NavLink> 
+                            <NavLink to={`${basePath}pricing`}>Ecommerce Pricing</NavLink> 
+                            <NavLink to={`${basePath}pricing`}>Business Website Pricing</NavLink> 
                         
                             
                         </div>
                     </div>
                     <hr/>
-                    <small>All Rights Reserved © jozzy-codes digital </small>
+                    <small><a href='https://jozzycodes.com' target='_blank'>All Rights Reserved © jozzy-codes digital</a> </small>
                 </footer>
             </div>
         </section>

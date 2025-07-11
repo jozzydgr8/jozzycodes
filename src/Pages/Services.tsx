@@ -1,6 +1,9 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
+import { getBasePath } from "../getBasePath";
 
 export const Services = ()=>{
+    const location = useLocation();
+    const basePath = getBasePath(location.pathname);
     return(
         <section id="services">
             <div className="container-fluid">
@@ -19,7 +22,7 @@ export const Services = ()=>{
                         <br/><br/>
                         
                         </p>
-                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                        <div className="service-link"><NavLink to={`${basePath}/pricing`}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </div>
                         <br/><br/>
                     </div>
@@ -37,7 +40,7 @@ export const Services = ()=>{
                         <br/><br/>
                         
                         </p>
-                        <div className="service-link"><NavLink to={'/pricing'}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
+                        <div className="service-link"><NavLink to={`${basePath}/pricing`}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
                         </div>
                         <br/><br/>
                     </div>

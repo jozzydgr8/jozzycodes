@@ -39,6 +39,13 @@ export const Philosophy = ()=>{
         <section id='philosophy'>
             <div className="container-fluid">
                 <div className="row">
+                    
+                    <div className="col-md-6 backgroundImage" >
+                        <div>
+                            
+                        </div>
+                    </div>
+
                     <div className="col-md-6 centerDiv ">
                         <small>
                             We Solve Problems
@@ -65,11 +72,7 @@ export const Philosophy = ()=>{
                              && mission ? <Mission />:''}
                         </p>
                     </div>
-                    <div className="col-md-6 backgroundImage" >
-                        <div>
-                            
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

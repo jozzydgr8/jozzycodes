@@ -1,12 +1,16 @@
 import { useEffect } from 'react';
 import { FlatButton } from '../Components/FlatButton';
 import { CountdownTimer } from '../Components/CountDown';
+import { useLocation } from 'react-router-dom';
+import { getBasePath } from '../getBasePath';
 export const Header = ()=>{
     useEffect(()=>{
         var container = document.querySelector('.headerWrite');
         
         container?.classList.add('sectionAnimationDown');
-    },[])
+    },[]);
+    const location = useLocation();
+    const basePath = getBasePath(location.pathname)
 
     return(
         <section id='header'>
@@ -34,7 +38,7 @@ export const Header = ()=>{
                         </div> */}
 
                         <div>
-                            <a href='/#features'><FlatButton title='Claim Deal' onCLick={()=>console.log('claim deal')}/>
+                            <a href={`${basePath}/#features`}><FlatButton title='Claim Deal' onCLick={()=>console.log('claim deal')}/>
                             </a>
                             <CountdownTimer/>
                         </div>

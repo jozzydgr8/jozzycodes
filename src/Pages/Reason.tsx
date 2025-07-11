@@ -6,9 +6,7 @@ export const Reason = ()=>{
             
                 <div className="row">
 
-                    <div className="col-md-6 " style={{display:'flex', justifyContent:'center'}}>
-                        <div className='reasonImage'></div>
-                    </div>
+                    
                     <div className="col-md-6 centerDiv">
                         <small>Solve Problems</small>
                         <h3 className='animate-right'>Why choose us?</h3>
@@ -27,6 +25,10 @@ export const Reason = ()=>{
                         <div className='animate-up' >
                             <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Let's Talk</button></a>
                         </div>
+                    </div>
+
+                    <div className="col-md-6 " style={{display:'flex', justifyContent:'center', marginTop:'20px'}}>
+                        <div className='reasonImage'></div>
                     </div>
                 </div>
                 
