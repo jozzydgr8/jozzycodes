@@ -3,7 +3,6 @@ import { Navbar } from "./Components/Navbar"
 import { useEffect, useState } from "react"
 import { SocialIcon } from "./Components/SocialIcon";
 import { Footer } from "./Components/Footer";
-import { Modal } from "./Components/Modal";
 import ScrollToTop from "./ScrollToTop";
 
 export const Layout = ()=>{
@@ -35,7 +34,6 @@ export const Layout = ()=>{
         <>
         <ScrollToTop/>
         <SocialIcon/>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         <Navbar clicked={darkTheme} onClick={toggletheme}/>
         <Outlet/>
         <a className='whatsappIcon' href='https://wa.link/ubp14t' target='_blank'>

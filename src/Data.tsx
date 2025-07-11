@@ -1,7 +1,6 @@
 import ubaLogo from './assets/uba-logo.png';
 import africaMagicLogo from './assets/africa-magic-logo.png';
 import blossomCakes from './assets/Blossom-cake-logo.png';
-import githubLogo from './assets/github-logo.png';
 import grandeurLogo from './assets/grandeur-tech-logo.png';
 import jumiaLogo from './assets/jumia-logo.png';
 import boltLogo from './assets/bolt-logo.png'
@@ -28,10 +27,6 @@ export const Logos = [
     },
     {
         image:grandeurLogo,
-        url:'https://jozzycodes.com/'
-    },
-    {
-        image:githubLogo,
         url:'https://jozzycodes.com/'
     },
     {
@@ -64,7 +59,9 @@ export const advertisement= [
         const message ="Hello, I'm interested in the ₦50,000 website Promo. I'd like to know what's included and how to get started."
         const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
          window.open(whatsappURL, '_blank');
-    }
+       
+    },
+
     }
 
 ]

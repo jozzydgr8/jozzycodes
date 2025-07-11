@@ -64,18 +64,19 @@ h4 {
 
 /* Background Images */
 .backgroundImage {
-    background-image: url('./assets/codingdesktop.jpg');
+    background-image: url('./assets/codingdesktop.png');
     background-size: cover;
     background-position: center center;
     min-height: 60vh;
 }
 
 .reasonImage, .headerImageDiv {
-    background-size: contain;
+    
     background-repeat: no-repeat;
     height: 400px;
-    width: 85%;
+   
 }
+
 /* Header Section */
 .header-grid {
     display: flex;
@@ -85,14 +86,19 @@ h4 {
 }
 
 .headerImageDiv {
-    background-image: url('./assets//personImage.png');
+    background-image: url('./assets/personImage.png');
+    background-size: contain;
+    width: 85%;
 }
 
 .reasonImage {
-    background-image: url('./assets/person-one.jpeg');
+    background-image: url('./assets/techbro.png');
+    background-size: cover;
     border-radius: 20px;
     outline: none;
     border: none;
+    background-position: center center;
+     width: 100%;
 }
 
 @media (max-width:750px) {
@@ -206,6 +212,7 @@ nav .container-fluid, section > .container-fluid, .modal-overlay {
     border: none;
     border-radius: 20px;
     padding: 8%;
+    
 }
 
 /* Footer Section */
@@ -295,59 +302,6 @@ footer small{
     align-items: center;
     gap: 5px;
 }
-/* modal */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .modal-content {
-    background-image: url('./assets/discount.jpg');
-    background-size: cover;
-    color: white;
-    background-position: center center;
-    width: 400px;
-    height: 400px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .modalbutton{
-    background: var(--background-color);
-    color: var(--text-color);
-    padding:7px;
-    border-radius: 7px;
-    width: 100%;
-    text-align: center;
-    outline: none;
-    border: none;
-  }
-  .modalbutton:hover{
-    background: var(--different-background);
-  }
-
- .closeButton{
-        position: absolute;
-        top: 7px;
-        right: 10px;
-        background: transparent;
-        border: none;
-        font-size: 40px;
-        cursor: pointer;
-        color: var(--background-color);
-      
- }
 
 /* animations */
 .sectionAnimationLeft{
@@ -381,17 +335,18 @@ footer small{
 .advertDisplay {
   margin-bottom: 15px;
   min-height: 100px;
-  border: 1px solid var(--faint-color);
   width: 100%;
   max-width: 400px;
   padding: 20px 25px;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px -1px var(--faint-color);
+   font-family: "Poppins", sans-serif;
 }
 
 .advertDisplay:hover {
