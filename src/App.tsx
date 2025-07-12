@@ -1,11 +1,11 @@
-import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import { Layout } from './Layout';
-import { Home } from './Home';
+import { Home } from './Pages/Home';
 import { Pricing } from './Pages/Pricing';
 import { useEffect, useState } from 'react';
-import { GeoRedirector } from './GeoRedirector';
 import { globalAdvertisement, localAdvertisement } from './Data';
-import { globalPricingPlans, pricingPlans } from './PricingData';
+import { globalPricingPlans, pricingPlans } from './shared/PricingData';
+import { Loading } from './shared/Loading';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -53,9 +53,7 @@ function App() {
     window.addEventListener('scroll', animation);
   },[]);
 
-  if(loading){
-    return <>..loading</>
-  }
+
 
   const router = createBrowserRouter(createRoutesFromElements(
     <>
@@ -76,7 +74,7 @@ function App() {
       <div className="App">
       
       {loading ? (
-        <>..loading</>
+        <Loading/>
       ) : (
         <RouterProvider router={router} />
       )}

@@ -1,5 +1,5 @@
 
-import { PricingPlan } from "../Types";
+import { PricingPlan } from "../shared/Types";
 
 export const Pricing = ({pricingPlans}:PricingPlan)=>{
       const handleRequest = (message: string) => {

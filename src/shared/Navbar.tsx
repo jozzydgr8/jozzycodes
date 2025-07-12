@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import darkLogo from '../assets/logo-black.png'
-import { getBasePath } from '../getBasePath';
+import { getBasePath } from './getBasePath';
 
 
 

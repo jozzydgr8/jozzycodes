@@ -1,7 +1,7 @@
 
 
-import { advertisement } from "../Types";
-import { FlatButton } from "./FlatButton";
+import { advertisement } from "../../shared/Types";
+import { FlatButton } from "../../shared/FlatButton";
 
 
 

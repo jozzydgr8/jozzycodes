@@ -54,9 +54,9 @@ export const pricingPlans = [
     {
       title: "Business Websites",
       description: "Showcase your business info, services and contact details",
-      originalPrice: "$200",
+      originalPrice: "$250",
       discount: "50%",
-      price: "$150",
+      price: "$175",
       features: [
         "Custom responsive website (mobile & desktop friendly)",
         "Fast and Secure Hosting",

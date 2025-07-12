@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Phil } from '../Components/Phil';
-import { Mission } from '../Components/Mission';
+import { Phil } from './Phil';
+import { Mission } from './Mission';
 
 const buttonStyle={
     borderRadius:'50%',

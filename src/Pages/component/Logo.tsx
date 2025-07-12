@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee"
-import { Logos } from "../Data"
+import { Logos } from "../../Data"
 
 export const Logo = ()=>{
     return(

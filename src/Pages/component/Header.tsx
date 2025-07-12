@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { FlatButton } from '../Components/FlatButton';
-import { CountdownTimer } from '../Components/CountDown';
+import { FlatButton } from '../../shared/FlatButton';
+import { CountdownTimer } from '../../shared/CountDown';
 import { useLocation } from 'react-router-dom';
-import { getBasePath } from '../getBasePath';
+import { getBasePath } from '../../shared/getBasePath';
 export const Header = ()=>{
     useEffect(()=>{
         var container = document.querySelector('.headerWrite');

@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom"
-import { getBasePath } from "../getBasePath";
+import { getBasePath } from "../../shared/getBasePath";
 
 export const Services = ()=>{
     const location = useLocation();

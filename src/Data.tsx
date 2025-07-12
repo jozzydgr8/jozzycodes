@@ -50,13 +50,13 @@ export const Logos = [
 
 export const localAdvertisement= [
     {
-        title: '₦50K Website – Limited Offer',
-        desc: 'Professional website + FREE domain & hosting (1 year) for just ₦50,000',
+        title: '₦70K Website – Limited Offer',
+        desc: 'Professional website + FREE domain & hosting (1 year) for just ₦70,000',
         urgency: 'Limited spots available!',
         catch: 'Perfect for businesses that want to establish an online presence.',
         notice: 'Not applicable for e-commerce, booking, or advanced custom features.',
         sendRequest : async ()=>{
-        const message ="Hello, I'm interested in the ₦50,000 website Promo. I'd like to know what's included and how to get started."
+        const message ="Hello, I'm interested in the ₦70,000 website Promo. I'd like to know what's included and how to get started."
         const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
          window.open(whatsappURL, '_blank');
        
@@ -68,13 +68,13 @@ export const localAdvertisement= [
 
 export const globalAdvertisement = [
     {
-        title: '$120 Website – Limited Offer',
-        desc: 'Professional website + FREE domain & hosting (1 year) for just $120',
+        title: '$100 Website – Limited Offer',
+        desc: 'Professional website + FREE domain & hosting (1 year) for just $100',
         urgency: 'Limited spots available!',
         catch: 'Perfect for businesses that want to establish an online presence.',
         notice: 'Not applicable for e-commerce, booking, or advanced custom features.',
         sendRequest : async ()=>{
-        const message ="Hello, I'm interested in the 150$ website Promo. I'd like to know what's included and how to get started."
+        const message ="Hello, I'm interested in the 100$ website Promo. I'd like to know what's included and how to get started."
         const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
          window.open(whatsappURL, '_blank');
        

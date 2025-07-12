@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import lightIcon from '../assets/white-logo.png';
-import { getBasePath } from '../getBasePath';
+import { getBasePath } from './getBasePath';
 
 export const Footer = ()=>{
     const location = useLocation();

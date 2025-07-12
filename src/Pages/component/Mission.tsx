@@ -1,4 +1,4 @@
-import { clickRenderProps } from "../Types"
+
 export const Mission = ()=>{
     return(
         <>
