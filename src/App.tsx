@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { globalAdvertisement, localAdvertisement } from './Data';
 import { globalPricingPlans, pricingPlans } from './shared/PricingData';
 import { Loading } from './shared/Loading';
+import { Portfolio } from './Pages/Portfolio';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -61,11 +62,13 @@ function App() {
     <Route path='/' element={<Layout setLoading={setLoading} />}>
       <Route index element={<Home advertisement={localAdvertisement}/>}/>
       <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} />
+      <Route path='portfolio' element={<Portfolio/>} />
 
     </Route>
     <Route path='/gb' element={<Layout setLoading={setLoading}/>}>
     <Route index element={<Home advertisement={globalAdvertisement}/>}/>
     <Route path='pricing' element={ <Pricing pricingPlans={globalPricingPlans}/>}/>
+    <Route path='portfolio' element={<Portfolio/>} />
 
     </Route>
     </>

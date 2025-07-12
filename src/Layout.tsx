@@ -1,8 +1,6 @@
 import { Outlet } from "react-router-dom"
 import { Navbar } from "./shared/Navbar"
-import { useEffect, useState } from "react"
 import { SocialIcon } from "./shared/SocialIcon";
-import { Footer } from "./shared/Footer";
 import ScrollToTop from "./shared/ScrollToTop";
 import { GeoRedirector } from "./shared/GeoRedirector";
 
@@ -22,7 +20,7 @@ export const Layout = ({setLoading}:layout)=>{
         <a className='whatsappIcon' href='https://wa.link/ubp14t' target='_blank'>
             <img  src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="whatsapp icon"/> chat us now
         </a>
-        <Footer />
+       
         </>
     )
 }

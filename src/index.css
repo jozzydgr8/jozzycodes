@@ -8,14 +8,6 @@
     --icon-color: #454047;
 }
 
-.dark-theme {
-    --background-color: #454047;
-    --different-background: #5c555f;
-    --text-color: white;
-    --bold-color: #344CB7;
-    --faint-color: #577BC1;
-    --icon-color: white;
-}
 
 /* Global Reset */
 * {
@@ -60,6 +52,11 @@ h4 {
 .btn:hover {
     background: #2d419e;
     color: white;
+}
+.btnoutline, .btnoutline:hover {
+    background-color: transparent;
+    color: var(--bold-color);
+    border: solid 1px var(--bold-color);
 }
 
 /* Background Images */
@@ -330,7 +327,7 @@ footer small{
   .advertGrid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    gap: 10px;
+    gap: 5px;
   }
 .advertDisplay {
   margin-bottom: 15px;

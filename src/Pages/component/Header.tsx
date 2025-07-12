@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FlatButton } from '../../shared/FlatButton';
 import { CountdownTimer } from '../../shared/CountDown';
-import { useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { getBasePath } from '../../shared/getBasePath';
 export const Header = ()=>{
     useEffect(()=>{
@@ -21,13 +21,13 @@ export const Header = ()=>{
                     <div className="col-md-4 centerDiv">
                         <small>code, create, captivate</small><br/>
                         <h1 className='headerWrite'>
-                            Your Trusted Partner for Stunning,<br/> User-Friendly Websites
+                            
+                            Custom Websites Built Right From Day One.
                         </h1>
                         <span className='custom-underline'></span> <br/>
                         <p>
-                            We build user-friendly, responsive, and
-                            professional websites tailored to your business needs,
-                            ensuring your online presence stands out and delivers exceptional results to your audience.
+                            We build responsive, brand-first websites tailored to your goals.
+                            Built from scratch to stand out, perform, and grow with your business.
                             <br/> <br/>
                             Want to give us a shot? 
                         </p>
@@ -38,8 +38,19 @@ export const Header = ()=>{
                         </div> */}
 
                         <div>
-                            <a href={`${basePath}/#features`}><FlatButton title='Claim Deal' onCLick={()=>console.log('claim deal')}/>
+                            
+                            <div style={{display:'flex', flexDirection:"row", gap:'10px', alignItems:'center'}}>
+                            <a href={`${basePath}/#features`}>
+                            <FlatButton title='Claim Deal' onCLick={()=>console.log('claim deal')}/>
                             </a>
+
+                            <NavLink to={`${basePath}/pricing`}>
+                            <FlatButton title='View Pricing' onCLick={()=>{console.log('view price')}} className='btnoutline'/>
+
+                            </NavLink>
+                            
+                            
+                            </div>
                             <CountdownTimer/>
                         </div>
                         <br/> <br/> 

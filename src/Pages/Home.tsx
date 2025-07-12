@@ -6,6 +6,7 @@ import { Philosophy } from "./component/Philosophy"
 import { Reason } from "./component/Reason"
 import { Services } from "./component/Services"
 import { advertisement } from "../shared/Types"
+import { Footer } from "../shared/Footer"
 
 export const Home = ({advertisement}:advertisement)=>{
     return(
@@ -17,6 +18,7 @@ export const Home = ({advertisement}:advertisement)=>{
         <Reason/>
         <Logo/>
         <Help/>
+        <Footer/>
        
         </>
     )

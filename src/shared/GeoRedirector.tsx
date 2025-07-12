@@ -26,7 +26,7 @@ export const GeoRedirector =({setLoading}:global)=> {
       // const { ip } = await ipRes.json();
 
       const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
-const data = geoRes.data;
+      const data = geoRes.data;
 
       localStorage.setItem('geoData', JSON.stringify(data));
       handleRedirect(data);

@@ -36,6 +36,10 @@ export const Navbar = ()=>{
                         {/* <a className="nav-link" href="#">Pricing</a> */}
                         </li>
                         <li className="nav-item">
+                          <NavLink className={'nav-link'} to={`${basePath}/portfolio`}>Portfolio</NavLink>
+                       
+                        </li>
+                        <li className="nav-item">
                         <a href={`${basePath}/#features`} className={'nav-link'}>Claim Deal</a>
                         </li>
                         <li className="nav-item">
