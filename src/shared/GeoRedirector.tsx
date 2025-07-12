@@ -24,7 +24,7 @@ export const GeoRedirector =({setLoading}:global)=> {
       const ipRes = await fetch('https://api.ipify.org?format=json');
       const { ip } = await ipRes.json();
 
-      const geoRes = await fetch(`http://ip-api.com/json/${ip}`);
+      const geoRes = await fetch('https://ipapi.co/json/');
       const data = await geoRes.json();
 
       localStorage.setItem('geoData', JSON.stringify(data));
@@ -37,7 +37,7 @@ export const GeoRedirector =({setLoading}:global)=> {
   }
 
   function handleRedirect(data:any) {
-    const isNigerian = data.countryCode === 'NG';  
+    const isNigerian = data.country_code === 'NG';  
     const isOngbPage = location.pathname.startsWith('/gb');
 
     if (!isNigerian && !isOngbPage) {
