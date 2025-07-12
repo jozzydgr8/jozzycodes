@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import axios from 'axios';
 
 type global = {
 setLoading: React.Dispatch<React.SetStateAction<boolean>>
@@ -24,8 +25,8 @@ export const GeoRedirector =({setLoading}:global)=> {
       // const ipRes = await fetch('https://api.ipify.org?format=json');
       // const { ip } = await ipRes.json();
 
-      const geoRes = await fetch(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
-const data = await geoRes.json();
+      const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
+const data = geoRes.data;
 
       localStorage.setItem('geoData', JSON.stringify(data));
       handleRedirect(data);
