@@ -21,11 +21,11 @@ export const GeoRedirector =({setLoading}:global)=> {
     }
 
     try {
-      const ipRes = await fetch('https://api.ipify.org?format=json');
-      const { ip } = await ipRes.json();
+      // const ipRes = await fetch('https://api.ipify.org?format=json');
+      // const { ip } = await ipRes.json();
 
-      const geoRes = await fetch('https://ipapi.co/json/');
-      const data = await geoRes.json();
+      const geoRes = await fetch(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
+const data = await geoRes.json();
 
       localStorage.setItem('geoData', JSON.stringify(data));
       handleRedirect(data);
@@ -37,7 +37,7 @@ export const GeoRedirector =({setLoading}:global)=> {
   }
 
   function handleRedirect(data:any) {
-    const isNigerian = data.country_code === 'NG';  
+    const isNigerian = data.country.toLowerCase() === 'ng';  
     const isOngbPage = location.pathname.startsWith('/gb');
 
     if (!isNigerian && !isOngbPage) {
