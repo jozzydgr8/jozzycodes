@@ -8,7 +8,8 @@ import jozzycodes from './assets/white-logo.png'
 import toyotaLogo from './assets/toyota-logo.png'
 import taycleanLogo from './assets/Tayclean_logo.png'
 import taycleanPortfolio from './assets/portfoliotayclean.png';
-import blossomcakePortfolio from './assets/portfolioblossomcakes.png'
+import blossomcakePortfolio from './assets/portfolioblossomcakes.png';
+import kingsAgroMineralsPortfolio from './assets/portfoliokingsagrominerals.png';
 export const Logos = [
     
     {
@@ -91,13 +92,18 @@ export const portfolioData = [
         id:'tayclean',
         image:taycleanPortfolio,
         link:'https://taycleaningsservices.com',
-        title:'taycleaningservices'
+        title:'Taycleaningservices'
     },
     {
         id:'blossomcakes',
         image:blossomcakePortfolio,
         link:'https://theblossomcakes.com',
-        title:'theblossomcakes'
+        title:'Theblossomcakes'
         
+    },{
+        id:'kingagrominerals',
+        image:kingsAgroMineralsPortfolio,
+        link:'https://kingsagrominerals.com',
+        title:'Kingsagrominerals'
     }
 ]

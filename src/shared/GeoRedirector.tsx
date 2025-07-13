@@ -5,6 +5,9 @@ import axios from 'axios';
 type global = {
 setLoading: React.Dispatch<React.SetStateAction<boolean>>
 }
+type geotype ={
+  country:string
+}
 export const GeoRedirector =({setLoading}:global)=> {
   const navigate = useNavigate();
   const location = useLocation();
@@ -22,8 +25,6 @@ export const GeoRedirector =({setLoading}:global)=> {
     }
 
     try {
-      // const ipRes = await fetch('https://api.ipify.org?format=json');
-      // const { ip } = await ipRes.json();
 
       const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
       const data = geoRes.data;
@@ -37,7 +38,7 @@ export const GeoRedirector =({setLoading}:global)=> {
     }
   }
 
-  function handleRedirect(data:any) {
+  function handleRedirect(data:geotype) {
     const isNigerian = data.country.toLowerCase() === 'ng';  
     const isOngbPage = location.pathname.startsWith('/gb');
 
