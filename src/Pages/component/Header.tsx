@@ -41,11 +41,11 @@ export const Header = ()=>{
                             
                             <div style={{display:'flex', flexDirection:"row", gap:'10px', alignItems:'center'}}>
                             <a href={`${basePath}/#features`}>
-                            <FlatButton title='Claim Deal' onCLick={()=>console.log('claim deal')}/>
+                            <FlatButton title='Claim Deal' onClick={()=>console.log('claim deal')}/>
                             </a>
 
                             <NavLink to={`${basePath}/pricing`}>
-                            <FlatButton title='View Pricing' onCLick={()=>{console.log('view price')}} className='btnoutline'/>
+                            <FlatButton title='View Pricing' onClick={()=>{console.log('view price')}} className='btnoutline'/>
 
                             </NavLink>
                             

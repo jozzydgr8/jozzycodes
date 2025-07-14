@@ -28,3 +28,22 @@ export type PricingPlan = {
   message: string;
   }[]
 };
+
+export type reviewType = {
+  name:string;
+  review:string;
+  project:string
+}
+
+export type blogType = {
+  title:string;
+  description:string;
+  updatedAt?:Date;
+  author?:string;
+  _id?:string
+}
+
+export type User = {
+  email:string,
+  token:string
+}

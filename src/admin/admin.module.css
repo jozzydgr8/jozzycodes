@@ -1,0 +1,8 @@
+.productcontainer{
+  width:400px;
+  box-shadow: 0 4px 6px -1px var(--color-darkblue);
+  margin: 15px;
+  padding:30px;
+  border-radius: 15px;
+
+}

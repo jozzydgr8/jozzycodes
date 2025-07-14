@@ -1,12 +1,14 @@
 type props = {
-    title:string,
-    onCLick:()=>void,
-    className?:string
+    title?:string,
+    onClick?:()=>void,
+    className?:string,
+    children?:string,
+    disabled?:boolean,
 }
-export const FlatButton = ({title, onCLick, className}:props)=>{
+export const FlatButton = ({title, onClick, className, children, disabled}:props)=>{
     return(
         <div>
-            <button className={`btn btn-md ${className}`} onClick={onCLick}>{title}</button>
+            <button disabled={disabled} className={`btn btn-md ${className}`} onClick={onClick}>{title} {children}</button>
         </div>
     )
 }
