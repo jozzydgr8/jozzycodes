@@ -30,7 +30,11 @@ a {
     color: inherit;
 }
 
-h1, h3 {
+h2{
+    text-align: center;
+}
+
+h1, h3,h2 {
     font-weight: 900;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -58,6 +62,11 @@ h4 {
     color: var(--bold-color);
     border: solid 1px var(--bold-color);
 }
+.btnalternate, .btnalternate:hover{
+    background: var(--text-color);
+    color: white;
+}
+
 
 /* Background Images */
 .backgroundImage {
@@ -585,3 +594,25 @@ input:-webkit-autofill {
   align-items: center;
 }
 
+
+/* blog blog */
+/* marguee blog */
+.blogcontainer{
+  width:400px;
+  box-shadow: 0 4px 6px -1px var(--bold-color);
+  margin: 15px;
+  padding:30px;
+  border-radius: 15px;
+
+}
+
+.blogcontent{
+    margin-bottom: 10px;
+
+}
+.blogcontent > h3{
+    color: white;
+    background: var(--text-color);
+    padding: 16px 10px;
+    text-transform: capitalize;
+}

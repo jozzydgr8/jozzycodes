@@ -1,4 +1,5 @@
 import { portfolioData } from "../Data"
+import {Helmet} from 'react-helmet-async'
 
 const Style = {
     imageContent:{
@@ -10,9 +11,19 @@ const Style = {
 }
 export const Portfolio = ()=>{
     return(
+        <>
+        <Helmet>
+            <title>Jozzy Codes Portfolio | Custom Websites Developed by Jozzy Codes</title>
+            <meta
+                name="description"
+                content="A showcase of our projects and work. See how we build stunning, custom websites crafted to perform and represent each brand with precision."
+            />
+        </Helmet>
+
         <section>
             <div className="container-fluid">
-                <h3 style={{textAlign:"center"}}>Portfolio</h3>
+                <h2>Portfolio</h2>
+                <p style={{textAlign:"center", textTransform:'capitalize'}}>The hall of websites built right!</p>
                 <div className="advertGrid">
                 {
                 portfolioData.map((data)=>(
@@ -27,5 +38,7 @@ export const Portfolio = ()=>{
                 </div>
             </div>
         </section>
+        </>
+        
     )
 }

@@ -5,17 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { DataContext } from './context/DataContext';
 import { ContextAuth } from './context/AuthContext';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ContextAuth>
+    <HelmetProvider>
+      <ContextAuth>
       <DataContext>
       <App />
     </DataContext>
     </ContextAuth>
+    </HelmetProvider>
   </React.StrictMode>
 );
 

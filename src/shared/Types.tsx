@@ -38,9 +38,10 @@ export type reviewType = {
 export type blogType = {
   title:string;
   description:string;
-  updatedAt?:Date;
   author?:string;
-  _id?:string
+  _id?:string;
+  slug?:string;
+  updatedAt?:string
 }
 
 export type User = {

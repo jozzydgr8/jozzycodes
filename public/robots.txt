@@ -1,5 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin_jctbdil1
 Allow: /
 Sitemap: https://jozzycodes.com/sitemap.xml

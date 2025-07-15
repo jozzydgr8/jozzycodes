@@ -4,6 +4,7 @@ import { SocialIcon } from "./shared/SocialIcon";
 import ScrollToTop from "./shared/ScrollToTop";
 import { GeoRedirector } from "./shared/GeoRedirector";
 
+
 type layout = {
     setLoading: React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -12,6 +13,7 @@ export const Layout = ({setLoading}:layout)=>{
     
     return(
         <>
+        
         <GeoRedirector setLoading={setLoading} />
         <ScrollToTop/>
         <SocialIcon/>

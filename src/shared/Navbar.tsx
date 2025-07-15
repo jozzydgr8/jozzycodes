@@ -27,9 +27,6 @@ export const Navbar = ()=>{
                           
                         </li>
                         
-                        <li className="nav-item">
-                        <a href={`${basePath}/#services`} className={'nav-link'}>Features</a>
-                        </li>
                         
                         <li className="nav-item">
                           <NavLink className={'nav-link'} to={`${basePath}/pricing`}>Pricing</NavLink>
@@ -40,8 +37,9 @@ export const Navbar = ()=>{
                        
                         </li>
                         <li className="nav-item">
-                        <a href={`${basePath}/#features`} className={'nav-link'}>Claim Deal</a>
+                        <NavLink to={`${basePath}/blog`} className={'nav-link'}>Articles</NavLink>
                         </li>
+                        
                         <li className="nav-item">
                         <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Contact Us</button></a>
                           {/* <a><button className='btn' onClick={onClick}> Toggle Night </button></a> */}

@@ -1,6 +1,11 @@
 RewriteEngine On
+
+# Redirect sitemap.xml to Vercel backend
+Redirect 301 /sitemap.xml https://jozzcodesserver.vercel.app/sitemap.xml
+
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
+

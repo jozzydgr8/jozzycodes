@@ -7,7 +7,7 @@ export const Services = ()=>{
     return(
         <section id="services">
             <div className="container-fluid">
-                <h3 style={{textAlign:'center'}}>Our Services</h3><br/>
+                <h2>Our Services</h2><br/>
                 <div className="row">
                     <div className="col-md-4">
                         

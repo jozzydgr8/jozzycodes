@@ -10,7 +10,7 @@ export const Features = ({advertisement}:advertisement) => {
   return (
     <section id="features">
       <div className="container-fluid">
-        <h3 style={{ textAlign: "center" }}>Deals</h3><br />
+        <h2>Deals</h2><br />
         <div className="advertGrid">
           {advertisement.map((ads, index) => (
             <div className="advertDisplay" key={index}>

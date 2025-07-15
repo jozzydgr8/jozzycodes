@@ -18,6 +18,7 @@ import Session from './Pages/Session'
 import { ProtectedRoutes } from './shared/ProtectedRoutes';
 import { Blog } from './Pages/Blogs';
 import { FeaturedBlog } from './Pages/FeaturedBlog';
+import { UpdateBlog } from './Pages/UpdateBlog';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -134,7 +135,8 @@ function App() {
       <Route index element={<Home advertisement={localAdvertisement}/>}/>
       <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} />
       <Route path='portfolio' element={<Portfolio/>} />
-      <Route path='blog' element={<Blog/>}>
+      <Route path='blog' element={<Outlet/>}>
+        <Route index element={<Blog/>}/>
         <Route path=':slug' element={<FeaturedBlog/>}/>
       </Route>
 
@@ -143,6 +145,10 @@ function App() {
     <Route index element={<Home advertisement={globalAdvertisement}/>}/>
     <Route path='pricing' element={ <Pricing pricingPlans={globalPricingPlans}/>}/>
     <Route path='portfolio' element={<Portfolio/>} />
+    <Route path='blog' element={<Outlet/>}>
+        <Route index element={<Blog/>}/>
+        <Route path=':slug' element={<FeaturedBlog/>}/>
+    </Route>
 
     </Route>
 
@@ -151,6 +157,7 @@ function App() {
 
     <Route path='blog' element={<ProtectedRoutes user={user}><Outlet/></ProtectedRoutes>}>
     <Route path='addblog' element={<ProtectedRoutes user={user}><BlogForm/></ProtectedRoutes>}/>
+    <Route path=':id' element={<ProtectedRoutes user={user}><UpdateBlog/></ProtectedRoutes>}/>
     </Route>
 
     <Route path='session' element ={<GuestRoutes user={user}><Session/></GuestRoutes>}/>

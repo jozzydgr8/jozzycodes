@@ -42,5 +42,25 @@ export const BlogHook = ()=>{
         }
     }
 
-    return {postBlog}
+    const deleteBlog = async(id:string)=>{
+        try{
+            const response = await fetch (`https://jozzcodesserver.vercel.app/blog/${id}`,{
+                method:'delete',
+                headers:{
+                    'Authorization':`Bearer ${user?.token}`
+                }
+            })
+            if(!response.ok){
+                throw Error('error deleting blog')
+            } 
+            const json = await response.json();
+            dispatch({type:"deleteBlog", payload:json._id});
+            toast.success('blog deleted succesfully')
+        }catch(error){
+            console.error(error);
+            toast.error('an error occured deleting blog')
+        }
+    }
+
+    return {postBlog, deleteBlog}
 }

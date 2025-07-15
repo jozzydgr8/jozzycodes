@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet-async";
 import { PricingPlan } from "../shared/Types";
 
 export const Pricing = ({pricingPlans}:PricingPlan)=>{
@@ -7,10 +8,21 @@ export const Pricing = ({pricingPlans}:PricingPlan)=>{
     window.open(whatsappURL, '_blank');
   };
     return(
+      <>
+      <Helmet>
+        <title>Jozzy Codes Pricing | Custom Website Development Rates by Jozzy Codes</title>
+        <meta
+          name="description"
+          content="Explore transparent pricing for custom website development services. Find plans and rates tailored to deliver stunning, high-performance websites that represent your brand perfectly."
+        />
+      </Helmet>
+      
        <section>
+        
+
       <div className="container-fluid">
         <div style={{ textAlign: 'center' }}>
-          <h3>Our Pricing</h3>
+          <h2>Our Pricing</h2>
           <h4>Custom Website Development Pricing</h4>
           <p>
             We design and develop websites that are simple, functional, and elegant, tailored to your unique needs
@@ -55,5 +67,7 @@ export const Pricing = ({pricingPlans}:PricingPlan)=>{
       </div>
       <br />
     </section>
+      </>
+      
     )
 }

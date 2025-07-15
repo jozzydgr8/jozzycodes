@@ -17,8 +17,8 @@ export const BlogForm = () => {
 
     description: Yup.string()
         .required('Description is required')
-        .min(20, 'Description must be at least 20 characters')
-        .max(500, 'Description must not be more than 500 characters')
+        .min(200, 'Description must be at least 20 characters')
+        .max(1000, 'Description must not be more than 500 characters')
         .trim('Description cannot include only whitespace'),
 });
 

@@ -36,7 +36,13 @@ type addBlog ={
   type:'addBlog',
   payload:blogType
 }
-type Action = LoadAction | reviewAction | blogAction |uploadblog |addBlog
+
+type deleteBlog ={
+  type:'deleteBlog',
+  payload:string
+}
+
+type Action = LoadAction | reviewAction | blogAction |uploadblog |addBlog | deleteBlog
 
 type ContextProps = State & {
   dispatch: React.Dispatch<Action>;
@@ -83,6 +89,11 @@ const reducer = (state: State, action: Action): State => {
       ...state,
       blog: [action.payload, ...(state.blog ?? [])], // prepend the new blog
     };
+    case "deleteBlog":
+      return {
+        ...state,
+        blog: state.blog?.filter((p) => p._id !== action.payload) ?? null,
+      };
 
 
 
