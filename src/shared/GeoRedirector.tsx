@@ -9,49 +9,49 @@ type geotype ={
   country:string
 }
 export const GeoRedirector =({setLoading}:global)=> {
-//   const navigate = useNavigate();
-//   const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
-//  useEffect(() => {
-//   async function fetchGeoData() {
-//     setLoading(true);
+ useEffect(() => {
+  async function fetchGeoData() {
+    setLoading(true);
 
-//     const cachedGeo = localStorage.getItem('geoData');
-//     if (cachedGeo) {
-//       const data = JSON.parse(cachedGeo);
-//       handleRedirect(data);
-//       setLoading(false);
-//       return;
-//     }
+    const cachedGeo = localStorage.getItem('geoData');
+    if (cachedGeo) {
+      const data = JSON.parse(cachedGeo);
+      handleRedirect(data);
+      setLoading(false);
+      return;
+    }
 
-//     try {
+    try {
 
-//       const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
-//       const data = geoRes.data;
+      const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
+      const data = geoRes.data;
 
-//       localStorage.setItem('geoData', JSON.stringify(data));
-//       handleRedirect(data);
-//     } catch (err) {
-//       console.error('GeoRedirector error:', err);
-//     } finally {
-//       setLoading(false);
-//     }
-//   }
+      localStorage.setItem('geoData', JSON.stringify(data));
+      handleRedirect(data);
+    } catch (err) {
+      console.error('GeoRedirector error:', err);
+    } finally {
+      setLoading(false);
+    }
+  }
 
-//   function handleRedirect(data:geotype) {
-//     const isNigerian = data.country.toLowerCase() === 'ng';  
-//     const isOngbPage = location.pathname.startsWith('/gb');
+  function handleRedirect(data:geotype) {
+    const isNigerian = data.country.toLowerCase() === 'ng';  
+    const isOngbPage = location.pathname.startsWith('/gb');
 
-//     if (!isNigerian && !isOngbPage) {
-//       navigate('/gb', { replace: true });
-//     } else if (isNigerian && isOngbPage) {
-//       navigate('/', { replace: true });
-//     }
-//     // else no redirect, stay
-//   }
+    if (!isNigerian && !isOngbPage) {
+      navigate('/gb', { replace: true });
+    } else if (isNigerian && isOngbPage) {
+      navigate('/', { replace: true });
+    }
+    // else no redirect, stay
+  }
 
-//   fetchGeoData();
-// }, []);
+  fetchGeoData();
+}, []);
 
   return null;
 }

@@ -65,7 +65,7 @@ export const FeaturedBlog = ()=>{
                                         </h4>
                                         <p>{blog.description.slice(0,20)}...</p>
                                         <div>
-                                            <NavLink to={`/featured/${blog.slug}`}><FlatButton title="View Article" className="btnalternate"/></NavLink>
+                                            <NavLink to={`/blog/${blog.slug}`}><FlatButton title="View Article" className="btnalternate"/></NavLink>
                                         </div>
                                     </div>
                                 
