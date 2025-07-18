@@ -35,6 +35,10 @@ export type reviewType = {
   project:string
 }
 
+export type Section  = {
+  subject: string;
+  features: string[];
+}
 export type blogType = {
   title:string;
   description:string;
@@ -42,6 +46,8 @@ export type blogType = {
   _id?:string;
   slug?:string;
   updatedAt?:string
+
+  sections?: Section[];
 }
 
 export type User = {

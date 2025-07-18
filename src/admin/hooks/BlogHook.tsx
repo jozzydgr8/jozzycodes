@@ -6,7 +6,7 @@ import { UseAuthContext } from "../../context/UseAuthContext";
 export const BlogHook = ()=>{
     const {dispatch} = UseDataContext();
     const {user} = UseAuthContext();
-    const postBlog = async({title, description}:blogType)=>{
+    const postBlog = async({title, description, sections}:blogType)=>{
         const slugify = (title: string): string => {
             return title
                 .toLowerCase() // convert to lowercase
@@ -18,9 +18,11 @@ export const BlogHook = ()=>{
             const post = {
             title:title,
             description:description,
-            slug:slugify(title)
+            slug:slugify(title),
+            sections:sections,
             }
 
+            
         try{
             const response = await fetch('https://jozzcodesserver.vercel.app/blog',{
                 method:"POST",

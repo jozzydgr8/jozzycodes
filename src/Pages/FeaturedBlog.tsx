@@ -20,7 +20,7 @@ export const FeaturedBlog = ()=>{
     return(
         <>
         <Helmet>
-        <title>{featured?.title} | Jozzy Codes Blog</title>
+        <title>{`${featured?.slug} | Jozzy Codes Blog`}</title>
         <meta
             name="description"
             content={featured?.description ? featured.description.slice(0, 150) : "Read this insightful blog featured from Jozzy Codes."}
@@ -34,6 +34,25 @@ export const FeaturedBlog = ()=>{
                 
                 <h3>{featured?.title}</h3>
                 <p>{featured?.description}</p>
+                <div>
+                    {featured?.sections?.map((sec, index)=>(
+                        <div key={index}>
+                        <b style={{fontWeight:"700"}}>
+                            {sec.subject}
+                        </b>
+                        <ul>
+                            {sec.features.map((feat, index)=>(
+
+                                <li key={index}>{feat}</li>
+                            ))}
+                        </ul>
+                        <ul>
+                            
+                        </ul>
+                        </div>
+                    ))}
+                                            
+                </div>
                 <div style={Styles.content}>
                     <ion-icon name="calendar-clear-outline"></ion-icon>
                     <div>
@@ -63,7 +82,8 @@ export const FeaturedBlog = ()=>{
                                         <h4 style={{textTransform:"capitalize"}}>
                                             {blog.title}
                                         </h4>
-                                        <p>{blog.description.slice(0,20)}...</p>
+                                        <p>{blog.description.slice(0,100)}...</p>
+                                        
                                         <div>
                                             <NavLink to={`/blog/${blog.slug}`}><FlatButton title="View Article" className="btnalternate"/></NavLink>
                                         </div>

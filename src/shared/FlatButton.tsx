@@ -1,4 +1,4 @@
-import React from "react";
+
 
 type props = {
     title?:string,
@@ -7,11 +7,12 @@ type props = {
     children?:string,
     disabled?:boolean,
     icon?:JSX.Element,
+    type?:"button" | "submit" | "reset" | undefined,
 }
-export const FlatButton = ({title, onClick, className, children, disabled, icon}:props)=>{
+export const FlatButton = ({title, onClick, className, children, disabled, icon, type}:props)=>{
     return(
         <div>
-            <button disabled={disabled} className={`btn btn-md ${className}`} onClick={onClick}>{title} {children} {icon}</button>
+            <button type={ type|| 'button'} disabled={disabled} className={`btn btn-md ${className}`} onClick={onClick}>{title} {children} {icon}</button>
         </div>
     )
 }

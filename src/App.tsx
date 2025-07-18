@@ -45,7 +45,8 @@ function App() {
           throw Error('error fetching blogs');
         }
         const json = await response.json();
-        dataDispatch({type:"getBlogs", payload:json})
+        dataDispatch({type:"getBlogs", payload:json});
+        console.log(json, 'blog')
       }catch(error){
         console.error(error)
       }finally{
