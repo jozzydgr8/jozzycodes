@@ -10,6 +10,8 @@ import taycleanLogo from './assets/Tayclean_logo.png'
 import taycleanPortfolio from './assets/portfoliotayclean.png';
 import blossomcakePortfolio from './assets/portfolioblossomcakes.png';
 import kingsAgroMineralsPortfolio from './assets/portfoliokingsagrominerals.png';
+import arkcityImage from './assets/portfolioarkcity.png';
+import arkcityLogo from './assets/arkcitylogo.png';
 export const Logos = [
     
     {
@@ -47,6 +49,9 @@ export const Logos = [
     {
         image:jozzycodes,
         url:'https://jozzycodes.com/'
+    },{
+        image:arkcityLogo,
+        url:'https://arkcitylp.com'
     }
 ]
 
@@ -105,5 +110,11 @@ export const portfolioData = [
         image:kingsAgroMineralsPortfolio,
         link:'https://kingsagrominerals.com',
         title:'Kingsagrominerals'
+    },{
+        id:'arkcity',
+        image:arkcityImage,
+        link:'https://arkcitylp.com',
+        title:'Arkcity'
+
     }
 ]
