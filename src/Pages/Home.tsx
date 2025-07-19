@@ -7,7 +7,7 @@ import { Reason } from "./component/Reason"
 import { Services } from "./component/Services"
 import { advertisement } from "../shared/Types"
 import { Footer } from "../shared/Footer"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 import { getBasePath } from "../shared/getBasePath"
 import { useLocation } from "react-router-dom"
 
