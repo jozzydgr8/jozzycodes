@@ -22,6 +22,7 @@ export const Blog = ()=>{
         <>
         <Helmet>
             <title>Jozzy Codes Blog | Insights on Custom Website Development & Design</title>
+            <link rel='canonical' href={`https://jozzzycodes.com${basePath}/blog`}/>
             <meta
                 name="description"
                 content="Read the latest articles, tips, and trends on custom website development, design, and digital branding from Jozzy Codes."

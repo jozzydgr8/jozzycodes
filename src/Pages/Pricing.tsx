@@ -1,16 +1,22 @@
 
 import { Helmet } from "react-helmet-async";
 import { PricingPlan } from "../shared/Types";
+import { useLocation } from "react-router-dom";
+import { getBasePath } from "../shared/getBasePath";
 
 export const Pricing = ({pricingPlans}:PricingPlan)=>{
+  const location = useLocation();
+  const basePath = getBasePath(location.pathname);
       const handleRequest = (message: string) => {
     const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
+
     return(
       <>
       <Helmet>
         <title>Jozzy Codes Pricing | Custom Website Development Rates by Jozzy Codes</title>
+        <link rel="canonical" href={`https://jozzycodes.com${basePath}/pricing`}/>
         <meta
           name="description"
           content="Explore transparent pricing for custom website development services. Find plans and rates tailored to deliver stunning, high-performance websites that represent your brand perfectly."

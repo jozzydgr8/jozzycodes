@@ -1,5 +1,7 @@
 import { portfolioData } from "../Data"
 import {Helmet} from 'react-helmet-async'
+import { getBasePath } from "../shared/getBasePath"
+import { useLocation } from "react-router-dom"
 
 const Style = {
     imageContent:{
@@ -10,10 +12,13 @@ const Style = {
     }
 }
 export const Portfolio = ()=>{
+    const location = useLocation()
+    const basePath = getBasePath(location.pathname)
     return(
         <>
         <Helmet>
             <title>Jozzy Codes Portfolio | Custom Websites Developed by Jozzy Codes</title>
+            <link rel='canonical' href={`https://jozzycodes.com${basePath}/portfolio`}/>
             <meta
                 name="description"
                 content="A showcase of our projects and work. See how we build stunning, custom websites crafted to perform and represent each brand with precision."

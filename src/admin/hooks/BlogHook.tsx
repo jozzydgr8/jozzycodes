@@ -7,14 +7,23 @@ export const BlogHook = ()=>{
     const {dispatch} = UseDataContext();
     const {user} = UseAuthContext();
     const postBlog = async({title, description, sections}:blogType)=>{
-        const slugify = (title: string): string => {
-            return title
-                .toLowerCase() // convert to lowercase
-                .trim() // remove whitespace from both ends
-                .replace(/[^a-z0-9\s-]/g, '') // remove non-alphanumeric chars (except spaces and hyphens)
-                .replace(/\s+/g, '-') // replace spaces with hyphens
-                .replace(/-+/g, '-'); // collapse multiple hyphens
-            };
+    function slugify(title: string): string {
+        const stopWords = new Set([
+            'a', 'an', 'the', 'and', 'or', 'in', 'on', 'for',
+            'of', 'with', 'to', 'is', 'why', 'how', 'this', 'that', 'are', 'was', 'be'
+        ]);
+
+        return title
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, '') // Remove non-alphanumeric characters (except spaces and hyphens)
+            .split(/\s+/) // Split by spaces
+            .filter(word => word && !stopWords.has(word)) // Remove empty strings and stop words
+            .slice(0, 6) // Limit to first 6 meaningful words (adjust for length preference)
+            .join('-') // Join with hyphens
+            .replace(/-+/g, '-') // Collapse multiple hyphens
+            .replace(/^-+|-+$/g, ''); // Trim hyphens from start/end
+        }
+
             const post = {
             title:title,
             description:description,

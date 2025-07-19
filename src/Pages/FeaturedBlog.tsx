@@ -1,9 +1,10 @@
-import { NavLink, useNavigate, useParams } from "react-router-dom"
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom"
 import { UseDataContext } from "../context/UseDataContext";
 import Marquee from "react-fast-marquee";
 import { FlatButton } from "../shared/FlatButton";
 import { FormatDate } from "../shared/FormatDate";
 import { Helmet } from "react-helmet-async";
+import { getBasePath } from "../shared/getBasePath";
 
 const Styles = {
         content:{
@@ -13,6 +14,8 @@ const Styles = {
         }
     }
 export const FeaturedBlog = ()=>{
+    const location = useLocation();
+    const basePath = getBasePath(location.pathname)
     const {slug} = useParams();
     const {blog} = UseDataContext();
     const featured = blog && blog.find(featured => featured.slug === slug);
@@ -20,6 +23,7 @@ export const FeaturedBlog = ()=>{
     return(
         <>
         <Helmet>
+        <link rel="canonical" href={`https://jozzycodes.com${basePath}/blog/${featured?.slug}`}/>
         <title>{`${featured?.slug} | Jozzy Codes Blog`}</title>
         <meta
             name="description"
