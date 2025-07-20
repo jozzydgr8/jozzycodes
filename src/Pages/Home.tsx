@@ -10,6 +10,7 @@ import { Footer } from "../shared/Footer"
 import { Helmet } from "react-helmet-async"
 import { getBasePath } from "../shared/getBasePath"
 import { useLocation } from "react-router-dom"
+import { GoogleReviews } from "./component/GoogleReviews"
 
 export const Home = ({advertisement}:advertisement)=>{
     const location = useLocation()
@@ -27,6 +28,7 @@ export const Home = ({advertisement}:advertisement)=>{
         <Features advertisement={advertisement}/>
         <Philosophy/>
         <Reason/>
+        <GoogleReviews/>
         <Logo/>
         <Help/>
         <Footer/>
