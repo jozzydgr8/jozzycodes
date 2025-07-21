@@ -14,7 +14,7 @@ export const Reason = ()=>{
                                         <img src={data.image} style={{width:"70px", height:"70px"}}/>
                                     </div>
                                     <div className="col-md-10">
-                                        <h4>{data.title}</h4>
+                                        <h5>{data.title}</h5>
                                         <p>{data.description}</p>
                                     </div>
                                 </div>

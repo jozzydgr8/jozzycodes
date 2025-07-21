@@ -44,7 +44,7 @@ export const PortfolioMarquee = ()=>{
             </Marquee>
                 </div>
 
-                <div><NavLink to={`${basepath}/pricing`}><FlatButton className="btn-lg" title="View Projects" icon={<RightOutlined/>}/></NavLink></div>
+                <div><NavLink to={`${basepath}/pricing`}><FlatButton title="View Projects" icon={<RightOutlined/>}/></NavLink></div>
             </div>
         </section>
     )

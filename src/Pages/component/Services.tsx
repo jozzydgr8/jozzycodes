@@ -1,76 +1,35 @@
 import { NavLink, useLocation } from "react-router-dom"
 import { getBasePath } from "../../shared/getBasePath";
-
+import desktop from '../../assets/desktop.png';
+import { LoopTest } from "./LoopTest";
+import { FlatButton } from "../../shared/FlatButton";
+import {RightOutlined} from '@ant-design/icons';
 export const Services = ()=>{
     const location = useLocation();
     const basePath = getBasePath(location.pathname);
+  
     return(
         <section id="services">
             <div className="container-fluid">
                 <h2>Our Services</h2><br/>
-                <div className="row">
-                    <div className="col-md-4">
-                        
-                        <div className="service-grid">
-                        <h4><ion-icon style={{fontSize:'35px'}} name="code-slash-outline"></ion-icon><br/>Custom Website development</h4>
-                        <p>
-                        We specialize in creating tailor-made websites that perfectly align with your business goals.
-                        Our custom website development services are designed to provide unique, scalable,
-                        and responsive web solutions
-                        that give your business a competitive edge.
-
-                        <br/><br/>
-                        
-                        </p>
-                        <div className="service-link"><NavLink to={`${basePath}/pricing`}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
-                        </div>
-                        <br/><br/>
-                    </div>
-                    <div className="col-md-4">
-                    
-                        <div className="service-grid">
-                        <h4><ion-icon style={{fontSize:'35px'}} name="cart-outline"></ion-icon><br/>E-commerce Solutions</h4>
-                        <p >
-                        We help businesses sell online easily with our complete e-commerce solutions.
-                         Whether you're starting a new online store or improving an existing one,
-                          we create custom websites that make it simple for customers to order products, book hotel rooms,
-                           or schedule services. Our goal is to make online shopping smooth for both you and your customers,
-                            helping your business grow while providing a great experience for buyers.
-
-                        <br/><br/>
-                        
-                        </p>
-                        <div className="service-link"><NavLink to={`${basePath}/pricing`}> View Pricing</NavLink><ion-icon name="arrow-forward-outline"></ion-icon></div>
-                        </div>
-                        <br/><br/>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="service-grid">
-                        <h4><ion-icon style={{fontSize:'35px'}} name="settings-outline"></ion-icon><br/>Website Maintenance</h4>
-                         <p>
-                         We take care of everything your website needs to stay online and run smoothly.
-                          From hosting and domain management to security updates and performance optimization,
-                           we handle it all—so you can focus on your business while we keep your website fast,
-                            secure, and up to date.
-
-
-
-
-
-
-
-
-
-                            <br/><br/>
+                <div style={{display:"flex", justifyContent:"center"}}>
+                    <div className="servicecontainer">
+                        {/* <motion.div
+                        initial={{opacity:0,y:20}}
+                        animate={{opacity:1,y:0}}
+                        transition={{duration:0.4,delay: index * 0.05}}>
                             
-                        
-                         </p>
-                         <div className="service-link"><a href='https://wa.link/ubp14t' target='_blank'>Discover more</a><ion-icon name="arrow-forward-outline"></ion-icon></div>
-                        </div>
-                        <br/><br/>
-                       
+                        </motion.div> */}
+                    <div>
+                        <img src={desktop} height={'200px'} width={'200px'}/>
                     </div>
+                    <h5>Custom Website Development</h5>
+                    <p>We build all kinds of Websites</p>
+                    <NavLink to={`${basePath}/pricing`}><FlatButton title="View Pricing" icon={<RightOutlined/>}/></NavLink>
                 </div>
+                </div>
+                    <LoopTest/>
+                   
             </div>
         </section>
     )

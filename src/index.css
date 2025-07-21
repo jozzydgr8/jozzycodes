@@ -23,6 +23,7 @@ body {
     color: var(--text-color);
     font-family: "inter";
     font-style: normal;
+    font-size: small;
 }
 
 a {
@@ -35,6 +36,10 @@ h1{
   font-size: 60px;
   color: var(--bold-color);
 }
+h2,h3,h4,h5{
+  font-family: "epilogue";
+   font-weight: 700;
+}
 @media (max-width:750px) {
   h1{
     font-size:35px;
@@ -45,18 +50,9 @@ h2{
     text-align: center;
 }
 
- h3,h2 {
-    
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    
-}
 
-h4 {
-    font-weight: 500;
-    font-family: "Mukta Vaani", sans-serif;
-    font-style: normal;
-}
+
+
 
 /* Buttons */
 button {
@@ -121,7 +117,7 @@ button {
   color: white;
  
   
-  border-radius: 70px 70px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 .reasonImage {
     background-image: url('./assets/techbro.png');
@@ -245,12 +241,17 @@ nav{
 }
 
 /* Service Section */
-.service-grid {
+.servicecontainer{
     background: var(--faint-color);
     color: white;
     border: none;
     border-radius: 20px;
-    padding: 8%;
+    padding: 30px 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
     
 }
 
@@ -336,11 +337,7 @@ footer small{
     background: white;
 }
 
-.service-link {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
+
 
 /* animations */
 .sectionAnimationLeft{

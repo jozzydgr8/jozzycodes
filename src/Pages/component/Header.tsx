@@ -17,7 +17,7 @@ export const Header = ()=>{
     return(
         <section className='linearbackground'>
             <div className="container-fluid">
-                <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
+                <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',fontSize:"medium"}}>
                 
                     
                     <div className="centerDiv">
