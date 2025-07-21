@@ -25,7 +25,7 @@ export const Portfolio = ()=>{
             />
         </Helmet>
 
-        <section>
+        <section className="linearbackground">
             <div className="container-fluid">
                 <h2>Portfolio</h2>
                 <p style={{textAlign:"center", textTransform:'capitalize'}}>The hall of websites built right!</p>

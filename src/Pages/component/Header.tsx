@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
+import curvedLine from '../../assets/curvedline.png'
 import { FlatButton } from '../../shared/FlatButton';
-import { CountdownTimer } from '../../shared/CountDown';
 import { NavLink, useLocation } from 'react-router-dom';
 import { getBasePath } from '../../shared/getBasePath';
+
+
 export const Header = ()=>{
     useEffect(()=>{
         var container = document.querySelector('.headerWrite');
@@ -13,56 +15,54 @@ export const Header = ()=>{
     const basePath = getBasePath(location.pathname)
 
     return(
-        <section id='header'>
+        <section className='linearbackground'>
             <div className="container-fluid">
-                <div className="row">
+                <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
                 
                     
-                    <div className="col-md-4 centerDiv">
+                    <div className="centerDiv">
                         <small>code, create, captivate</small><br/>
-                        <h1 className='headerWrite'>
+                        
+                            <h1 style={{textAlign:'center'}} className='headerWrite'>
+                                
                             
                             Custom Websites Built Right From Day One.
                         </h1>
+                
+                        <div style={{display:"flex", justifyContent:"center"}}>
+                            <img src={curvedLine} style={{width:'80%'}}/>
+                        </div>
                         <span className='custom-underline'></span> <br/>
-                        <p>
-                            We build responsive, brand-first websites tailored to your goals.
-                            Built from scratch to stand out, perform, and grow with your business.
+                        <p style={{textAlign:'center'}}>
+                            Search no More, Let's take it from here. Jozzycodes specializes in developing custom, brand-first websites tailored to your goals.
+                            {/* Built from scratch to stand out, perform, and grow with your business. */}
                             <br/> <br/>
-                            Want to give us a shot? 
+                             Want to give us a shot?
                         </p>
                         
-                        {/* <div>
-                            <a href='https://wa.link/ubp14t' target='_blank'><button className='btn'>Contact Us</button></a>
-                        
-                        </div> */}
-
-                        <div>
+                        <div style={{display:"flex", justifyContent:"center"}} >
                             
-                            <div style={{display:'flex', flexDirection:"row", gap:'10px', alignItems:'center'}}>
-                            <a href={`${basePath}/#features`}>
-                            <FlatButton title='Claim Deal' onClick={()=>console.log('claim deal')}/>
+                            <div className='row justify-content-center text-center'>
+                            <a href='https://wa.link/ubp14t' target='_blank' rel='no-referrer' className='col-md-6' style={{marginBottom:'20px'}}>
+                            <FlatButton className='btn-lg' title='Get Started Now' onClick={()=>console.log('claim deal')}/>
                             </a>
 
-                            <NavLink to={`${basePath}/pricing`}>
-                            <FlatButton title='View Pricing' onClick={()=>{console.log('view price')}} className='btnoutline'/>
+                            <NavLink to={`${basePath}/pricing`} className='col-md-6'>
+                            <FlatButton title='View Pricing' onClick={()=>{console.log('view price')}} className='btnoutline btn-lg'/>
 
                             </NavLink>
                             
                             
                             </div>
-                            <CountdownTimer/>
+                            {/* <CountdownTimer/> */}
                         </div>
                         <br/> <br/> 
+                        </div>
                        
                     </div>
-                    <div className="col-md-8 header-grid">
-                        <div className='headerImageDiv'>
-                            
-                        </div>
-                    </div>
+                    
                    
-                </div>
+              
             </div>
         </section>
     )

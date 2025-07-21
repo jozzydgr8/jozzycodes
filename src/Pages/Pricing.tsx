@@ -23,7 +23,7 @@ export const Pricing = ({pricingPlans}:PricingPlan)=>{
         />
       </Helmet>
       
-       <section>
+       <section className="linearbackground">
         
 
       <div className="container-fluid">

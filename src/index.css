@@ -2,10 +2,11 @@
     /* Theme Colors */
     --background-color: white;
     --different-background: #F5F5F5;
-    --text-color: #000957;
+    --text-color: #0B1E52;
     --bold-color: #344CB7;
     --faint-color: #577BC1;
     --icon-color: #454047;
+    --white-gradient-blend: #EAF0FF;
 }
 
 
@@ -20,8 +21,7 @@
 body {
     background: var(--background-color);
     color: var(--text-color);
-    font-family: "Average Sans", sans-serif;
-    font-weight: 300;
+    font-family: "inter";
     font-style: normal;
 }
 
@@ -29,13 +29,24 @@ a {
     text-decoration: none;
     color: inherit;
 }
+h1{
+  font-family: "sora";
+  font-weight: 900;
+  font-size: 60px;
+  color: var(--bold-color);
+}
+@media (max-width:750px) {
+  h1{
+    font-size:35px;
+  }
+}
 
 h2{
     text-align: center;
 }
 
-h1, h3,h2 {
-    font-weight: 900;
+ h3,h2 {
+    
     font-family: "Poppins", sans-serif;
     font-style: normal;
     
@@ -48,6 +59,10 @@ h4 {
 }
 
 /* Buttons */
+button {
+  white-space: nowrap;
+}
+
 .btn {
     background: var(--bold-color);
     color: white;
@@ -76,7 +91,7 @@ h4 {
     min-height: 60vh;
 }
 
-.reasonImage, .headerImageDiv {
+.reasonImage {
     
     background-repeat: no-repeat;
     height: 400px;
@@ -84,6 +99,14 @@ h4 {
 }
 
 /* Header Section */
+.linearbackground{
+ 
+  background: linear-gradient(to bottom, var(--white-gradient-blend), var(--background-color));
+
+}
+.invertlinearbackground{
+  background: linear-gradient(to bottom, var(--background-color), var(--white-gradient-blend));
+}
 .header-grid {
     display: flex;
     justify-content: end;
@@ -91,12 +114,15 @@ h4 {
     border-radius: 20px;
 }
 
-.headerImageDiv {
-    background-image: url('./assets/personImage.png');
-    background-size: contain;
-    width: 85%;
-}
 
+
+#reason{
+  background:var(--text-color);
+  color: white;
+ 
+  
+  border-radius: 70px 70px 0 0;
+}
 .reasonImage {
     background-image: url('./assets/techbro.png');
     background-size: cover;
@@ -111,13 +137,13 @@ h4 {
     .header-grid {
         justify-content: center;
     }
-    .headerImageDiv, .reasonImage {
+   .reasonImage {
         height: 300px;
     }
 }
 
 /* Underline Effect */
-.custom-underline {
+/* .custom-underline {
     position: relative;
     display: inline-block;
 }
@@ -132,7 +158,7 @@ h4 {
     background: var(--text-color);
     border-radius: 10px;
     transform: translateY(50%);
-}
+} */
 
 /* Navbar */
 .navbar-brand, .nav-link {
@@ -148,9 +174,16 @@ h4 {
         width: 30%;
     }
 }
-
-nav .container-fluid, section > .container-fluid, .modal-overlay {
+nav .container-fluid{
+  padding:0 7%;
+}
+nav{
+  background: var(--white-gradient-blend) ;
+  font-size: small;
+}
+ section > .container-fluid, .modal-overlay {
     padding: 4% 7%;
+    
 }
 
 
@@ -382,7 +415,7 @@ footer small{
 
 
 /* loading loader */
-.loader {
+/* .loader {
   width: 48px;
   height: 48px;
   border: 3px solid #FFF;
@@ -413,7 +446,7 @@ footer small{
   100% {
     transform: rotate(360deg);
   }
-} 
+}  */
 
 
 /* Remove blue glow and focus box shadow for all AntD inputs */
@@ -615,4 +648,42 @@ input:-webkit-autofill {
     background: var(--text-color);
     padding: 16px 10px;
     text-transform: capitalize;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  color: var(--bold-color);
+  position: relative;
+  background:
+    conic-gradient(from 134deg at top   ,currentColor 92deg,#0000 0) top,
+    conic-gradient(from -46deg at bottom,currentColor 92deg,#0000 0) bottom;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+.loader:before {
+  content:'';
+  position: absolute;
+  inset: 0;
+  --g:currentColor 14.5px,#0000 0 calc(100% - 14.5px),currentColor 0;
+  background:
+    linear-gradient( 45deg,var(--g)),
+    linear-gradient(-45deg,var(--g));
+   animation: l7 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+@keyframes l7 {
+   33%  {inset:-10px;transform: rotate(0deg)}
+   66%  {inset:-10px;transform: rotate(90deg)}
+   100% {inset:0    ;transform: rotate(90deg)}
+}
+
+
+.fade-marquee {
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  overflow: hidden;
 }

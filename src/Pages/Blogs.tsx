@@ -29,7 +29,7 @@ export const Blog = ()=>{
             />
         </Helmet>
 
-        <section>
+        <section className="linearbackground">
             <div className="container-fluid">
                 <h2>Articles</h2>
                 <p style={{textAlign:"center", textTransform:"capitalize"}}>Insights you didn't know you needed</p>

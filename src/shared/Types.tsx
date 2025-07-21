@@ -3,17 +3,7 @@ export type clickRenderProps = {
     clicked : boolean
 
 }
-export type advertisement ={
-    advertisement:{
-    title: string;
-    desc: string;
-    urgency: string;
-    catch: string;
-    notice: string;
-    sendRequest: () => Promise<void>;
-    }[]
-    
-}
+
 
 export type PricingPlan = {
   pricingPlans:{

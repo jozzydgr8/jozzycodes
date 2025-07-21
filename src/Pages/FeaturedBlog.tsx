@@ -31,7 +31,7 @@ export const FeaturedBlog = ()=>{
         />
         </Helmet>
 
-        <section>
+        <section className="linearbackground">
             <div className="container-fluid">
                 <h4>Featured</h4>
                 <div className="blogcontent">

@@ -1,18 +1,18 @@
-import { Features } from "./component/Features"
+
 import { Header } from "./component/Header"
 import { Help } from "./component/Help"
 import { Logo } from "./component/Logo"
 import { Philosophy } from "./component/Philosophy"
 import { Reason } from "./component/Reason"
 import { Services } from "./component/Services"
-import { advertisement } from "../shared/Types"
 import { Footer } from "../shared/Footer"
 import { Helmet } from "react-helmet-async"
 import { getBasePath } from "../shared/getBasePath"
 import { useLocation } from "react-router-dom"
 import { GoogleReviews } from "./component/GoogleReviews"
+import { PortfolioMarquee } from "./component/PortfolioMarquee"
 
-export const Home = ({advertisement}:advertisement)=>{
+export const Home = ()=>{
     const location = useLocation()
     const basePath = getBasePath(location.pathname)
     return(
@@ -25,8 +25,8 @@ export const Home = ({advertisement}:advertisement)=>{
         </Helmet>
         <Header/>
         <Services />
-        <Features advertisement={advertisement}/>
-        <Philosophy/>
+    
+        <PortfolioMarquee/>
         <Reason/>
         <GoogleReviews/>
         <Logo/>
