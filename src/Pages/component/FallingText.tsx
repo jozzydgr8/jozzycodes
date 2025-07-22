@@ -1,56 +1,60 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
-const fallingTexts = [
-  "Design",
-  "Develop",
-  "Deploy",
-  "Optimize",
-  "Maintain",
-  "Scale",
-  "Secure",
-  "Test",
+const tags = [
+  "Educational Website",
+  "Real Estate Website",
+  "Consultancy Website",
+  "Automotive Website",
+  "Health & Wellness Website",
+  "Blog",
+  "Restaurant & Food Website",
+  "Charity & Nonprofit Website",
+  "Technology & Gadgets Website",
+  "Music & Entertainment Website",
+  "Portfolio Website",
+  "E-commerce Website",
+  "Event Website",
+  "Travel & Tourism Website",
+  "Personal Website",
+  "Business Website",
+  "Online Booking Website",
+  "Medical or Clinic Website",
+  "And Many More"
 ];
 
-export const FallingText = () => {
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true });
+const getRandomRotation = () => Math.floor(Math.random() * 20 - 10); // -10 to +10 degrees
 
+export function FallingText() {
   return (
-    <div
-      ref={containerRef}
-      className="relative w-full h-screen overflow-hidden bg-black text-white"
-    >
-      {fallingTexts.map((text, i) => {
-        // Generate random x offset for scatter effect
-        const randomX = Math.floor(Math.random() * window.innerWidth - 100);
-
-        return (
+    <section className="tag-section">
+      <div className="tag-container">
+        {tags.map((tag, i) => (
           <motion.div
-            key={i}
-            initial={{ y: -100, opacity: 0 }}
-            animate={
-              isInView
-                ? {
-                    y: "80vh",
-                    x: randomX,
-                    opacity: 1,
-                    rotate: Math.random() * 20 - 10,
-                  }
-                : {}
-            }
-            transition={{
-              delay: i * 0.2,
-              duration: 1,
-              type: "spring",
-              damping: 8,
+            key={tag}
+            className="tag"
+            initial={{ y: -100, opacity: 0, rotate: 0 }}
+            whileInView={{
+                y: 0,
+                opacity: 1,
+                rotate: getRandomRotation(),
             }}
-            className="absolute top-0 text-2xl font-bold"
-          >
-            {text}
-          </motion.div>
-        );
-      })}
-    </div>
+            whileHover={{
+                scale: 1.05,
+                y: -5,
+                rotate: getRandomRotation(), // optional: adds randomness on hover
+            }}
+            transition={{
+                type: "spring",
+                stiffness: 60,
+                damping: 12,
+                delay: (tags.length - i) * 0.07,
+            }}
+            viewport={{ once: true }}
+            >
+            {tag}
+            </motion.div>
+        ))}
+      </div>
+    </section>
   );
-};
+}

@@ -33,7 +33,9 @@ export const FeaturedBlog = ()=>{
 
         <section className="linearbackground">
             <div className="container-fluid">
-                <h4>Featured</h4>
+                <h1 style={{fontSize:"30px", color:'#577BC1'}}>
+                Featured
+                </h1>
                 <div className="blogcontent">
                 
                 <h3>{featured?.title}</h3>

@@ -3,34 +3,42 @@ import curvedLine from '../../assets/curvedline.png'
 import { FlatButton } from '../../shared/FlatButton';
 import { NavLink, useLocation } from 'react-router-dom';
 import { getBasePath } from '../../shared/getBasePath';
+import { LoopText } from './LoopText';
 
 
 export const Header = ()=>{
     useEffect(()=>{
-        var container = document.querySelector('.headerWrite');
-        
-        container?.classList.add('sectionAnimationDown');
+      const containers = document.querySelectorAll('.headerWrite');
+
+        containers.forEach((el) => {
+        el.classList.add('sectionAnimationUp');
+        });
     },[]);
     const location = useLocation();
-    const basePath = getBasePath(location.pathname)
+    const basePath = getBasePath(location.pathname);
+    const loopTexts = [
+  "Code, Create, Captivate",
+  "Design, Develop, Deliver",
+  "Build, Brand, Breakthrough"
+];
 
     return(
         <section className='linearbackground'>
             <div className="container-fluid">
-                <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',fontSize:"medium"}}>
+                <div className='headerWrite' style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',fontSize:"medium"}}>
                 
                     
                     <div className="centerDiv">
-                        <small>code, create, captivate</small><br/>
+                        <LoopText loopTexts={loopTexts} as="span"/><br/>
                         
-                            <h1 style={{textAlign:'center'}} className='headerWrite'>
+                            <h1 style={{textAlign:'center'}} >
                                 
                             
                             Custom Websites Built Right From Day One.
                         </h1>
                 
-                        <div style={{display:"flex", justifyContent:"center"}}>
-                            <img src={curvedLine} style={{width:'80%'}}/>
+                        <div style={{display:"flex", justifyContent:"center"}} >
+                            <img src={curvedLine} style={{width:'80%'}} alt='jozzy codes'/>
                         </div>
                         <span className='custom-underline'></span> <br/>
                         <p style={{textAlign:'center'}}>

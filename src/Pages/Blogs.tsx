@@ -5,6 +5,7 @@ import {RightCircleOutlined} from '@ant-design/icons'
 import { FormatDate } from "../shared/FormatDate";
 import { getBasePath } from "../shared/getBasePath";
 import { Helmet } from "react-helmet-async";
+import { LoopText } from "./component/LoopText";
 
 export const Blog = ()=>{
     const location = useLocation()
@@ -17,7 +18,10 @@ export const Blog = ()=>{
             gap:'5px'
         }
     }
-    
+    const loopTexts =[
+        "Insights you didn't know you needed",
+        "Answers to your questions"
+    ]
     return(
         <>
         <Helmet>
@@ -31,8 +35,11 @@ export const Blog = ()=>{
 
         <section className="linearbackground">
             <div className="container-fluid">
-                <h2>Articles</h2>
-                <p style={{textAlign:"center", textTransform:"capitalize"}}>Insights you didn't know you needed</p>
+              <h1 style={{fontSize:"30px", color:'#577BC1'}}>
+                              Articles
+                              </h1>
+                              <LoopText loopTexts={loopTexts} as="h1" style={{fontSize:"30px",textAlign:"left"}}/>
+                              <br/>
                 {
                     blog && blog.map(blog=>(
                         <div key={blog._id} className="blogcontent">

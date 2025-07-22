@@ -2,6 +2,7 @@ import { portfolioData } from "../Data"
 import {Helmet} from 'react-helmet-async'
 import { getBasePath } from "../shared/getBasePath"
 import { useLocation } from "react-router-dom"
+import { LoopText } from "./component/LoopText"
 
 const Style = {
     imageContent:{
@@ -11,6 +12,11 @@ const Style = {
         backgroundRepeat:'no-repeat'
     }
 }
+const loopTexts = [
+    'Hall of websites built right',
+    'Custom coded client projects',
+    'Brand first digital experiences'
+]
 export const Portfolio = ()=>{
     const location = useLocation()
     const basePath = getBasePath(location.pathname)
@@ -27,8 +33,12 @@ export const Portfolio = ()=>{
 
         <section className="linearbackground">
             <div className="container-fluid">
-                <h2>Portfolio</h2>
-                <p style={{textAlign:"center", textTransform:'capitalize'}}>The hall of websites built right!</p>
+              
+                <h1 style={{fontSize:"30px", color:'#577BC1'}}>
+                Portfolio
+                </h1>
+                <LoopText loopTexts={loopTexts} as="h1" style={{fontSize:"30px",textAlign:"left"}}/>
+                <br/>
                 <div className="advertGrid">
                 {
                 portfolioData.map((data)=>(

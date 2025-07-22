@@ -1,12 +1,19 @@
 import { NavLink, useLocation } from "react-router-dom"
 import { getBasePath } from "../../shared/getBasePath";
 import desktop from '../../assets/desktop.png';
-import { LoopTest } from "./LoopTest";
+import { LoopText } from "./LoopText";
 import { FlatButton } from "../../shared/FlatButton";
 import {RightOutlined} from '@ant-design/icons';
+import { FallingText } from "./FallingText";
 export const Services = ()=>{
     const location = useLocation();
     const basePath = getBasePath(location.pathname);
+    const loopTexts = [
+      "Welcome to Our World",
+      "Custom sites, Done Right",
+      "Design. Speed. Performance.",
+      "Start Your Project Today"
+    ];
   
     return(
         <section id="services">
@@ -21,14 +28,15 @@ export const Services = ()=>{
                             
                         </motion.div> */}
                     <div>
-                        <img src={desktop} height={'200px'} width={'200px'}/>
+                        <img src={desktop} height={'200px'} width={'200px'} alt='jozzy codes'/>
                     </div>
                     <h5>Custom Website Development</h5>
                     <p>We build all kinds of Websites</p>
-                    <NavLink to={`${basePath}/pricing`}><FlatButton title="View Pricing" icon={<RightOutlined/>}/></NavLink>
+                    <NavLink to={`${basePath}/pricing`}><FlatButton title="View Pricing" className="btnoutlinelight" icon={<RightOutlined/>}/></NavLink>
                 </div>
                 </div>
-                    <LoopTest/>
+                    <LoopText loopTexts={loopTexts} as="h1"/>
+                    <FallingText/>
                    
             </div>
         </section>

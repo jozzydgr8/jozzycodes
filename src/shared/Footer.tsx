@@ -30,7 +30,7 @@ export const Footer = ()=>{
 
                             <div>
                                 Send us a message on whatsApp? <br/>
-                                <a href='https://wa.link/ubp14t' target='_blank'>
+                                <a href='https://wa.link/ubp14t' target='_blank' rel='no-referrer'>
                                     WhatsApp<ion-icon name="logo-whatsapp"></ion-icon>
                                 </a>
                             </div>
@@ -43,9 +43,8 @@ export const Footer = ()=>{
                         <div className="col-md-3" style={{display:'flex', gap:'10px',flexDirection:'column'}}>
                             <small className='heading'>Quick Links</small>
                             <a href='/#philosophy' >About Us</a> 
-                            <NavLink to={`${basePath}pricing`}>Website Development</NavLink> 
-                            <a href='/#services'>Our Services</a>
-                            <a>Refund Policy</a>
+                            <NavLink to={`${basePath}pricing`} >Website Development</NavLink> 
+                            <NavLink to={`${basePath}pricing`}>Our Services</NavLink>
                             <br/>
 
                         </div>
@@ -60,7 +59,7 @@ export const Footer = ()=>{
                         </div>
                     </div>
                     <hr/>
-                    <small><a href='https://jozzycodes.com' target='_blank'>All Rights Reserved © jozzy-codes digital</a> </small>
+                    <small><a href='https://jozzycodes.com' target='_blank' rel='no-referrer'>All Rights Reserved © jozzy-codes digital</a> </small>
                 </footer>
             </div>
         </section>

@@ -24,6 +24,7 @@ body {
     font-family: "inter";
     font-style: normal;
     font-size: small;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -59,15 +60,16 @@ button {
   white-space: nowrap;
 }
 
-.btn {
+.btn, .btn:hover {
     background: var(--bold-color);
     color: white;
 }
-
-.btn:hover {
-    background: #2d419e;
-    color: white;
+.btnoutlinelight, .btnoutlinelight:hover{
+  background: transparent;
+  color: var(--background-color);
+  border: solid 1px var(--background-color);
 }
+
 .btnoutline, .btnoutline:hover {
     background-color: transparent;
     color: var(--bold-color);
@@ -77,88 +79,10 @@ button {
     background: var(--text-color);
     color: white;
 }
-
-
-/* Background Images */
-.backgroundImage {
-    background-image: url('./assets/codingdesktop.png');
-    background-size: cover;
-    background-position: center center;
-    min-height: 60vh;
-}
-
-.reasonImage {
-    
-    background-repeat: no-repeat;
-    height: 400px;
-   
-}
-
-/* Header Section */
-.linearbackground{
- 
-  background: linear-gradient(to bottom, var(--white-gradient-blend), var(--background-color));
-
-}
-.invertlinearbackground{
-  background: linear-gradient(to bottom, var(--background-color), var(--white-gradient-blend));
-}
-.header-grid {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    border-radius: 20px;
-}
-
-
-
-#reason{
-  background:var(--text-color);
-  color: white;
- 
-  
-  border-radius: 20px 20px 0 0;
-}
-.reasonImage {
-    background-image: url('./assets/techbro.png');
-    background-size: cover;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    background-position: center center;
-     width: 100%;
-}
-
-@media (max-width:750px) {
-    .header-grid {
-        justify-content: center;
-    }
-   .reasonImage {
-        height: 300px;
-    }
-}
-
-/* Underline Effect */
-/* .custom-underline {
-    position: relative;
-    display: inline-block;
-}
-
-.custom-underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: var(--text-color);
-    border-radius: 10px;
-    transform: translateY(50%);
-} */
-
 /* Navbar */
 .navbar-brand, .nav-link {
     color: var(--text-color);
+    font-weight: bold;
 }
 
 .navbar-brand {
@@ -177,17 +101,34 @@ nav{
   background: var(--white-gradient-blend) ;
   font-size: small;
 }
- section > .container-fluid, .modal-overlay {
-    padding: 4% 7%;
+ section > .container-fluid {
+    padding: 6% 7%;
     
 }
 
+/* Header Section */
+.linearbackground{
+  background: linear-gradient(to bottom, var(--white-gradient-blend), var(--background-color));
 
-
-/* Section Backgrounds */
-#philosophy {
-    background: linear-gradient(to bottom, var(--background-color), var(--different-background));
 }
+.invertlinearbackground{
+  background: linear-gradient(to bottom, var(--background-color), var(--white-gradient-blend));
+}
+.header-grid {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+/* reason */
+#reason{
+  background:var(--text-color);
+  color: white;
+  border-radius: 20px 20px 0 0;
+}
+
 
 /* Floating Icons */
 .whatsappIcon {
@@ -252,6 +193,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: fit-content;
+    text-align: center;
     
 }
 
@@ -303,12 +245,13 @@ footer small{
 
 /* Pricing Section */
 .pricing-grid {
-    background: var(--different-background);
+    background: var(--faint-color);
     padding: 5%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: var(--background-color);
 }
 
 .pricing-grid ul {
@@ -375,7 +318,7 @@ footer small{
   max-width: 400px;
   padding: 20px 25px;
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--white-gradient-blend);
   
   display: flex;
   flex-direction: column;
@@ -390,60 +333,6 @@ footer small{
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
-.advertDisplay h4 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.advertDisplay p {
-  margin-bottom: 0.5rem;
-  color: var(--icon-color);
-}
-
-.advertDisplay strong {
-  color: var(--bold-color);
-  font-weight: bold;
-}
-
-.advertDisplay small {
-  color: #999;
-  font-style: italic;
-}
-
-
-/* loading loader */
-/* .loader {
-  width: 48px;
-  height: 48px;
-  border: 3px solid #FFF;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
-.loader::after {
-  content: '';  
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 3px solid;
-  border-color: var(--bold-color) transparent;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}  */
 
 
 /* Remove blue glow and focus box shadow for all AntD inputs */
@@ -641,9 +530,9 @@ input:-webkit-autofill {
 
 }
 .blogcontent > h3{
-    color: white;
-    background: var(--text-color);
-    padding: 16px 10px;
+    color: var(--text-color);
+    /* background: var(--text-color); */
+    /* padding: 16px 10px; */
     text-transform: capitalize;
 }
 
@@ -684,3 +573,33 @@ input:-webkit-autofill {
   -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
   overflow: hidden;
 }
+.tag-section {
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align container contents to bottom */
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  flex-direction: row; /* keep rows horizontal */
+  align-content: flex-end; /* align wrapped rows to bottom */
+  height: 100%; /* make container full height to help alignment */
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  background: #e2f3ea;
+  border-radius: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform-origin: center;
+  cursor: pointer;
+}
+

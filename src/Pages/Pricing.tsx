@@ -30,10 +30,7 @@ export const Pricing = ({pricingPlans}:PricingPlan)=>{
         <div style={{ textAlign: 'center' }}>
           <h2>Our Pricing</h2>
           <h4>Custom Website Development Pricing</h4>
-          <p>
-            We design and develop websites that are simple, functional, and elegant, tailored to your unique needs
-            while maintaining high industry standards for performance, security, and user experience.
-          </p>
+          
         </div>
 
         <div className="row">
