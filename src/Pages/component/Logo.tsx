@@ -18,7 +18,7 @@ export const Logo = ()=>{
 
                     <Marquee speed={50} gradient={false} direction="right">
                         {Logos.slice(Logos.length/2,Logos.length).map((data, index)=>(
-                        <a key={index} href={`${data?.url}`} target="_blank">
+                        <a key={index} href={`${data?.url}`} target="_blank" rel="noreferrer">
                             <div className="logo-display" style={{backgroundImage:`url(${data.image})`}}>
 
                             </div>

@@ -21,12 +21,7 @@ export const Services = ()=>{
                 <h2>Our Services</h2><br/>
                 <div style={{display:"flex", justifyContent:"center"}}>
                     <div className="servicecontainer">
-                        {/* <motion.div
-                        initial={{opacity:0,y:20}}
-                        animate={{opacity:1,y:0}}
-                        transition={{duration:0.4,delay: index * 0.05}}>
-                            
-                        </motion.div> */}
+                        
                     <div>
                         <img src={desktop} height={'200px'} width={'200px'} alt='jozzy codes'/>
                     </div>
@@ -35,6 +30,7 @@ export const Services = ()=>{
                     <NavLink to={`${basePath}/pricing`}><FlatButton title="View Pricing" className="btnoutlinelight" icon={<RightOutlined/>}/></NavLink>
                 </div>
                 </div>
+                <br/>
                     <LoopText loopTexts={loopTexts} as="h1"/>
                     <FallingText/>
                    

@@ -8,7 +8,7 @@ export const Help = ()=>{
                         <h3>Get in Touch</h3>
                         <p>We will analyze your request and come up with
                         the best proposal for you</p>
-                        <a href="https://wa.link/ubp14t" target="_blank" rel="no-referrer">
+                        <a href="https://wa.link/ubp14t" target="_blank" rel="noreferrer">
                         <button className="btn ">
                         Contact Us
                         </button>

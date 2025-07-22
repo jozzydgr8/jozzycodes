@@ -51,7 +51,7 @@ export const Header = ()=>{
                         <div style={{display:"flex", justifyContent:"center"}} >
                             
                             <div className='row justify-content-center text-center'>
-                            <a href='https://wa.link/ubp14t' target='_blank' rel='no-referrer' className='col-md-6' style={{marginBottom:'20px'}}>
+                            <a href='https://wa.link/ubp14t' target='_blank' rel='noreferrer' className='col-md-6' style={{marginBottom:'20px'}}>
                             <FlatButton className='btn-lg' title='Get Started Now' onClick={()=>console.log('claim deal')}/>
                             </a>
 

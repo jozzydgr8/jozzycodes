@@ -57,7 +57,7 @@ export const Pricing = ({pricingPlans}:PricingPlan)=>{
                 )}
 
                 <div>
-                  <button className="btn" onClick={() => handleRequest(plan.message)}>
+                  <button className="btn btnoutlinelight" onClick={() => handleRequest(plan.message)}>
                     {plan.buttonText}
                   </button>
                 </div>

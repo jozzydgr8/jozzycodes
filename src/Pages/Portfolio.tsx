@@ -46,7 +46,7 @@ export const Portfolio = ()=>{
                         <div style={{...Style.imageContent, backgroundImage:`url(${data.image})`}}>
 
                         </div>
-                        <div><a style={{display:"flex", alignItems:"center", gap:'2px'}} href={data.link} target="_blank" rel="no-referrer"><ion-icon name="link-outline"></ion-icon>{data.title}</a></div>
+                        <div><a style={{display:"flex", alignItems:"center", gap:'2px'}} href={data.link} target="_blank" rel="noreferrer"><ion-icon name="link-outline"></ion-icon>{data.title}</a></div>
                     </div>
                 ))
                 }
