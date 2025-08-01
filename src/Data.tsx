@@ -17,7 +17,8 @@ import bullseye from './assets/bullseye.png';
 import graph from './assets/graph.png';
 import gear from './assets/gear.png';
 import service from './assets/customerservice.png';
-import puzzle from './assets/puzzle.png'
+import puzzle from './assets/puzzle.png';
+import blossomDelight from './assets/portfolioblossomdelight.png'
 export const Logos = [
     
     {
@@ -65,11 +66,24 @@ export const Logos = [
 
 
 export const portfolioData = [
+  {
+        id:'arkcity',
+        image:arkcityImage,
+        link:'https://arkcitylp.com',
+        title:'Arkcity'
+
+    },
     {
         id:'tayclean',
         image:taycleanPortfolio,
         link:'https://taycleaningsservices.com',
         title:'Taycleaningservices'
+    },
+    {
+      id:"blossomdelight",
+      image:blossomDelight,
+      link:'https://blossomdelightrestaurant.com/',
+      title:'Blossom Delight'
     },
     {
         id:'blossomcakes',
@@ -82,13 +96,7 @@ export const portfolioData = [
         image:kingsAgroMineralsPortfolio,
         link:'https://kingsagrominerals.com',
         title:'Kingsagrominerals'
-    },{
-        id:'arkcity',
-        image:arkcityImage,
-        link:'https://arkcitylp.com',
-        title:'Arkcity'
-
-    }
+    },
 ]
 
 
