@@ -21,7 +21,7 @@ export const pricingPlans = [
       message: "Hey there! I came across your website and I'm interested in your Business web development services. I'd love to learn more!",
     },
     {
-      id:'E-commerce:ecommerce',
+      id:'ecommerce:ecommerce',
       title: "E-commerce & Booking websites",
       description: "Includes everything in a business website plus online ordering, payments or booking functionality",
       originalPrice: "₦500K",
@@ -59,7 +59,7 @@ export const pricingPlans = [
 
   export const globalPricingPlans = [
     {
-      id:'business:business',
+      id:'globalBusiness:business',
       title: "Business Websites",
       description: "Showcase your business info, services and contact details",
       originalPrice: "$400",
@@ -80,7 +80,7 @@ export const pricingPlans = [
       message: "Hey there! I came across your website and I'm interested in your Business web development services. I'd love to learn more!",
     },
     {
-      id:'E-commerce:ecommerce',
+      id:'globalEcommerce:ecommerce',
       title: "E-commerce & Booking websites",
       description: "Includes everything in a business website plus online ordering, payments or booking functionality",
       originalPrice: "$1000",
@@ -107,7 +107,7 @@ export const pricingPlans = [
       message: "Hey there! I came across your website and I'm interested in your e-commerce web development services. I'd love to learn more!",
     },
     {
-      id:'custom:custom',
+      id:'globalCustom:custom',
       title: "Custom or Advanced websites",
       description: "For businesses that need more than a standard website, custom solutions with features like membership systems, dashboards, and integrations tailored to your needs.",
       features: [],
