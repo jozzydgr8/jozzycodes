@@ -1,57 +1,74 @@
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+const { t, i18n } = useTranslation();
 import axios from 'axios';
 
 type global = {
-setLoading: React.Dispatch<React.SetStateAction<boolean>>
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>
 }
-type geotype ={
-  country:string
+
+type geotype = {
+  country: string
 }
-export const GeoRedirector =({setLoading}:global)=> {
+
+// Your language change function
+const changeLanguage = (lng: string) => {
+  i18n.changeLanguage(lng);
+}
+
+export const GeoRedirector = ({ setLoading }: global) => {
   const navigate = useNavigate();
   const location = useLocation();
 
- useEffect(() => {
-  async function fetchGeoData() {
-    setLoading(true);
+  useEffect(() => {
+    async function fetchGeoData() {
+      setLoading(true);
 
-    const cachedGeo = localStorage.getItem('geoData');
-    if (cachedGeo) {
-      const data = JSON.parse(cachedGeo);
-      handleRedirect(data);
-      setLoading(false);
-      return;
+      const cachedGeo = localStorage.getItem('geoData');
+      if (cachedGeo) {
+        const data = JSON.parse(cachedGeo);
+        handleRedirectAndLang(data);
+        setLoading(false);
+        return;
+      }
+
+      try {
+        const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
+        const data = geoRes.data;
+
+        localStorage.setItem('geoData', JSON.stringify(data));
+        handleRedirectAndLang(data);
+      } catch (err) {
+        console.error('GeoRedirector error:', err);
+      } finally {
+        setLoading(false);
+      }
     }
 
-    try {
+    // This function will both handle redirect and set language
+    function handleRedirectAndLang(data: geotype) {
+      const countryCode = data.country.toLowerCase();
+      const isNigerian = countryCode === 'ng';
+      const isOngbPage = location.pathname.startsWith('/gb');
 
-      const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
-      const data = geoRes.data;
+      // Redirect logic
+      if (!isNigerian && !isOngbPage) {
+        navigate('/gb', { replace: true });
+      } else if (isNigerian && isOngbPage) {
+        navigate('/', { replace: true });
+      }
 
-      localStorage.setItem('geoData', JSON.stringify(data));
-      handleRedirect(data);
-    } catch (err) {
-      console.error('GeoRedirector error:', err);
-    } finally {
-      setLoading(false);
+      // Language switching logic based on country
+      if (countryCode === 'tr') {
+        changeLanguage('tr');  
+      } else{
+        changeLanguage('en')
+      }
     }
-  }
 
-  function handleRedirect(data:geotype) {
-    const isNigerian = data.country.toLowerCase() === 'ng';  
-    const isOngbPage = location.pathname.startsWith('/gb');
-
-    if (!isNigerian && !isOngbPage) {
-      navigate('/gb', { replace: true });
-    } else if (isNigerian && isOngbPage) {
-      navigate('/', { replace: true });
-    }
-    // else no redirect, stay
-  }
-
-  fetchGeoData();
-}, []);
+    fetchGeoData();
+  }, []);
 
   return null;
 }

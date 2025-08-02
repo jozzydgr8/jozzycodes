@@ -1,0 +1,158 @@
+{
+  "header": {
+    "loopTexts": [
+      "Kodla, Yarat, Etkile",
+      "Tasarım Yap, Geliştir, Sun",
+      "Kur, Markalaştır, Başar"
+    ],
+    "title": "Gün Birinden İtibaren Özel Web Siteleri",
+    "subtitle": "Aramayın, işte buradayız. Jozzycodes, hedeflerinize uygun, marka öncelikli özel web siteleri geliştirir.",
+    "ctaGetStarted": "Şimdi Başlayın",
+    "ctaViewPricing": "Fiyatları Görüntüle",
+    "wantToGiveShot": "Bize bir şans vermek ister misiniz?"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "loopTexts": [
+      "Dünyamıza Hoş Geldiniz",
+      "Özel Siteler, Doğru Yapıldı",
+      "Tasarım. Hız. Performans.",
+      "Projenize Bugün Başlayın"
+    ],
+    "service": {
+      "heading": "Özel Web Sitesi Geliştirme",
+      "description": "Her Türlü Web Sitesi Yapıyoruz",
+      "buttonText": "Fiyatları Görüntüle"
+    }
+  },
+  "reasonData": [
+    {
+      "title": "İlk günden özel",
+      "description": "Şablon kullanmıyoruz. Her site, benzersiz markanızı yansıtmak için baştan oluşturulur; hız, netlik ve tam özelleştirme sağlanır."
+    },
+    {
+      "title": "Zamanında Proje Teslimi",
+      "description": "Sizin ve bizim zamanımıza değer veriyoruz. Bu yüzden net zaman çizelgeleri belirler ve onlara sadık kalırız—projenizi gecikmeden söz verdiğimiz gibi teslim ederiz."
+    },
+    {
+      "title": "Bütçe Dostu Mükemmellik",
+      "description": "Şeffaf fiyatlarla yüksek kaliteli web siteleri. Bütçenizi zorlamadan ve gizli ücretler olmadan üstün tasarım ve performans sunarız."
+    },
+    {
+      "title": "Müşteri Odaklı. Hedefe Yönelik.",
+      "description": "Önce dinler, sonra inşa ederiz. Web sitelerimiz hedeflerinize göre özelleştirilmiştir ve işinizin büyümesini desteklemek için tasarlanmıştır."
+    },
+    {
+      "title": "Tasarım Odaklı & Performans Öncelikli",
+      "description": "Görünüm önemlidir—ve hız da öyle. Tüm cihazlarda ve platformlarda kusursuz çalışan güzel, duyarlı ve SEO hazır siteler yaratıyoruz."
+    },
+    {
+      "title": "Uçtan Uca Hizmet. Gerçek Destek.",
+      "description": "Domain’den lansmana ve sonrasına kadar her şeyi yönetiriz ve ihtiyaç duyduğunuzda hızlı destek için her zaman hazırız."
+    }
+  ],
+  
+  "googleReviews": {
+    "label": "Müşteri Memnuniyeti",
+    "title": "Mutlu Müşterilerimizin Görüşlerini Dinleyin",
+    "buttonText": "Bizi Değerlendirin"
+  },
+
+  "help": {
+    "label": "Size yardımcı olalım",
+    "title": "Bizimle İletişime Geçin",
+    "description": "Talebinizi analiz edip sizin için en iyi teklifi sunacağız",
+    "buttonText": "Bize Ulaşın"
+  },
+  
+  
+  "portfolioMarquee": {
+    "heading": "Projeler",
+    "buttonText": "Projeleri Görüntüle"
+  },
+
+  "footer": {
+    "social": "Fb./ Ig./ Tw./ Ln. / Whatsapp",
+    "contact": {
+      "heading": "Bizimle iletişime geçin?",
+      "talk": "Biriyle konuşmak ister misiniz?",
+      "callUs": "Bizi Arayın",
+      "message": "WhatsApp'tan bize mesaj gönderin?",
+      "whatsapp": "WhatsApp"
+    },
+    "quickLinks": {
+      "heading": "Hızlı Bağlantılar",
+      "about": "Hakkımızda",
+      "development": "Web Sitesi Geliştirme",
+      "services": "Hizmetlerimiz"
+    },
+    "quotes": {
+      "heading": "Teklif Talep Et",
+      "ecommerce": "E-Ticaret Fiyatları",
+      "business": "Kurumsal Web Sitesi Fiyatları"
+    },
+    "rights": "Tüm Hakları Saklıdır © jozzy-codes dijital"
+  },
+
+
+  "pricing": {
+  "plans": {
+    "business": {
+      "title": "Kurumsal Web Siteleri",
+      "description": "İş bilgilerinizi, hizmetlerinizi ve iletişim detaylarınızı sergileyin",
+      "features": [
+        "Özel duyarlı web sitesi (mobil ve masaüstü uyumlu)",
+        "Hızlı ve Güvenli Hosting",
+        "SEO Uyumlu Teslimat",
+        "Alan Adı Entegrasyonu ve Kurulumu",
+        "Özel Alan Adı E-postası",
+        "Müşteri talepleri için CTA",
+        "Sosyal medya sayfalarıyla entegrasyon",
+        "30 gün ücretsiz bakım ve destek"
+      ],
+      "buttonText": "Hemen Başlayın",
+      "renewalNote": "* Yıllık ₦70,000 olarak faturalandırılır (yenileme)",
+      "message": "Merhaba! Web sitenizi gördüm ve kurumsal web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak istiyorum!"
+    },
+    "ecommerce": {
+      "title": "E-ticaret ve Randevu Siteleri",
+      "description": "Kurumsal web sitesindeki her şeyin yanı sıra çevrimiçi sipariş, ödeme veya rezervasyon işlevselliği içerir",
+      "features": [
+        "Ürün veya hizmet listeleri ile çevrimiçi mağaza kurulumu",
+        "Hızlı ve Güvenli Hosting",
+        "SEO Uyumlu Teslimat",
+        "Alan Adı Entegrasyonu ve Kurulumu",
+        "Özel Alan Adı E-postası",
+        "Güvenli Ödeme Altyapısı",
+        "Sepet ve Ödeme Süreci",
+        "Randevu Rezervasyon Sistemleri",
+        "Sipariş yönetimi ve bildirimler",
+        "Müşteri Girişi ve Hesap Yönetimi",
+        "Yönetici Paneli",
+        "Müşteri talepleri için CTA",
+        "Sosyal medya sayfalarıyla entegrasyon",
+        "30 gün ücretsiz bakım ve destek"
+      ],
+      "buttonText": "Hemen Başlayın",
+      "renewalNote": "* Yıllık ₦100,000 olarak faturalandırılır (yenileme)",
+      "message": "Merhaba! Web sitenizi gördüm ve e-ticaret web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak istiyorum!"
+    },
+    "custom": {
+      "title": "Özel veya Gelişmiş Web Siteleri",
+      "description": "Standart bir web sitesinden fazlasına ihtiyaç duyan işletmeler için üyelik sistemleri, paneller ve özel entegrasyonlarla ihtiyaçlarınıza göre özel çözümler.",
+      "features": [],
+      "buttonText": "Bize Ulaşın",
+      "message": "Merhaba! Web sitenizi gördüm ve özel web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak istiyorum!"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+}

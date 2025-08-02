@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { DataContext } from './context/DataContext';
 import { ContextAuth } from './context/AuthContext';
 import { HelmetProvider } from 'react-helmet-async';
+import './i18n';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
