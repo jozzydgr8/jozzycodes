@@ -4,9 +4,8 @@ export type clickRenderProps = {
 
 }
 
-
-export type PricingPlan = {
-  pricingPlans:{
+export type plans ={
+    id:string;
     title: string;
   description: string;
   originalPrice?: string;
@@ -16,7 +15,10 @@ export type PricingPlan = {
   buttonText: string;
   renewalNote?: string;
   message: string;
-  }[]
+  }
+
+export type PricingPlan = {
+  pricingPlans:plans[]
 };
 
 export type reviewType = {

@@ -93,59 +93,123 @@
     },
     "rights": "Tüm Hakları Saklıdır © jozzy-codes dijital"
   },
-
-
+  
+  
   "pricing": {
-  "plans": {
     "business": {
-      "title": "Kurumsal Web Siteleri",
-      "description": "İş bilgilerinizi, hizmetlerinizi ve iletişim detaylarınızı sergileyin",
+      "title": "İşletme Web Siteleri",
+      "description": "İşletme bilgilerinizi, hizmetlerinizi ve iletişim detaylarınızı sergileyin",
+      "originalPrice": "₦350K",
+      "discount": "%%25",
+      "price": "₦220K",
+      "renewalNote": "* Yıllık ₦70,000 olarak faturalandırılır (yenileme)",
       "features": [
         "Özel duyarlı web sitesi (mobil ve masaüstü uyumlu)",
-        "Hızlı ve Güvenli Hosting",
-        "SEO Uyumlu Teslimat",
+        "Hızlı ve Güvenli Barındırma",
+        "SEO Optimizasyonu",
         "Alan Adı Entegrasyonu ve Kurulumu",
         "Özel Alan Adı E-postası",
         "Müşteri talepleri için CTA",
-        "Sosyal medya sayfalarıyla entegrasyon",
+        "Sosyal medya sayfaları entegrasyonu",
         "30 gün ücretsiz bakım ve destek"
       ],
-      "buttonText": "Hemen Başlayın",
-      "renewalNote": "* Yıllık ₦70,000 olarak faturalandırılır (yenileme)",
-      "message": "Merhaba! Web sitenizi gördüm ve kurumsal web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak istiyorum!"
+      "buttonText": "Başlayın",
+      "message": "Merhaba! Web sitenize rastladım ve İşletme web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak isterim!"
     },
     "ecommerce": {
-      "title": "E-ticaret ve Randevu Siteleri",
-      "description": "Kurumsal web sitesindeki her şeyin yanı sıra çevrimiçi sipariş, ödeme veya rezervasyon işlevselliği içerir",
+      "title": "E-ticaret & Rezervasyon Siteleri",
+      "description": "Bir işletme web sitesindeki her şeyi içerir artı online sipariş, ödeme veya rezervasyon işlevselliği",
+      "originalPrice": "₦500K",
+      "discount": "%%17",
+      "price": "₦450K",
+      "renewalNote": "* Yıllık ₦100,000 olarak faturalandırılır (yenileme)",
       "features": [
-        "Ürün veya hizmet listeleri ile çevrimiçi mağaza kurulumu",
-        "Hızlı ve Güvenli Hosting",
-        "SEO Uyumlu Teslimat",
+        "Ürün veya hizmet listeleri ile Online Mağaza Kurulumu",
+        "Hızlı ve Güvenli Barındırma",
+        "SEO Optimizasyonu",
         "Alan Adı Entegrasyonu ve Kurulumu",
         "Özel Alan Adı E-postası",
-        "Güvenli Ödeme Altyapısı",
+        "Güvenli Ödeme Ağ Geçidi",
         "Sepet ve Ödeme Süreci",
         "Randevu Rezervasyon Sistemleri",
         "Sipariş yönetimi ve bildirimler",
-        "Müşteri Girişi ve Hesap Yönetimi",
+        "Müşteri Girişi ve hesap yönetimi",
         "Yönetici Paneli",
         "Müşteri talepleri için CTA",
-        "Sosyal medya sayfalarıyla entegrasyon",
+        "Sosyal medya sayfaları entegrasyonu",
         "30 gün ücretsiz bakım ve destek"
       ],
-      "buttonText": "Hemen Başlayın",
-      "renewalNote": "* Yıllık ₦100,000 olarak faturalandırılır (yenileme)",
-      "message": "Merhaba! Web sitenizi gördüm ve e-ticaret web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak istiyorum!"
+      "buttonText": "Başlayın",
+      "message": "Merhaba! Web sitenize rastladım ve E-ticaret web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak isterim!"
     },
     "custom": {
       "title": "Özel veya Gelişmiş Web Siteleri",
-      "description": "Standart bir web sitesinden fazlasına ihtiyaç duyan işletmeler için üyelik sistemleri, paneller ve özel entegrasyonlarla ihtiyaçlarınıza göre özel çözümler.",
+      "description": "Standart bir web sitesinden daha fazlasına ihtiyacı olan işletmeler için, üyelik sistemleri, panolar ve ihtiyaçlarınıza göre özelleştirilmiş entegrasyonlar gibi özel çözümler.",
       "features": [],
-      "buttonText": "Bize Ulaşın",
-      "message": "Merhaba! Web sitenizi gördüm ve özel web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak istiyorum!"
+      "buttonText": "İletişime Geçin",
+      "message": "Merhaba! Web sitenize rastladım ve özel web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak isterim!"
+    },
+    "globalBusiness": {
+      "title": "İşletme Web Siteleri",
+      "description": "İşletme bilgilerinizi, hizmetlerinizi ve iletişim detaylarınızı sergileyin",
+      "originalPrice": "$400",
+      "discount": "%%30",
+      "price": "$300",
+      "renewalNote": "* Yıllık $100 olarak faturalandırılır (yenileme)",
+      "features": [
+        "Özel duyarlı web sitesi (mobil ve masaüstü uyumlu)",
+        "Hızlı ve Güvenli Barındırma",
+        "SEO Optimizasyonu",
+        "Alan Adı Entegrasyonu ve Kurulumu",
+        "Özel Alan Adı E-postası",
+        "Müşteri talepleri için CTA",
+        "Sosyal medya sayfaları entegrasyonu",
+        "30 gün ücretsiz bakım ve destek"
+      ],
+      "buttonText": "Başlayın",
+      "message": "Merhaba! Web sitenize rastladım ve İşletme web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak isterim!"
+    },
+    "globalEcommerce": {
+      "title": "E-ticaret & Rezervasyon Siteleri",
+      "description": "Bir işletme web sitesindeki her şeyi içerir artı online sipariş, ödeme veya rezervasyon işlevselliği",
+      "originalPrice": "$1000",
+      "discount": "%%20",
+      "price": "$750",
+      "renewalNote": "* Yıllık $170 olarak faturalandırılır (yenileme)",
+      "features": [
+        "Ürün veya hizmet listeleri ile Online Mağaza Kurulumu",
+        "Hızlı ve Güvenli Barındırma",
+        "SEO Optimizasyonu",
+        "Alan Adı Entegrasyonu ve Kurulumu",
+        "Özel Alan Adı E-postası",
+        "Güvenli Ödeme Ağ Geçidi",
+        "Sepet ve Ödeme Süreci",
+        "Randevu Rezervasyon Sistemleri",
+        "Sipariş yönetimi ve bildirimler",
+        "Müşteri Girişi ve hesap yönetimi",
+        "Yönetici Paneli",
+        "Müşteri talepleri için CTA",
+        "Sosyal medya sayfaları entegrasyonu",
+        "30 gün ücretsiz bakım ve destek"
+      ],
+      "buttonText": "Başlayın",
+      "message": "Merhaba! Web sitenize rastladım ve E-ticaret web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak isterim!"
+    },
+    "globalCustom": {
+      "title": "Özel veya Gelişmiş Web Siteleri",
+      "description": "Standart bir web sitesinden daha fazlasına ihtiyacı olan işletmeler için, üyelik sistemleri, panolar ve ihtiyaçlarınıza göre özelleştirilmiş entegrasyonlar gibi özel çözümler.",
+      "features": [],
+      "buttonText": "İletişime Geçin",
+      "message": "Merhaba! Web sitenize rastladım ve özel web geliştirme hizmetlerinizle ilgileniyorum. Daha fazla bilgi almak isterim!"
     }
+  },
+  "pricingPage": {
+    "title": "Fiyatlandırmamız",
+    "subtitle": "Özel Web Sitesi Geliştirme Fiyatları"
   }
-}
+
+
+
 
 
 

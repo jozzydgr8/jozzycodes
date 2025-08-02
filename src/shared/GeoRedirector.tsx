@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-const { t, i18n } = useTranslation();
 import axios from 'axios';
+
 
 type global = {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>
@@ -12,12 +12,14 @@ type geotype = {
   country: string
 }
 
-// Your language change function
+
+
+export const GeoRedirector = ({ setLoading }: global) => {
+  const { t, i18n } = useTranslation();
+  // Your language change function
 const changeLanguage = (lng: string) => {
   i18n.changeLanguage(lng);
 }
-
-export const GeoRedirector = ({ setLoading }: global) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -32,6 +34,7 @@ export const GeoRedirector = ({ setLoading }: global) => {
         setLoading(false);
         return;
       }
+      
 
       try {
         const geoRes = await axios.get(`https://ipinfo.io/json?token=${process.env.REACT_APP_token}`);
@@ -69,6 +72,7 @@ export const GeoRedirector = ({ setLoading }: global) => {
 
     fetchGeoData();
   }, []);
+  
 
   return null;
 }

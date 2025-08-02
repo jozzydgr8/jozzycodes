@@ -94,62 +94,120 @@
     "heading": "Projects",
     "buttonText": "View Projects"
   },
-  
+
   
   "pricing": {
-    "plans": {
-      "business": {
-        "title": "Business Websites",
-        "description": "Showcase your business info, services and contact details",
-        "features": [
-          "Custom responsive website (mobile & desktop friendly)",
-          "Fast and Secure Hosting",
-          "SEO-Optimized Delivery",
-          "Domain Integration and Setup",
-          "Custom Domain Email",
-          "CTA for customer inquiries",
-          "Integration with social media pages",
-          "Free maintenance & Support for 30 days"
-        ],
-        "buttonText": "Get Started",
-        "renewalNote": "* Billed as {price} yearly (renewal)",
-        "message": "Hey there! I came across your website and I'm interested in your Business web development services. I'd love to learn more!"
-      },
-      "ecommerce": {
-        "title": "E-commerce & Booking websites",
-        "description": "Includes everything in a business website plus online ordering, payments or booking functionality",
-        "features": [
-          "Online Store Setup with product or service listings",
-          "Fast and Secure Hosting",
-          "SEO-Optimized Delivery",
-          "Domain Integration and Setup",
-          "Custom Domain Email",
-          "Secure Payment Gateway",
-          "Cart and Checkout Process",
-          "Appointment Booking Systems",
-          "Order management and notifications",
-          "Customer Login and account management",
-          "Admin Dashboard",
-          "CTA for customer inquiries",
-          "Integration with social media pages",
-          "Free maintenance & Support for 30 days"
-        ],
-        "buttonText": "Get Started",
-        "renewalNote": "* Billed as {price} yearly (renewal)",
-        "message": "Hey there! I came across your website and I'm interested in your e-commerce web development services. I'd love to learn more!"
-      },
-      "custom": {
-        "title": "Custom or Advanced websites",
-        "description": "For businesses that need more than a standard website, custom solutions with features like membership systems, dashboards, and integrations tailored to your needs.",
-        "features": [],
-        "buttonText": "Contact Us",
-        "message": "Hey there! I came across your website and I'm interested in your custom website development services. I'd love to learn more!"
-      }
+    "business": {
+      "title": "Business Websites",
+      "description": "Showcase your business info, services and contact details",
+      "originalPrice": "₦350K",
+      "discount": "25%",
+      "price": "₦220K",
+      "renewalNote": "* Billed as ₦70,000 yearly (renewal)",
+      "features": [
+        "Custom responsive website (mobile & desktop friendly)",
+        "Fast and Secure Hosting",
+        "SEO-Optimized Delivery",
+        "Domain Integration and Setup",
+        "Custom Domain Email",
+        "CTA for customer inquiries",
+        "Integration with social media pages",
+        "Free maintenance & Support for 30 days"
+      ],
+      "buttonText": "Get Started",
+      "message": "Hey there! I came across your website and I'm interested in your Business web development services. I'd love to learn more!"
+    },
+    "ecommerce": {
+      "title": "E-commerce & Booking websites",
+      "description": "Includes everything in a business website plus online ordering, payments or booking functionality",
+      "originalPrice": "₦500K",
+      "discount": "17%",
+      "price": "₦450K",
+      "renewalNote": "* Billed as ₦100,000 yearly (renewal)",
+      "features": [
+        "Online Store Setup with product or service listings",
+        "Fast and Secure Hosting",
+        "SEO-Optimized Delivery",
+        "Domain Integration and Setup",
+        "Custom Domain Email",
+        "Secure Payment Gateway",
+        "Cart and Checkout Process",
+        "Appointment Booking Systems",
+        "Order management and notifications",
+        "Customer Login and account management",
+        "Admin Dashboard",
+        "CTA for customer inquiries",
+        "Integration with social media pages",
+        "Free maintenance & Support for 30 days"
+      ],
+      "buttonText": "Get Started",
+      "message": "Hey there! I came across your website and I'm interested in your e-commerce web development services. I'd love to learn more!"
+    },
+    "custom": {
+      "title": "Custom or Advanced websites",
+      "description": "For businesses that need more than a standard website, custom solutions with features like membership systems, dashboards, and integrations tailored to your needs.",
+      "features": [],
+      "buttonText": "Contact Us",
+      "message": "Hey there! I came across your website and I'm interested in your custom website development services. I'd love to learn more!"
+    },
+    "globalBusiness": {
+      "title": "Business Websites",
+      "description": "Showcase your business info, services and contact details",
+      "originalPrice": "$400",
+      "discount": "30%",
+      "price": "$300",
+      "renewalNote": "* Billed as $100 yearly (renewal)",
+      "features": [
+        "Custom responsive website (mobile & desktop friendly)",
+        "Fast and Secure Hosting",
+        "SEO-Optimized Delivery",
+        "Domain Integration and Setup",
+        "Custom Domain Email",
+        "CTA for customer inquiries",
+        "Integration with social media pages",
+        "Free maintenance & Support for 30 days"
+      ],
+      "buttonText": "Get Started",
+      "message": "Hey there! I came across your website and I'm interested in your Business web development services. I'd love to learn more!"
+    },
+    "globalEcommerce": {
+      "title": "E-commerce & Booking websites",
+      "description": "Includes everything in a business website plus online ordering, payments or booking functionality",
+      "originalPrice": "$1000",
+      "discount": "20%",
+      "price": "$750",
+      "renewalNote": "* Billed as $170 yearly (renewal)",
+      "features": [
+        "Online Store Setup with product or service listings",
+        "Fast and Secure Hosting",
+        "SEO-Optimized Delivery",
+        "Domain Integration and Setup",
+        "Custom Domain Email",
+        "Secure Payment Gateway",
+        "Cart and Checkout Process",
+        "Appointment Booking Systems",
+        "Order management and notifications",
+        "Customer Login and account management",
+        "Admin Dashboard",
+        "CTA for customer inquiries",
+        "Integration with social media pages",
+        "Free maintenance & Support for 30 days"
+      ],
+      "buttonText": "Get Started",
+      "message": "Hey there! I came across your website and I'm interested in your e-commerce web development services. I'd love to learn more!"
+    },
+    "globalCustom": {
+      "title": "Custom or Advanced websites",
+      "description": "For businesses that need more than a standard website, custom solutions with features like membership systems, dashboards, and integrations tailored to your needs.",
+      "features": [],
+      "buttonText": "Contact Us",
+      "message": "Hey there! I came across your website and I'm interested in your custom website development services. I'd love to learn more!"
     }
+  },
+  "pricingPage": {
+    "title": "Our Pricing",
+    "subtitle": "Custom Website Development Pricing"
   }
-
-
-
 
 
 
