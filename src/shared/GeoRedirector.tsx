@@ -15,7 +15,7 @@ type geotype = {
 
 
 export const GeoRedirector = ({ setLoading }: global) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   // Your language change function
 const changeLanguage = (lng: string) => {
   i18n.changeLanguage(lng);
@@ -71,6 +71,7 @@ const changeLanguage = (lng: string) => {
     }
 
     fetchGeoData();
+    // eslint-disable-next-line
   }, []);
   
 

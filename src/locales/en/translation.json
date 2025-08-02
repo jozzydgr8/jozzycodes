@@ -96,7 +96,25 @@
   },
 
   
+  "portfolio":{
+    "heading": "Portfolio",
+  "loopTexts": [
+    "Hall of websites built right",
+    "Custom coded client projects",
+    "Brand first digital experiences"
+  ],
+  "linkLabel": "Visit Project"
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "portfolio": "Portfolio",
+    "articles": "Articles",
+    "contact": "Contact Us"
+  },
   "pricing": {
+    "heading":"Pricing",
+    "subheading":"Custom Website Development Pricing",
     "business": {
       "title": "Business Websites",
       "description": "Showcase your business info, services and contact details",

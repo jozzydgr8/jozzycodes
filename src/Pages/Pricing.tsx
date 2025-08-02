@@ -5,12 +5,6 @@ import { getBasePath } from "../shared/getBasePath";
 import { useTranslation } from "react-i18next";
 import { plans, PricingPlan } from "../shared/Types";
 
-
-
-type PricingProps = {
-  pricingPlans: PricingPlan[];
-};
-
 export const Pricing = ({ pricingPlans }:PricingPlan) => {
   const location = useLocation();
   const basePath = getBasePath(location.pathname);
@@ -43,7 +37,7 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
   return (
     <>
       <Helmet>
-        <title>{t("pricing.pageTitle")}</title>
+        <title>pricing</title>
         <link rel="canonical" href={`https://jozzycodes.com${basePath}/pricing`} />
         <meta
           name="description"
