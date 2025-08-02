@@ -86,7 +86,7 @@ export const FeaturedBlog = ()=>{
                 <h2>More Content</h2>
                     <Marquee>
                         {
-                            blog && blog.filter(featured => featured.slug != slug).map((blog, index)=>(
+                            blog && blog.filter(featured => featured.slug !== slug).map((blog, index)=>(
                                 <div key={index} >
                                     <div className="blogcontainer">
                                         
