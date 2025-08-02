@@ -18,12 +18,18 @@ import graph from './assets/graph.png';
 import gear from './assets/gear.png';
 import service from './assets/customerservice.png';
 import puzzle from './assets/puzzle.png';
-import blossomDelight from './assets/portfolioblossomdelight.png'
+import blossomDelight from './assets/portfolioblossomdelight.png';
+import greencity from './assets/portfoliogreencity.png';
+import greenCitylogo from './assets/greeninverterlogo.jpg';
 export const Logos = [
     
     {
         image:ubaLogo,
         url:'https://www.ubagroup.com/'
+    },
+    {
+      image:greenCitylogo,
+      url:'https://greenenergyinstallation.com/'
     },
     {
         image:boltLogo,
@@ -83,7 +89,7 @@ export const portfolioData = [
       id:"blossomdelight",
       image:blossomDelight,
       link:'https://blossomdelightrestaurant.com/',
-      title:'Blossom Delight'
+      title:'Blossomdelightrestaurant'
     },
     {
         id:'blossomcakes',
@@ -91,6 +97,12 @@ export const portfolioData = [
         link:'https://theblossomcakes.com',
         title:'Theblossomcakes'
         
+    },
+    {
+      id:'greencityenergy',
+      image:greencity,
+      link:'https://greenenergyinstallation.com/',
+      title:"GreenCity"
     },{
         id:'kingagrominerals',
         image:kingsAgroMineralsPortfolio,

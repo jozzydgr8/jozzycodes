@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom"
+import { NavLink, useLocation, useParams } from "react-router-dom"
 import { UseDataContext } from "../context/UseDataContext";
 import Marquee from "react-fast-marquee";
 import { FlatButton } from "../shared/FlatButton";
@@ -47,10 +47,15 @@ export const FeaturedBlog = ()=>{
                             {sec.subject}
                         </b>
                         <ul>
-                            {sec.features.map((feat, index)=>(
-
-                                <li key={index}>{feat}</li>
-                            ))}
+                            {sec.features.map((feat, index)=>{
+                                    if(feat === ''){
+                                        return null
+                                    }
+                                    return(
+                                        <li key={index}>{feat}</li>
+                                    )
+                                
+                            })}
                         </ul>
                         <ul>
                             
@@ -81,7 +86,7 @@ export const FeaturedBlog = ()=>{
                 <h2>More Content</h2>
                     <Marquee>
                         {
-                            blog && blog.map((blog, index)=>(
+                            blog && blog.filter(featured => featured.slug != slug).map((blog, index)=>(
                                 <div key={index} >
                                     <div className="blogcontainer">
                                         

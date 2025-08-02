@@ -18,7 +18,7 @@ export const Layout = ({setLoading}:layout)=>{
         <SocialIcon/>
         <Navbar/>
         <Outlet/>
-        <a className='whatsappIcon' href='https://wa.link/ubp14t' target='_blank'>
+        <a className='whatsappIcon' href='https://wa.link/ubp14t' target='_blank' rel="noreferrer">
             <img  src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="whatsapp icon"/> chat us now
         </a>
        
