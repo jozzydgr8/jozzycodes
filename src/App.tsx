@@ -18,6 +18,9 @@ import { ProtectedRoutes } from './shared/ProtectedRoutes';
 import { Blog } from './Pages/Blogs';
 import { FeaturedBlog } from './Pages/FeaturedBlog';
 import { UpdateBlog } from './Pages/UpdateBlog';
+import {Lagos} from './Pages/Rank/Lagos'
+import { Nigeria } from './Pages/Rank/Nigeria';
+import { Affordable } from './Pages/Rank/Affordable';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -131,13 +134,19 @@ function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <>
     
+    
     <Route path='/' element={<Layout setLoading={setLoading} />}>
       <Route index element={<Home/>}/>
       <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} />
-      <Route path='portfolio' element={<Portfolio/>} />
+      <Route path='portfolio' element={<Portfolio/>}/>
+      <Route path='website-developer-in-lagos' element={<Lagos/>}/>
+      <Route path='website-developer-in-nigeria' element={<Nigeria/>}/>
+      <Route path='affordable-website-design-lagos' element={<Affordable/>}/>
+      
       <Route path='blog' element={<Outlet/>}>
         <Route index element={<Blog/>}/>
         <Route path=':slug' element={<FeaturedBlog/>}/>
+        
       </Route>
 
     </Route>
@@ -163,6 +172,8 @@ function App() {
     <Route path='session' element ={<GuestRoutes user={user}><Session/></GuestRoutes>}/>
 
     </Route>
+
+    
     </>
   ))
   return (
