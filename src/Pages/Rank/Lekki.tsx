@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import {LagosHeader} from '../component/LagosHeader'
+import {LekkiHeader} from '../component/LekkiHeader'
 import { Services } from "../component/Services";
 import { PortfolioMarquee } from "../component/PortfolioMarquee";
 import { Reason } from "../component/Reason";
@@ -10,7 +10,7 @@ import { Footer } from "../../shared/Footer";
 import { getBasePath } from "../../shared/getBasePath";
 import { useLocation } from "react-router-dom"
 
-export const Lagos = ()=>{
+export const Lekki = ()=>{
     const location = useLocation()
     const basePath = getBasePath(location.pathname)
     return(
@@ -18,7 +18,7 @@ export const Lagos = ()=>{
          <Helmet>
             <meta 
               name="description"
-              content="Hire a professional website developer in Lagos. We build fast, modern, and responsive websites tailored to your business goals — from e-commerce stores to corporate websites. Get a high-converting, custom-built website designed to grow your brand online."
+              content="Hire a professional website developer in Lekki. We build fast, modern, and responsive websites tailored to your business goals — from e-commerce stores to corporate websites. Get a high-converting, custom-built website designed to grow your brand online."
             />
         
             <link 
@@ -27,11 +27,11 @@ export const Lagos = ()=>{
             />
         
             <title>
-              Jozzycodes – Website Developer in Lagos | Professional Web Design, E-Commerce & Business Websites
+              Jozzycodes – Website Developer in Lekki | Professional Web Design, E-Commerce & Business Websites 
             </title>
         </Helmet>
         
-               <LagosHeader/>
+               <LekkiHeader/>
                <Services/>
                <PortfolioMarquee/>
                <Reason/>

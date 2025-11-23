@@ -21,6 +21,8 @@ import { UpdateBlog } from './Pages/UpdateBlog';
 import {Lagos} from './Pages/Rank/Lagos'
 import { Nigeria } from './Pages/Rank/Nigeria';
 import { Affordable } from './Pages/Rank/Affordable';
+import { Lekki } from './Pages/Rank/Lekki';
+import { Ikeja } from './Pages/Rank/Ikeja';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -142,6 +144,8 @@ function App() {
       <Route path='website-developer-in-lagos' element={<Lagos/>}/>
       <Route path='website-developer-in-nigeria' element={<Nigeria/>}/>
       <Route path='affordable-website-design-lagos' element={<Affordable/>}/>
+      <Route path='website-developer-in-lekki' element={<Lekki/>}/>
+      <Route path='website-developer-in-ikeja' element={<Ikeja/>}/>
       
       <Route path='blog' element={<Outlet/>}>
         <Route index element={<Blog/>}/>

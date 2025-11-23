@@ -4,20 +4,46 @@
 
 
 {
+  "ikejaHeader": {
+  "loopTexts": [
+    "Affordable Website Design in Ikeja",
+    "Budget-Friendly Web Development in Ikeja",
+    "Professional Website Developer in Ikeja",
+    "High-Quality Website Design at Accessible Prices"
+  ],
+  "title": "Affordable Website Design in Ikeja",
+  "subtitle": "Get a clean, modern, and fully responsive website built to strengthen your brand ideal for businesses, startups, and entrepreneurs in Ikeja.",
+  "wantToGiveShot": "We create high-performing, visually stunning websites designed to help your business stand out online. From corporate websites to portfolios and e-commerce stores, our development process delivers exceptional design, fast performance, and reliable functionality all tailored to fit your budget.",
+  "ctaGetStarted": "Get Started",
+  "ctaViewPricing": "View Pricing"
+},
+  "lekkiHeader": {
+  "loopTexts": [
+    "Affordable Website Design in Lekki",
+    "Budget-Friendly Web Development in Lekki",
+    "Professional Web Developer in Lekki",
+    "High-Quality Website Design at Accessible Prices"
+  ],
+  "title": "Affordable Website Design in Lekki",
+  "subtitle": "Get a clean, modern, and fully responsive website built to enhance your brand thoughtfully crafted for businesses, startups, and entrepreneurs in Lekki.",
+  "wantToGiveShot": "We deliver premium quality websites that are fast, visually impressive, and built to help your business stand out online. Whether you need a corporate website, portfolio, or e-commerce store, our development process ensures top-tier performance and design all at a price that works for your budget.",
+  "ctaGetStarted": "Get Started",
+  "ctaViewPricing": "View Pricing"
+},
   
   "affordableHeader": {
-    "loopTexts": [
-      "Affordable Website Design in Lagos",
-      "Budget-Friendly Web Design for Lagos Businesses",
-      "Cheap & Professional Website Designer in Lagos",
-      "High-Quality Website Design at Affordable Prices"
-    ],
-    "title": "Affordable Website Design in Lagos",
-    "subtitle": "Get a clean, modern, and fully responsive website at a price that fits your budget — perfect for startups, small businesses, and growing brands in Lagos.",
-    "wantToGiveShot": "I create affordable websites that still look professional, load fast, and help your business stand out online. Whether you need a business website, portfolio, or e-commerce store, you get premium quality design without the premium price tag. Get a website that works for your brand and your budget.",
-    "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View Pricing"
-  }
+  "loopTexts": [
+    "Affordable Website Design in Lagos",
+    "Budget-Friendly Web Design for Lagos Businesses",
+    "Professional & Affordable Web Designer in Lagos",
+    "High-Quality Website Design at Accessible Prices"
+  ],
+  "title": "Affordable Website Design in Lagos",
+  "subtitle": "Get a clean, modern, and fully responsive website crafted to elevate your brand, all at a price that works for startups, small businesses, and growing brands in Lagos.",
+  "wantToGiveShot": "We build professional, high-performing websites that look premium, load fast, and help your business stand out online. Whether you need a business website, portfolio, or e-commerce store, we deliver exceptional design and reliable functionality all while keeping your budget in mind.",
+  "ctaGetStarted": "Get Started",
+  "ctaViewPricing": "View Pricing"
+}
 ,
   
   "nigeriaHeader": {
