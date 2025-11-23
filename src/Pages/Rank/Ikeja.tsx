@@ -23,7 +23,7 @@ export const Ikeja = ()=>{
         
             <link 
               rel="canonical" 
-              href={`https://jozzycodes.com${basePath}`} 
+              href={`https://jozzycodes.com${basePath}/website-developer-in-ikeja`} 
             />
         
             <title>

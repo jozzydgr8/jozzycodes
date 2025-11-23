@@ -22,7 +22,7 @@ export const Affordable = ()=>{
 
             <link 
             rel="canonical" 
-            href={`https://jozzycodes.com${basePath}`} 
+            href={`https://jozzycodes.com${basePath}/affordable-website-design-lagos`} 
             />
 
             <title>
