@@ -32,6 +32,11 @@ export const Navbar = () => {
                 {t("nav.home")}
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to={`${basePath}/website-for-your-business`} className="nav-link">
+                {t("nav.yourBusiness")}
+              </NavLink>
+            </li>
 
             <li className="nav-item">
               <NavLink to={`${basePath}/pricing`} className="nav-link">

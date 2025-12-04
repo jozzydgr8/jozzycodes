@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { getBasePath } from "../shared/getBasePath";
 import { useTranslation } from "react-i18next";
 import { plans, PricingPlan } from "../shared/Types";
+import { handleRequest } from "../shared/HandleAction";
 
 export const Pricing = ({ pricingPlans }:PricingPlan) => {
   const location = useLocation();
@@ -29,10 +30,6 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
 
   const translatedPlans = pricingPlans.map(translatePlan);
 
-  const handleRequest = (message: string) => {
-    const whatsappURL = `https://wa.me/2348113828486?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, "_blank");
-  };
 
   return (
     <>
@@ -68,7 +65,7 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
                   {plan.price && <h3>{plan.price}</h3>}
 
                   {plan.features && plan.features.length > 0 && (
-                    <ul>
+                    <ul className="special-list">
                       {plan.features.map((feature, idx) => (
                         <li key={idx}>{feature}</li>
                       ))}

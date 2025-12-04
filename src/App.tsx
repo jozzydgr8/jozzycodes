@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Navigate, Outlet, Route, RouterProvider } from 'react-router-dom';
 import { Layout } from './Layout';
 import { Home } from './Pages/Home';
 import { Pricing } from './Pages/Pricing';
@@ -24,6 +24,7 @@ import { Affordable } from './Pages/Rank/Affordable';
 import { Lekki } from './Pages/Rank/Lekki';
 import { Ikeja } from './Pages/Rank/Ikeja';
 import { Starter } from './Pages/ForBusiness/Starter';
+import { Premium } from './Pages/ForBusiness/Premium';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -148,7 +149,9 @@ function App() {
       <Route path='website-developer-in-lekki' element={<Lekki/>}/>
       <Route path='website-developer-in-ikeja' element={<Ikeja/>}/>
       <Route path='website-for-your-business' element={<Outlet/>}>
+        <Route index element= {<Navigate to={'premium'}/>}/>
         <Route path='starter' element={<Starter/>}/>
+        <Route path='premium' element={<Premium/>}/>
       </Route>
       
       <Route path='blog' element={<Outlet/>}>
@@ -156,8 +159,11 @@ function App() {
         <Route path=':slug' element={<FeaturedBlog/>}/>
         
       </Route>
-
+        {/* Catch-all route to redirect unknown URLs to home */}
+       <Route path='*' element={<Navigate to='/' replace />} />
     </Route>
+
+
     <Route path='/gb' element={<Layout setLoading={setLoading}/>}>
     <Route index element={<Home/>}/>
     <Route path='pricing' element={ <Pricing pricingPlans={globalPricingPlans}/>}/>
@@ -165,6 +171,11 @@ function App() {
     <Route path='blog' element={<Outlet/>}>
         <Route index element={<Blog/>}/>
         <Route path=':slug' element={<FeaturedBlog/>}/>
+    </Route>
+    <Route path='website-for-your-business' element={<Outlet/>}>
+        <Route index element= {<Navigate to={'premium'}/>}/>
+        <Route path='starter' element={<Starter/>}/>
+        <Route path='premium' element={<Premium/>}/>
     </Route>
 
     </Route>
@@ -178,7 +189,8 @@ function App() {
     </Route>
 
     <Route path='session' element ={<GuestRoutes user={user}><Session/></GuestRoutes>}/>
-
+      {/* Catch-all route to redirect unknown URLs to home */}
+      <Route path='*' element={<Navigate to='/' replace />} />
     </Route>
 
     

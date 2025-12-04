@@ -6,11 +6,11 @@ import { handleRequest } from "../../shared/HandleAction"
 
 const other = [
     {
-        title:"Premium",
-        recommend:true,
-        description:'Perfect for brands that want enhanced functionality and customer interaction',
+        title:"starter",
+        recommend:false,
+        description:'This is Best for businesses, startups, personal brands or anyone getting online for the first time.',
         CTA:'Read More',
-        link:'/website-for-your-business/premium'
+        link:'/website-for-your-business/starter'
     },
     {
         title:'enteprise',
@@ -20,7 +20,7 @@ const other = [
         link:''
     }
 ]
-export const Starter = ()=>{
+export const Premium = ()=>{
     return(
         <section className="linearbackground">
             <div className="container-fluid">
@@ -28,16 +28,16 @@ export const Starter = ()=>{
                 <h4 >Get a website that gives your business credibility, visibility, and customer trust</h4>
              
                 <div>
-                    <FlatButton title="Get Started - ₦220,000" onClick={()=>handleRequest('Good day, I’m interested in getting the Starter Pack for my business.')}/>
+                    <FlatButton title="Get Started - ₦340,000" onClick={()=>handleRequest('Good day, I’m interested in getting the Premium Pack for my business.')}/>
                 </div>
                 <br/>
-                <h2>Starter Package</h2>
-                <p>This is Best for businesses, startups, personal brands or anyone getting online for the first time.</p>
+                <h2>Premium Package - Recommended</h2>
+                <p>Perfect for brands that want enhanced functionality and customer interaction</p>
                 <h4>What's Included:</h4>
                 <ul className="special-list" >
                     <li>
-                        <b style={{textTransform:"capitalize"}}>3 high performance static landing pages</b>
-                        <br/>one main landing page plus two additional SEO-focused pages. These extra pages help target more keywords and improve your overall search visibility.
+                        <b>5-7 high performance static landing pages</b>
+                        <br/>multple landing pages plus additional SEO-focused pages. These extra pages help target more keywords and improve your overall search visibility.
                     </li>
                     <li>
                         <b>Domain and hosting setup</b>
@@ -66,8 +66,18 @@ export const Starter = ()=>{
                         <br/>
                         Your project will be showcased in our portfolio on the JozzyCodes website and highlighted on our social media channels. We’ll also share any content you create, giving your brand added exposure and endorsement.
                     </li>
+                    <li> 
+                        <b>booking functionality or direct purchase (simple, straight to order)</b>
+                        <br/>
+                        We will set up a booking and direct purchase system, allowing your users to quickly reserve services or order products.
+                    </li>
+                    <li>
+                        <b>Listed on relevant external business directories for visibility</b>
+                        <br/>
+                        We will list your business on relevant external directories to increase visibility and reach more customers
+                    </li>
                 </ul>
-                <FlatButton title="Get Started - ₦220,000" onClick={()=>handleRequest('Good day, I’m interested in getting the Starter Pack for my business.')}/>
+                <FlatButton title="Get Started - ₦340,000" onClick={()=>handleRequest('Good day, I’m interested in getting the Premium Pack for my business.')}/>
                 <br/>
                 <h2>Other Packages</h2>
                 
@@ -85,9 +95,8 @@ export const Starter = ()=>{
                                     </div>
                                     <p>{item.description}</p>
                                     {
-                                        item.title =='enteprise'?<FlatButton title="Get Started"  onClick={()=>handleRequest('Good day, I would like to discuss creating a custom solution tailored to our needs.')}/>:<NavLink to={`${item.link}`}><FlatButton title='View now' /></NavLink>
+                                        item.title =='enteprise'?<FlatButton title="Get Started" onClick={()=>handleRequest('Good day, I would like to discuss creating a custom solution tailored to our needs.')}/>:<NavLink to={`${item.link}`}><FlatButton title='View now' /></NavLink>
                                     }
-                                    
                                 </div>
                             </div>
                         ))

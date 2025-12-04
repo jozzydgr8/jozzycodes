@@ -18,6 +18,9 @@
 }
 
 /* Typography */
+b{
+  text-transform: capitalize;
+}
 body {
     background: var(--background-color);
     color: var(--text-color);
@@ -254,16 +257,16 @@ footer small{
     color: var(--background-color);
 }
 
-.pricing-grid ul {
+ .special-list {
     list-style: none;
     padding: 0;
 }
 
-.pricing-grid ul li {
+ .special-list li {
     padding: 5px;
 }
 
-.pricing-grid ul li::before {
+ .special-list li::before {
     content: "✔";
     margin-right: 8px;
     color: var(--icon-color);
