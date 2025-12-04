@@ -68,43 +68,49 @@ export const Logos = [
 
 export const portfolioData = [
   {
-        id:'arkcity',
-        image:arkcityImage,
-        link:'https://arkcitylp.com',
-        title:'Arkcity'
+    id:'arkcity',
+    image:arkcityImage,
+    link:'https://arkcitylp.com',
+    title:'Arkcity',
+    description: 'A modern LPG distribution platform showcasing refilling services and customer support.'
+  },
+  {
+    id:'tayclean',
+    image:taycleanPortfolio,
+    link:'https://taycleaningsservices.com',
+    title:'Taycleaningservices',
+    description: 'A professional cleaning-service site highlighting services, booking, and pricing.'
+  },
+  {
+    id:"blossomdelight",
+    image:blossomDelight,
+    link:'https://blossomdelightrestaurant.com/',
+    title:'Blossomdelightrestaurant',
+    description: 'A vibrant restaurant website displaying menus, dishes,and more.'
+  },
+  {
+    id:'blossomcakes',
+    image:blossomcakePortfolio,
+    link:'https://theblossomcakes.com',
+    title:'Theblossomcakes',
+    description: 'A bakery website featuring custom cakes, galleries, and online ordering.'
+  },
+  {
+    id:'greencityenergy',
+    image:greencity,
+    link:'https://greenenergyinstallation.com/',
+    title:"GreenCity",
+    description: 'A solar-energy inverter site showcasing solar solutions, installations, and sustainability services.'
+  },
+  {
+    id:'kingagrominerals',
+    image:kingsAgroMineralsPortfolio,
+    link:'https://kingsagrominerals.com',
+    title:'Kingsagrominerals',
+    description: 'A corporate website presenting agricultural products, services, and company information.'
+  },
+];
 
-    },
-    {
-        id:'tayclean',
-        image:taycleanPortfolio,
-        link:'https://taycleaningsservices.com',
-        title:'Taycleaningservices'
-    },
-    {
-      id:"blossomdelight",
-      image:blossomDelight,
-      link:'https://blossomdelightrestaurant.com/',
-      title:'Blossomdelightrestaurant'
-    },
-    {
-        id:'blossomcakes',
-        image:blossomcakePortfolio,
-        link:'https://theblossomcakes.com',
-        title:'Theblossomcakes'
-        
-    },
-    {
-      id:'greencityenergy',
-      image:greencity,
-      link:'https://greenenergyinstallation.com/',
-      title:"GreenCity"
-    },{
-        id:'kingagrominerals',
-        image:kingsAgroMineralsPortfolio,
-        link:'https://kingsagrominerals.com',
-        title:'Kingsagrominerals'
-    },
-]
 
 
 
