@@ -25,6 +25,7 @@ import { Lekki } from './Pages/Rank/Lekki';
 import { Ikeja } from './Pages/Rank/Ikeja';
 import { Starter } from './Pages/ForBusiness/Starter';
 import { Premium } from './Pages/ForBusiness/Premium';
+import { NearMe } from './Pages/Rank/NearMe';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -148,6 +149,7 @@ function App() {
       <Route path='affordable-website-design-lagos' element={<Affordable/>}/>
       <Route path='website-developer-in-lekki' element={<Lekki/>}/>
       <Route path='website-developer-in-ikeja' element={<Ikeja/>}/>
+      <Route path='website-developer-near-me' element={<NearMe/>}/>
       <Route path='website-for-your-business' element={<Outlet/>}>
         <Route index element= {<Navigate to={'premium'}/>}/>
         <Route path='starter' element={<Starter/>}/>

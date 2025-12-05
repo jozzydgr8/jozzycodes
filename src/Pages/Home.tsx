@@ -20,7 +20,7 @@ export const Home = ()=>{
             <meta name="description"
             content="We build responsive, brand-first websites tailored to your goals. Built from scratch to stand out, perform, and grow with your business."/>
             <link rel="canonical" href={`https://jozzycodes.com${basePath}`}/>
-            <title>Jozzycodes – Website Services | E-Commerce & Business Websites | Ongoing Discount | Claim Deal</title>
+            <title>Website Developer in Lagos | Website Designer & Web Solutions - Jozzycodes</title>
         </Helmet>
         <Header/>
         <Services />

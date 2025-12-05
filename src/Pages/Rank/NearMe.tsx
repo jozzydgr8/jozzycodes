@@ -7,29 +7,30 @@ import { Reason } from "../component/Reason";
 import { GoogleReviews } from "../component/GoogleReviews";
 import { Logo } from "../component/Logo";
 import { Help } from "../component/Help";
-import { Footer } from "../../shared/Footer";
-import { AffordableHeader } from "../component/AffordableHeader";
-export const Affordable = ()=>{
+import { Footer} from "../../shared/Footer";
+import { NearMeHeader } from "../component/NearMeHeader";
+export const NearMe = ()=>{
     const location = useLocation()
-        const basePath = getBasePath(location.pathname)
+    const basePath = getBasePath(location.pathname)
     return(
         <>
         <Helmet>
             <meta 
-            name="description"
-            content="Get affordable website design in Lagos for your business. Professional, modern, and responsive websites at budget-friendly prices — perfect for startups, SMEs, and entrepreneurs looking for quality web design without high costs."
+                name="description"
+                content="Hire a professional website developer near you. We create modern, responsive, and high-converting websites for local businesses — including e-commerce stores, corporate sites, and custom web solutions designed to grow your brand online."
             />
 
             <link 
-            rel="canonical" 
-            href={`https://jozzycodes.com${basePath}/affordable-website-design-lagos`} 
+                rel="canonical" 
+                href={`https://jozzycodes.com${basePath}/website-developer-near-me`} 
             />
 
             <title>
-            Website Developer in Lagos | Affordable & Professional web Design | jozzycodes
+                Jozzycodes – Website Developer Near You | Professional Web Design & Business Websites
             </title>
         </Helmet>
-            <AffordableHeader/>
+
+            <NearMeHeader/>
             <Services/>
             <PortfolioMarquee/>
             <Reason/>
@@ -37,7 +38,8 @@ export const Affordable = ()=>{
             <Logo/>
             <Help/>
             <Footer/>
-
+           
         </>
+        
     )
 }

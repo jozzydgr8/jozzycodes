@@ -27,7 +27,7 @@ export const Ikeja = ()=>{
             />
         
             <title>
-              Jozzycodes – Website Developer in Ikeja | Professional Web Design, E-Commerce & Business Websites 
+              Jozzycodes – Website Developer in Ikeja, Lagos | Web Design & Business Websites 
             </title>
         </Helmet>
         

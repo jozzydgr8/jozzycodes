@@ -3,6 +3,9 @@ import { FlatButton } from "../../shared/FlatButton"
 import { NavLink } from "react-router-dom"
 import recommended from '../../assets/recommended.png'
 import { handleRequest } from "../../shared/HandleAction"
+import { Helmet } from "react-helmet-async"
+import { getBasePath } from "../../shared/getBasePath"
+import { useLocation } from "react-router-dom"
 
 const other = [
     {
@@ -21,11 +24,20 @@ const other = [
     }
 ]
 export const Premium = ()=>{
+    const location = useLocation();
+    const basePath = getBasePath(location.pathname);
     return(
+    <>
+    <Helmet>
+        <meta name="description"
+            content="Premium, Custom-built business website desgined for visibility, speed and conversions, Perfect for brands that want enhanced functionality and customer interaction"/>
+            <link rel="canonical" href={`https://jozzycodes.com${basePath}/website-for-your-business/premium`}/>
+            <title>Premium Website for Your business | Custom Web Design Package - Jozzycodes</title>
+    </Helmet>
         <section className="linearbackground">
             <div className="container-fluid">
                 <h1>Website For Your Business</h1>
-                <h4 >Get a website that gives your business credibility, visibility, and customer trust</h4>
+                <h4 >Premium-recommended</h4>
              
                 <div>
                     <FlatButton title="Get Started - ₦340,000" onClick={()=>handleRequest('Good day, I’m interested in getting the Premium Pack for my business.')}/>
@@ -105,5 +117,6 @@ export const Premium = ()=>{
             </div>
 
         </section>
+    </>
     )
 }

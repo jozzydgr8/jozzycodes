@@ -68,48 +68,49 @@ export const Logos = [
 
 export const portfolioData = [
   {
-    id:'arkcity',
-    image:arkcityImage,
-    link:'https://arkcitylp.com',
-    title:'Arkcity',
-    description: 'A modern LPG distribution platform showcasing refilling services and customer support.'
+    id: 'arkcity',
+    image: arkcityImage,
+    link: 'https://arkcitylp.com',
+    title: 'Arkcity',
+    description: 'A purpose-built LPG distribution website featuring smooth refill requests, helpful customer support options, and a modern interface designed for clarity and efficiency.'
   },
   {
-    id:'tayclean',
-    image:taycleanPortfolio,
-    link:'https://taycleaningsservices.com',
-    title:'Taycleaningservices',
-    description: 'A professional cleaning-service site highlighting services, booking, and pricing.'
+    id: 'tayclean',
+    image: taycleanPortfolio,
+    link: 'https://taycleaningsservices.com',
+    title: 'Taycleaningservices',
+    description: 'A streamlined cleaning-service website offering clear service listings, easy booking options, and a clean, professional user experience.'
   },
   {
-    id:"blossomdelight",
-    image:blossomDelight,
-    link:'https://blossomdelightrestaurant.com/',
-    title:'Blossomdelightrestaurant',
-    description: 'A vibrant restaurant website displaying menus, dishes,and more.'
+    id: 'blossomdelight',
+    image: blossomDelight,
+    link: 'https://blossomdelightrestaurant.com/',
+    title: 'Blossomdelightrestaurant',
+    description: 'A vibrant restaurant website featuring detailed dish displays, and an inviting interface that enhances user experience online.'
   },
   {
-    id:'blossomcakes',
-    image:blossomcakePortfolio,
-    link:'https://theblossomcakes.com',
-    title:'Theblossomcakes',
-    description: 'A bakery website featuring custom cakes, galleries, and online ordering.'
+    id: 'blossomcakes',
+    image: blossomcakePortfolio,
+    link: 'https://theblossomcakes.com',
+    title: 'Theblossomcakes',
+    description: 'A custom bakery website showcasing personalized Custom cakes & rich visual galleries.'
   },
   {
-    id:'greencityenergy',
-    image:greencity,
-    link:'https://greenenergyinstallation.com/',
-    title:"GreenCity",
-    description: 'A solar-energy inverter site showcasing solar solutions, installations, and sustainability services.'
+    id: 'greencityenergy',
+    image: greencity,
+    link: 'https://greenenergyinstallation.com/',
+    title: 'GreenCity',
+    description: 'A solar-energy solutions website presenting inverter options, installation services, and sustainability-focused offerings through a clean, modern layout.'
   },
   {
-    id:'kingagrominerals',
-    image:kingsAgroMineralsPortfolio,
-    link:'https://kingsagrominerals.com',
-    title:'Kingsagrominerals',
-    description: 'A corporate website presenting agricultural products, services, and company information.'
+    id: 'kingagrominerals',
+    image: kingsAgroMineralsPortfolio,
+    link: 'https://kingsagrominerals.com',
+    title: 'Kingsagrominerals',
+    description: 'An agromineral distributor website highlighting service offerings, and company insights with a clear and professional presentation.'
   },
 ];
+
 
 
 

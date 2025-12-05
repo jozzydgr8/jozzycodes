@@ -26,7 +26,7 @@ export const Nigeria = ()=>{
             />
 
             <title>
-            Jozzycodes – Website Developer in Nigeria | Professional Web Design, E-Commerce & Business Websites
+            Jozzycodes – Website Developer in Nigeria | Professional Web Design & Business Websites
             </title>
         </Helmet>
             <NigeriaHeader/>

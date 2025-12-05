@@ -24,11 +24,11 @@ export const Portfolio = () => {
     return (
          <>
          <Helmet>
-            <title>Jozzy Codes Portfolio | Custom Websites Developed by Jozzy Codes</title>
+            <title>jozzycodes Portfolio | Professional Website Designs & Projects</title>
             <link rel='canonical' href={`https://jozzycodes.com${basePath}/portfolio`}/>
             <meta
                 name="description"
-                content="A showcase of our projects and work. See how we build stunning, custom websites crafted to perform and represent each brand with precision."
+                content="A showcase of projects. See how we build stunning, custom websites crafted to perform and represent each brand with precision."
             />
         </Helmet>
         <section className="linearbackground">
@@ -60,7 +60,8 @@ export const Portfolio = () => {
                                         style={{
                                             display: "flex",
                                             alignItems: "center",
-                                            gap: '2px'
+                                            gap: '2px',
+                                            fontWeight:"bold"
                                         }}
                                         href={data.link}
                                         target="_blank"
@@ -69,6 +70,8 @@ export const Portfolio = () => {
                                         <ion-icon name="link-outline"></ion-icon>
                                         {data.title || t("portfolio.linkLabel")}
                                     </a>
+                                    <br/>
+                                    <p style={{textTransform:'lowercase'}}>{data.description}</p>
                                 </div>
                             </div>
                         ))

@@ -1,10 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { getBasePath } from "../shared/getBasePath";
 import { useTranslation } from "react-i18next";
 import { plans, PricingPlan } from "../shared/Types";
 import { handleRequest } from "../shared/HandleAction";
+import { FlatButton } from "../shared/FlatButton";
 
 export const Pricing = ({ pricingPlans }:PricingPlan) => {
   const location = useLocation();
@@ -34,7 +35,7 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
   return (
     <>
       <Helmet>
-        <title>pricing</title>
+        <title>Website Design Pricing | Web Design Packages - jozzycodes</title>
         <link rel="canonical" href={`https://jozzycodes.com${basePath}/pricing`} />
         <meta
           name="description"
@@ -47,7 +48,9 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
           <div style={{ textAlign: "center" }}>
             <h2>{t("pricing.heading")}</h2>
             <h4>{t("pricing.subheading")}</h4>
+            
           </div>
+          <p>Visit <NavLink to={'/website-for-your-business'} style={{textDecoration:'underline', fontWeight:'bold'}}>website for your business</NavLink> to know more about this packages</p>
 
           <div className="row">
             {translatedPlans.map((plan, index) => (
@@ -55,6 +58,7 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
                 <div className="pricing-grid">
                   <h4>{plan.title}</h4>
                   <p>{plan.description}</p>
+                  
 
                   {plan.originalPrice && plan.discount && (
                     <div className="discount">
@@ -81,7 +85,7 @@ export const Pricing = ({ pricingPlans }:PricingPlan) => {
                     </button>
                   </div>
                 </div>
-                {plan.renewalNote && <div>{plan.renewalNote}</div>}
+                {/* {plan.renewalNote && <div>{plan.renewalNote}</div>} */}
                 <br />
               </div>
             ))}

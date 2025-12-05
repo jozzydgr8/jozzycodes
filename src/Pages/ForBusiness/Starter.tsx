@@ -3,6 +3,9 @@ import { FlatButton } from "../../shared/FlatButton"
 import { NavLink } from "react-router-dom"
 import recommended from '../../assets/recommended.png'
 import { handleRequest } from "../../shared/HandleAction"
+import { Helmet } from "react-helmet-async"
+import { getBasePath } from "../../shared/getBasePath"
+import { useLocation } from "react-router-dom"
 
 const other = [
     {
@@ -21,7 +24,16 @@ const other = [
     }
 ]
 export const Starter = ()=>{
+    const location = useLocation();
+    const basePath = getBasePath(location.pathname);
     return(
+        <>
+        <Helmet>
+            <meta name="description"
+            content="Get your business online with a professional starter website package from jozzycodes. Clean, responsive and ready to grow with yout brand"/>
+            <link rel="canonical" href={`https://jozzycodes.com${basePath}/website-for-your-business/starter`}/>
+            <title>Starter Website Package for Your Business | Professional Business Website - Jozzycodes</title>
+        </Helmet>
         <section className="linearbackground">
             <div className="container-fluid">
                 <h1>Website For Your Business</h1>
@@ -96,5 +108,6 @@ export const Starter = ()=>{
             </div>
 
         </section>
+        </>
     )
 }

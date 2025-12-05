@@ -27,7 +27,7 @@ export const Lekki = ()=>{
             />
         
             <title>
-              Jozzycodes – Website Developer in Lekki | Professional Web Design, E-Commerce & Business Websites 
+              Jozzycodes – Website Developer in Lekki | Professional Web Design & Business Websites 
             </title>
         </Helmet>
         
