@@ -170,6 +170,7 @@ function App() {
     <Route index element={<Home/>}/>
     <Route path='pricing' element={ <Pricing pricingPlans={globalPricingPlans}/>}/>
     <Route path='portfolio' element={<Portfolio/>} />
+    <Route path='website-developer-near-me' element={<NearMe/>}/>
     <Route path='blog' element={<Outlet/>}>
         <Route index element={<Blog/>}/>
         <Route path=':slug' element={<FeaturedBlog/>}/>
