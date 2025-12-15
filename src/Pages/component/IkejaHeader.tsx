@@ -56,7 +56,7 @@ export const IkejaHeader = ()=>{
                             <FlatButton className='btn-lg' title={t('ikejaHeader.ctaGetStarted')} />
                             </a>
 
-                            <NavLink to={`${basePath}/pricing`} className='col-md-6'>
+                            <NavLink to={`${basePath}/website-for-your-business`} className='col-md-6'>
                             <FlatButton title={t('ikejaHeader.ctaViewPricing')} className='btnoutline btn-lg' />
 
                             </NavLink>

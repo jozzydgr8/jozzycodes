@@ -56,7 +56,7 @@ export const NigeriaHeader = ()=>{
                             <FlatButton className='btn-lg' title={t('nigeriaHeader.ctaGetStarted')} />
                             </a>
 
-                            <NavLink to={`${basePath}/pricing`} className='col-md-6'>
+                            <NavLink to={`${basePath}/website-for-your-business`} className='col-md-6'>
                             <FlatButton title={t('nigeriaHeader.ctaViewPricing')} className='btnoutline btn-lg' />
 
                             </NavLink>

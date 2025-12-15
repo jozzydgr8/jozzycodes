@@ -8,7 +8,7 @@ import { GoogleReviews } from "../component/GoogleReviews";
 import { Logo } from "../component/Logo";
 import { Help } from "../component/Help";
 import { Footer } from "../../shared/Footer";
-import { AffordableHeader } from "../component/AffordableHeader";
+import { AgencyHeader } from "../component/AgencyHeader";
 export const Affordable = ()=>{
     const location = useLocation()
         const basePath = getBasePath(location.pathname)
@@ -17,19 +17,19 @@ export const Affordable = ()=>{
         <Helmet>
             <meta 
             name="description"
-            content="Get affordable website design in Lagos for your business. Professional, modern, and responsive websites at budget-friendly prices — perfect for startups, SMEs, and entrepreneurs looking for quality web design without high costs."
+            content="We build responsive, brand-first websites tailored to your goals. Built from scratch to stand out, perform, and grow with your business."
             />
 
             <link 
             rel="canonical" 
-            href={`https://jozzycodes.com${basePath}/affordable-website-design-lagos`} 
+            href={`https://jozzycodes.com${basePath}/premium-website-design`} 
             />
 
             <title>
-            Website Developer in Lagos | Affordable & Professional web Design | jozzycodes
+            Premium Website Development Service for Brands
             </title>
         </Helmet>
-            <AffordableHeader/>
+            <AgencyHeader/>
             <Services/>
             <PortfolioMarquee/>
             <Reason/>

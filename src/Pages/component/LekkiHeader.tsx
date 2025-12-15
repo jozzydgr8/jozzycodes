@@ -57,7 +57,7 @@ export const LekkiHeader = ()=>{
                             <FlatButton className='btn-lg' title={t('lekkiHeader.ctaGetStarted')} />
                             </a>
 
-                            <NavLink to={`${basePath}/pricing`} className='col-md-6'>
+                            <NavLink to={`${basePath}/website-for-your-business`} className='col-md-6'>
                             <FlatButton title={t('lekkiHeader.ctaViewPricing')} className='btnoutline btn-lg' />
 
                             </NavLink>

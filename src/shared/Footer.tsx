@@ -10,7 +10,7 @@ export const Footer = () => {
   const basePath = getBasePath(location.pathname);
 
   return (
-    <section className="footer-section">
+    <footer className="footer-section">
       <div className="container-fluid">
         <footer>
           <div className="row">
@@ -61,6 +61,6 @@ export const Footer = () => {
           </small>
         </footer>
       </div>
-    </section>
+    </footer>
   );
 };

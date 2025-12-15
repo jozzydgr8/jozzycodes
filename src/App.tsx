@@ -20,7 +20,7 @@ import { FeaturedBlog } from './Pages/FeaturedBlog';
 import { UpdateBlog } from './Pages/UpdateBlog';
 import {Lagos} from './Pages/Rank/Lagos'
 import { Nigeria } from './Pages/Rank/Nigeria';
-import { Affordable } from './Pages/Rank/Affordable';
+import { Affordable } from './Pages/Rank/Agency';
 import { Lekki } from './Pages/Rank/Lekki';
 import { Ikeja } from './Pages/Rank/Ikeja';
 import { Starter } from './Pages/ForBusiness/Starter';
@@ -146,7 +146,7 @@ function App() {
       <Route path='portfolio' element={<Portfolio/>}/>
       <Route path='website-developer-in-lagos' element={<Lagos/>}/>
       <Route path='website-developer-in-nigeria' element={<Nigeria/>}/>
-      <Route path='affordable-website-design-lagos' element={<Affordable/>}/>
+      <Route path='premium-website-design' element={<Affordable/>}/>
       <Route path='website-developer-in-lekki' element={<Lekki/>}/>
       <Route path='website-developer-in-ikeja' element={<Ikeja/>}/>
       <Route path='website-developer-near-me' element={<NearMe/>}/>

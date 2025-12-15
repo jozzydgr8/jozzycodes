@@ -15,7 +15,7 @@
   "subtitle": "Get a clean, modern, and fully responsive website built to strengthen your brand ideal for businesses, startups, and entrepreneurs in Ikeja.",
   "wantToGiveShot": "We create high-performing, visually stunning websites designed to help your business stand out online. From corporate websites to portfolios and e-commerce stores, our development process delivers exceptional design, fast performance, and reliable functionality all tailored to fit your budget.",
   "ctaGetStarted": "Get Started",
-  "ctaViewPricing": "View Pricing"
+  "ctaViewPricing": "View process"
 },
   "lekkiHeader": {
   "loopTexts": [
@@ -28,22 +28,24 @@
   "subtitle": "Get a clean, modern, and fully responsive website built to enhance your brand thoughtfully crafted for businesses, startups, and entrepreneurs in Lekki.",
   "wantToGiveShot": "We deliver premium quality websites that are fast, visually impressive, and built to help your business stand out online. Whether you need a corporate website, portfolio, or e-commerce store, our development process ensures top-tier performance and design all at a price that works for your budget.",
   "ctaGetStarted": "Get Started",
-  "ctaViewPricing": "View Pricing"
+  "ctaViewPricing": "View Process"
 },
   
-  "affordableHeader": {
+  "agencyHeader": {
   "loopTexts": [
-    "Affordable Website Design in Lagos",
-    "Budget-Friendly Web Design for Lagos Businesses",
-    "Professional & Affordable Web Designer in Lagos",
-    "High-Quality Website Design at Accessible Prices"
+    "High-Performance Website Design",
+    "Websites Built for Scale and Reliability",
+    "Strategic Website Design and Development",
+    "Modern Web Platforms Focused on Performance"
   ],
-  "title": "Affordable Website Design in Lagos",
-  "subtitle": "Get a clean, modern, and fully responsive website crafted to elevate your brand, all at a price that works for startups, small businesses, and growing brands in Lagos.",
-  "wantToGiveShot": "We build professional, high-performing websites that look premium, load fast, and help your business stand out online. Whether you need a business website, portfolio, or e-commerce store, we deliver exceptional design and reliable functionality all while keeping your budget in mind.",
-  "ctaGetStarted": "Get Started",
-  "ctaViewPricing": "View Pricing"
+  "title": "High-Performance Website Design",
+  "subtitle": "We design and develop fast, scalable websites with a focus on clarity, performance, and long-term reliability.",
+  "wantToGiveShot": "We are a digital agency designing and building websites with a strong emphasis on performance, structure, and execution.",
+  "ctaGetStarted": "Start a Project",
+  "ctaViewPricing": "Our Process"
 }
+
+
 ,
   "nearMeHeader": {
   "loopTexts": [
@@ -56,7 +58,7 @@
   "subtitle": "Get a fast, responsive, and high-converting website built by an experienced local website developer focused on helping businesses grow in your area.",
   "wantToGiveShot": "Whether you’re a startup, small business, or established company, we create custom websites that look professional, load quickly, and help you attract more customers nearby. Our goal is to deliver a website that strengthens your local online presence and drives real business results in your community.",
   "ctaGetStarted": "Get Started",
-  "ctaViewPricing": "View Pricing"
+  "ctaViewPricing": "View process"
 }
 ,
   "nigeriaHeader": {
@@ -70,7 +72,7 @@
     "subtitle": "Get a fast, responsive, and high-converting website built by an experienced Nigerian website developer focused on helping businesses grow online.",
     "wantToGiveShot": "Whether you’re a startup, small business, or established company, We create custom websites that look professional, load quickly, and help you attract more customers across Nigeria. Our goal is to deliver a website that strengthens your online presence and drives real business results nationwide.",
     "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View Pricing"
+    "ctaViewPricing": "View process"
   }
 ,
   "lagosHeader": {
@@ -84,7 +86,7 @@
   "subtitle": "Get a fast, modern, and high-converting website crafted by an experienced Lagos-based developer that understands how to help businesses grow online.",
   "wantToGiveShot": "Whether you’re a startup, small business, or established company, we build custom websites that look exceptional, load quickly, and help you attract more customers. Our focus is on creating a website that strengthens your online presence and delivers measurable results for your business in Lagos and beyond.",
   "ctaGetStarted": "Get Started",
-  "ctaViewPricing": "View Pricing"
+  "ctaViewPricing": "View process"
 },
 
   "header": {
@@ -96,7 +98,7 @@
     "title": "Custom Websites Built Right From Day One.",
     "subtitle": "Search no More, Let's take it from here. Jozzycodes specializes in developing custom, brand-first websites tailored to your goals.",
     "ctaGetStarted": "Get Started Now",
-    "ctaViewPricing": "View Pricing",
+    "ctaViewPricing": "View process",
     "wantToGiveShot": "Want to give us a shot?"
   },
   
@@ -111,7 +113,7 @@
     "service": {
       "heading": "Custom Website Development",
       "description": "We build all kinds of Websites",
-      "buttonText": "View Pricing"
+      "buttonText": "View pricing"
     }
   },
   "reasonData": [
@@ -172,8 +174,8 @@
     },
     "quotes": {
       "heading": "Request a Quote",
-      "ecommerce": "Ecommerce Pricing",
-      "business": "Business Website Pricing"
+      "ecommerce": "Premium process",
+      "business": "Starter process"
     },
     "rights": "All Rights Reserved © jozzy-codes digital"
   },
@@ -195,15 +197,15 @@
   },
   "nav": {
     "home": "Home",
-    "pricing": "Pricing",
+    "pricing": "pricing",
     "portfolio": "Portfolio",
-    "articles": "Articles",
+    "articles": "blog",
     "contact": "Contact Us",
     "yourBusiness":"Business"
   },
   "pricing": {
-    "heading":"Pricing",
-    "subheading":"Custom Website Development Pricing",
+    "heading":"pricing",
+    "subheading":"Custom Website Development pricing",
     "business": {
       "title": "Starter",
       "description": "Best for businesses, startups, personal brands or anyone getting online for the first time.",
@@ -304,8 +306,8 @@
     }
   },
   "pricingPage": {
-    "title": "Our Pricing",
-    "subtitle": "Custom Website Development Pricing"
+    "title": "Our process",
+    "subtitle": "Custom Website Development process"
   }
 
 

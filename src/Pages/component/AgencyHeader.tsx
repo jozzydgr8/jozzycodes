@@ -7,7 +7,7 @@ import { LoopText } from './LoopText';
 import { useTranslation } from 'react-i18next';
 
 
-export const AffordableHeader = ()=>{
+export const AgencyHeader = ()=>{
 
     useEffect(()=>{
       const containers = document.querySelectorAll('.headerWrite');
@@ -21,7 +21,7 @@ export const AffordableHeader = ()=>{
      const { t, i18n } = useTranslation();
 
  
-  const loopTexts = t('affordableHeader.loopTexts', { returnObjects: true }) as string[];
+  const loopTexts = t('agencyHeader.loopTexts', { returnObjects: true }) as string[];
     
 
     return(
@@ -38,7 +38,7 @@ export const AffordableHeader = ()=>{
                         <LoopText loopTexts={loopTexts} as="span"/><br/>
                         
                             <h1 style={{textAlign:'center'}}>
-                            {t('affordableHeader.title')}
+                            {t('agencyHeader.title')}
                             </h1>
                 
                         <div style={{display:"flex", justifyContent:"center"}} >
@@ -46,19 +46,19 @@ export const AffordableHeader = ()=>{
                         </div>
                         <span className='custom-underline'></span> <br/>
                         <p style={{textAlign:'center'}}>
-                        {t('affordableHeader.subtitle')}
+                        {t('agencyHeader.subtitle')}
                         <br /> <br />
-                        {t('affordableHeader.wantToGiveShot')}
+                        {t('agencyHeader.wantToGiveShot')}
                         </p>
                         <div style={{display:"flex", justifyContent:"center"}} >
                             
                             <div className='row justify-content-center text-center'>
                             <a href='https://wa.link/ubp14t' target='_blank' rel='noreferrer' className='col-md-6' style={{marginBottom:'20px'}}>
-                            <FlatButton className='btn-lg' title={t('affordableHeader.ctaGetStarted')} />
+                            <FlatButton className='btn-lg' title={t('agencyHeader.ctaGetStarted')} />
                             </a>
 
-                            <NavLink to={`${basePath}/pricing`} className='col-md-6'>
-                            <FlatButton title={t('affordableHeader.ctaViewPricing')} className='btnoutline btn-lg' />
+                            <NavLink to={`${basePath}/website-for-your-business`} className='col-md-6'>
+                            <FlatButton title={t('agencyHeader.ctaViewPricing')} className='btnoutline btn-lg' />
 
                             </NavLink>
                             

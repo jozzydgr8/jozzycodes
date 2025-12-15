@@ -103,8 +103,9 @@ nav .container-fluid{
 nav{
   background: var(--white-gradient-blend) ;
   font-size: small;
+  text-transform: capitalize;
 }
- section > .container-fluid {
+ section > .container-fluid, footer > .container-fluid {
     padding: 6% 7%;
     
 }
