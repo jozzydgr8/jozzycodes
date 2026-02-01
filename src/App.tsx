@@ -140,7 +140,7 @@ function App() {
     <>
     
     
-    <Route path='/' element={<Layout setLoading={setLoading} />}>
+    <Route path='/jozzycodes' element={<Layout setLoading={setLoading} />}>
       <Route index element={<Home/>}/>
       <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} />
       <Route path='portfolio' element={<Portfolio/>}/>
