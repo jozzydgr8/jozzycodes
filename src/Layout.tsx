@@ -13,7 +13,7 @@ export const Layout = ({setLoading}:layout)=>{
     
     return(
         <>
-        {/* <GeoRedirector setLoading={setLoading} /> */}
+        <GeoRedirector setLoading={setLoading} />
         <ScrollToTop/>
         <SocialIcon/>
         <Navbar/>
