@@ -14,7 +14,7 @@ export const PortfolioMarquee = () => {
   return (
     <section className="linearbackground">
       <div className="container-fluid">
-        <h2>{t("portfolioMarquee.heading")}</h2>
+        {/* <h2>{t("portfolioMarquee.heading")}</h2> */}
 
         <div className="fade-marquee">
           <Marquee direction="right">
