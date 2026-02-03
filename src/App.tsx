@@ -142,7 +142,7 @@ function App() {
     
     <Route path='/' element={<Layout setLoading={setLoading} />}>
       <Route index element={<Home/>}/>
-      <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} />
+      {/* <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} /> */}
       {/* <Route path='portfolio' element={<Portfolio/>}/> */}
       <Route path='website-developer-in-lagos' element={<Lagos/>}/>
       <Route path='website-developer-in-nigeria' element={<Nigeria/>}/>

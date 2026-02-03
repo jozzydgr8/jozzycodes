@@ -38,11 +38,11 @@ export const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink to={`${basePath}/pricing`} className="nav-link">
                 {t("nav.pricing")}
               </NavLink>
-            </li>
+            </li> */}
 
             {/* <li className="nav-item">
               <NavLink to={`${basePath}/portfolio`} className="nav-link">
