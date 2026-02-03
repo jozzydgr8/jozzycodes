@@ -54,11 +54,11 @@ export const PortfolioMarquee = () => {
           </Marquee>
         </div>
 
-        <div>
+        {/* <div>
           <NavLink to={`${basepath}/portfolio`}>
             <FlatButton title={t("portfolioMarquee.buttonText")} icon={<RightOutlined />} />
           </NavLink>
-        </div>
+        </div> */}
       </div>
     </section>
   );
