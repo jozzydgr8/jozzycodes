@@ -26,14 +26,14 @@ export const Footer = () => {
                 {t('footer.contact.talk')}<br />
                 <a href="tel:08113828486">
                   {t('footer.contact.callUs')}
-                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                  <ion-icon name="phone-portrait-outline"></ion-icon> +234 811 3828 486
                 </a>
               </div>
               <div>
                 {t('footer.contact.message')}<br />
                 <a href="https://wa.link/ubp14t" target="_blank" rel="noreferrer">
                   {t('footer.contact.whatsapp')}
-                  <ion-icon name="logo-whatsapp"></ion-icon>
+                  <ion-icon name="logo-whatsapp"></ion-icon> +234 811 3828 486
                 </a>
               </div>
               <br />

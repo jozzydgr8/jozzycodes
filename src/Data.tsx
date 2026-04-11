@@ -1,15 +1,16 @@
-import ubaLogo from './assets/uba-logo.png';
-import africaMagicLogo from './assets/africa-magic-logo.png';
+import dewhynoLogo from './assets/dewhynoLogo.png';
+
 import blossomCakes from './assets/Blossom-cake-logo.png';
 import grandeurLogo from './assets/grandeur-tech-logo.png';
-import jumiaLogo from './assets/jumia-logo.png';
-import boltLogo from './assets/bolt-logo.png'
+import googleLogo from './assets/google.png';
+
 import jozzycodes from './assets/white-logo.png'
-import toyotaLogo from './assets/toyota-logo.png'
+
 import taycleanLogo from './assets/Tayclean_logo.png'
 import taycleanPortfolio from './assets/portfoliotayclean.png';
 import blossomcakePortfolio from './assets/portfolioblossomcakes.png';
-import kingsAgroMineralsPortfolio from './assets/portfoliokingsgrominerals.png';
+import dewhynoconstructionportfolio from './assets/portfoliodewhyno.png';
+// import kingsAgroMineralsPortfolio from './assets/portfoliokingsgrominerals.png';
 import arkcityImage from './assets/portfolioarkcity.png';
 import arkcityLogo from './assets/arkcitylogo.png';
 
@@ -19,24 +20,18 @@ import greenCitylogo from './assets/greeninverterlogo.jpg';
 export const Logos = [
     
     {
-        image:ubaLogo,
-        url:'https://www.ubagroup.com/'
+        image:dewhynoLogo,
+        url:'https://dewhynoconstruction.com/'
     },
     {
       image:greenCitylogo,
       url:'https://greenenergyinstallation.com/'
     },
+    
+    
     {
-        image:boltLogo,
-        url:'https://bolt.eu/en/'
-    },
-    {
-        image:toyotaLogo,
-        url:'https://www.toyota.com/'
-    },
-    {
-        image:jumiaLogo,
-        url:'https://jozzycodes.com/'
+        image:googleLogo,
+        url:'https://www.google.com/?zx=1775891596430'
     },
     {
         image:grandeurLogo,
@@ -50,10 +45,7 @@ export const Logos = [
         image:taycleanLogo,
         url:'https://taycleaningsservices.com/'
     },
-    {
-        image:africaMagicLogo,
-        url:'https://jozzycodes.com/'
-    },
+    
     {
         image:jozzycodes,
         url:'https://jozzycodes.com/'
@@ -73,6 +65,13 @@ export const portfolioData = [
     link: 'https://arkcitylp.com',
     title: 'Arkcity',
     description: 'A purpose-built LPG distribution website featuring smooth refill requests, helpful customer support options, and a modern interface designed for clarity and efficiency.'
+  },
+  {
+    id:'dewhyno',
+    image: dewhynoconstructionportfolio,
+    link:'https://dewhynoconstruction.com',
+    title:'Dewhyno construction',
+    description:'A modern construction website featuring project highlights, service offerings, and a structured design that builds trust and enhances user engagement.',
   },
   {
     id: 'tayclean',
@@ -102,13 +101,13 @@ export const portfolioData = [
     title: 'GreenCity',
     description: 'A solar-energy solutions website presenting inverter options, installation services, and sustainability-focused offerings through a clean, modern layout.'
   },
-  {
-    id: 'kingagrominerals',
-    image: kingsAgroMineralsPortfolio,
-    link: 'https://kingsagrominerals.com',
-    title: 'Kingsagrominerals',
-    description: 'An agromineral distributor website highlighting service offerings, and company insights with a clear and professional presentation.'
-  },
+  // {
+  //   id: 'kingagrominerals',
+  //   image: kingsAgroMineralsPortfolio,
+  //   link: 'https://kingsagrominerals.com',
+  //   title: 'Kingsagrominerals',
+  //   description: 'An agromineral distributor website highlighting service offerings, and company insights with a clear and professional presentation.'
+  // },
 ];
 
 

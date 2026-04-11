@@ -40,7 +40,7 @@ function App() {
     userDispatch({type:'getUser', payload:JSON.parse(user)})
   }
   userDispatch({type:'loading',payload:false})
-  },[])
+  },[userDispatch])
 
   //useeffect for blogs
   useEffect(()=>{
@@ -62,7 +62,7 @@ function App() {
     
     }
     fetchBlogs();
-  },[])
+  },[dataDispatch])
 
 
 
@@ -85,7 +85,7 @@ function App() {
     
     }
     fetchReviews();
-  },[])
+  },[dataDispatch])
   useEffect(()=>{
     const animation = ()=>{
       var leftAnimate = document.querySelectorAll('.animate-left');
@@ -143,7 +143,7 @@ function App() {
     <Route path='/' element={<Layout setLoading={setLoading} />}>
       <Route index element={<Home/>}/>
       {/* <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} /> */}
-      {/* <Route path='portfolio' element={<Portfolio/>}/> */}
+      <Route path='portfolio' element={<Portfolio/>}/>
       <Route path='website-developer-in-lagos' element={<Lagos/>}/>
       <Route path='website-developer-in-nigeria' element={<Nigeria/>}/>
       <Route path='premium-website-design' element={<Affordable/>}/>
