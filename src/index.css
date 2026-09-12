@@ -36,9 +36,17 @@ a {
 }
 h1{
   font-family: "sora";
-  font-weight: 900;
-  font-size: 60px;
+  
   color: var(--bold-color);
+   max-width: 1050px;
+    margin: 0 auto;
+
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    font-weight: 800;
+
+  
 }
 h2,h3,h4,h5{
   font-family: "epilogue";
@@ -106,14 +114,174 @@ nav{
   text-transform: capitalize;
 }
  section > .container-fluid, footer > .container-fluid {
-    padding: 6% 7%;
+    padding: 4% 7%;
     
 }
 
 /* Header Section */
-.linearbackground{
-  background: linear-gradient(to bottom, var(--white-gradient-blend), var(--background-color));
+.linearbackground {
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(48, 79, 196, 0.06),
+            transparent 42%
+        ),
+        linear-gradient(
+            to bottom,
+            var(--white-gradient-blend),
+            var(--background-color)
+        );
 
+    min-height: calc(100vh - 80px);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-content {
+    min-height: calc(100vh - 80px);
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+
+/* EYEBROW */
+
+.hero-eyebrow {
+
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: #1d316e;
+}
+
+
+
+/* CURVED LINE */
+
+.hero-line {
+    width: min(680px, 75vw);
+
+    margin: 5px auto 28px;
+
+    position: relative;
+}
+
+.hero-line img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    transform: rotate(-1deg);
+
+    animation: lineFloat 5s ease-in-out infinite;
+}
+
+
+/* SUBTITLE */
+
+.hero-subtitle {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.7;
+
+    color: #19316e;
+}
+
+
+/* SMALL QUESTION */
+
+.hero-question {
+    margin: 20px 0 24px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #52618a;
+}
+
+
+/* BUTTONS */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.hero-actions a {
+    text-decoration: none;
+}
+
+.hero-primary,
+.hero-secondary {
+    min-width: 155px;
+}
+
+
+/* SCROLL */
+
+.hero-scroll {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+
+    color: #7d8496;
+
+    opacity: 0.75;
+}
+
+.scroll-line {
+    width: 35px;
+    height: 1px;
+
+    background: currentColor;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes pulseDot {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+
+@keyframes lineFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(5px) rotate(0deg);
+    }
 }
 .invertlinearbackground{
   background: linear-gradient(to bottom, var(--background-color), var(--white-gradient-blend));
@@ -219,11 +387,11 @@ footer small{
     width: 30%;
 }
 
-.centerDiv {
+/* .centerDiv {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
+} */
 
 /* Logo Grid */
 
@@ -247,41 +415,254 @@ footer small{
     }
 }
 
-/* Pricing Section */
-.pricing-grid {
-    background: var(--faint-color);
-    padding: 5%;
-    border-radius: 20px;
+/* =========================================================
+   HELP / CTA SECTION
+   ========================================================= */
+
+.help-section {
+    position: relative;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(48, 79, 196, 0.07),
+            transparent 55%
+        ),
+        var(--background-color);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.help-content {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.help-label {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: var(--background-color);
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-bottom: 28px;
 }
 
- .special-list {
-    list-style: none;
-    padding: 0;
+
+.help-label small {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+
+    text-transform: uppercase;
+
+    color: #52618a;
 }
 
- .special-list li {
-    padding: 5px;
+
+.help-label-line {
+    width: 35px;
+
+    height: 1px;
+
+    background: rgba(82, 97, 138, 0.35);
 }
 
- .special-list li::before {
-    content: "✔";
-    margin-right: 8px;
-    color: var(--icon-color);
-    font-size: 1.1em;
-    font-weight: 300;
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.help-description {
+    max-width: 650px;
+
+    margin: 30px auto 0;
+
+    font-size: clamp(15px, 1.2vw, 18px);
+
+    line-height: 1.75;
+
+    color: #52618a;
 }
 
-.discount {
-    color: var(--faint-color);
-    border: solid 1px var(--faint-color);
-    width: 60%;
-    padding: 7px;
-    border-radius: 7px;
-    background: white;
+
+/* =========================================================
+   ACTION
+   ========================================================= */
+
+.help-action {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 42px;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.help-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    min-width: 190px;
+
+    padding: 15px 20px 15px 25px;
+
+    border-radius: 100px;
+
+    background: var(--bold-color);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.help-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.12);
+
+    color: white;
+}
+
+
+/* =========================================================
+   BUTTON ARROW
+   ========================================================= */
+
+.help-button-arrow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    font-size: 17px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+
+.help-button:hover .help-button-arrow {
+    transform: translate(3px, -3px);
+
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .help-section {
+        padding-top: 100px;
+
+        padding-bottom: 100px;
+    }
+
+
+    .help-label {
+        gap: 10px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .help-label small {
+        font-size: 9px;
+
+        letter-spacing: 0.16em;
+    }
+
+
+    .help-label-line {
+        width: 25px;
+    }
+
+
+    .help-title {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+
+    .help-description {
+        max-width: 90%;
+
+        margin-top: 24px;
+
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+
+    .help-action {
+        margin-top: 32px;
+    }
+
+
+    .help-button {
+        min-width: 180px;
+    }
+
 }
 
 
@@ -299,7 +680,7 @@ footer small{
   }
   
   .sectionAnimationUp{
-    scroll-behavior: smooth;
+  
     animation:fadeInUpBig;
     animation-duration: 1.2s;
   

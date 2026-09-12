@@ -1,78 +1,156 @@
 import { useEffect } from 'react';
-import curvedLine from '../../assets/curvedline.png'
-import { FlatButton } from '../../shared/FlatButton';
 import { NavLink, useLocation } from 'react-router-dom';
-import { getBasePath } from '../../shared/getBasePath';
-import { LoopText } from './LoopText';
 import { useTranslation } from 'react-i18next';
 
+import curvedLine from '../../assets/curvedline.png';
 
-export const Header = ()=>{
-    useEffect(()=>{
-      const containers = document.querySelectorAll('.headerWrite');
+import { FlatButton } from '../../shared/FlatButton';
+import { getBasePath } from '../../shared/getBasePath';
+import { LoopText } from './LoopText';
+
+
+export const Header = () => {
+
+    // --------------------------------------------------
+    // Effects
+    // --------------------------------------------------
+
+    useEffect(() => {
+        const containers = document.querySelectorAll('.headerWrite');
 
         containers.forEach((el) => {
-        el.classList.add('sectionAnimationUp');
+            el.classList.add('sectionAnimationUp');
         });
-    },[]);
+    }, []);
+
+
+    // --------------------------------------------------
+    // Routing
+    // --------------------------------------------------
+
     const location = useLocation();
     const basePath = getBasePath(location.pathname);
-     const { t, i18n } = useTranslation();
 
- 
-  const loopTexts = t('header.loopTexts', { returnObjects: true }) as string[];
-    
 
-    return(
-        <section className='linearbackground'>
+    // --------------------------------------------------
+    // Translation
+    // --------------------------------------------------
+
+    const { t, i18n } = useTranslation();
+
+    const loopTexts = t('header.loopTexts', {
+        returnObjects: true
+    }) as string[];
+
+
+    // --------------------------------------------------
+    // Render
+    // --------------------------------------------------
+
+    return (
+        <section className="linearbackground">
+
             <div className="container-fluid">
-    <div>
 
-    </div>
+                {/* Hero Content */}
 
-                <div className='headerWrite' style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center',fontSize:"medium"}}>
-                
-                    
-                    <div className="centerDiv">
-                        <LoopText loopTexts={loopTexts} as="span"/><br/>
-                        
-                            <h1 style={{textAlign:'center'}}>
-                            {t('header.title')}
-                            </h1>
-                
-                        <div style={{display:"flex", justifyContent:"center"}} >
-                            <img src={curvedLine} style={{width:'80%'}} alt='jozzy codes'/>
-                        </div>
-                        <span className='custom-underline'></span> <br/>
-                        <p style={{textAlign:'center'}}>
-                        {t('header.subtitle')}
-                        <br /> <br />
-                        {t('header.wantToGiveShot')}
-                        </p>
-                        <div style={{display:"flex", justifyContent:"center"}} >
-                            
-                            <div className='row justify-content-center text-center'>
-                            <a href='https://wa.link/ubp14t' target='_blank' rel='noreferrer' className='col-md-6' style={{marginBottom:'20px'}}>
-                            <FlatButton className='btn-lg' title={t('header.ctaGetStarted')} />
-                            </a>
+                <div className="headerWrite hero-content d-flex justify-content-center align-items-center flex-column">
 
-                            <NavLink to={`${basePath}/website-for-your-business`} className='col-md-6'>
-                            <FlatButton title={t('header.ctaViewPricing')} className='btnoutline btn-lg' />
+                    {/* Eyebrow */}
 
-                            </NavLink>
-                            
-                            
-                            </div>
-                            {/* <CountdownTimer/> */}
-                        </div>
-                        <br/> <br/> 
-                        </div>
-                       
+                    <div className="hero-eyebrow">
+
+                        <span className="eyebrow-dot"></span>
+
+                        <LoopText
+                            loopTexts={loopTexts}
+                            as="span"
+                        />
+
                     </div>
-                    
-                   
-              
+
+
+                    {/* Main Heading */}
+
+                    <h1 className="hero-title">
+                        {t('header.title')}
+                    </h1>
+
+
+                    {/* Decorative Curved Line */}
+
+                    <div className="hero-line">
+
+                        <img
+                            src={curvedLine}
+                            alt=""
+                        />
+
+                    </div>
+
+
+                    {/* Hero Description */}
+
+                    <p className="hero-subtitle">
+                        {t('header.subtitle')}
+                    </p>
+
+
+                    {/* Hero Question */}
+
+                    <p className="hero-question">
+                        {t('header.wantToGiveShot')}
+                    </p>
+
+
+                    {/* Call To Action Buttons */}
+
+                    <div className="hero-actions">
+
+                        {/* Primary CTA */}
+
+                        <a
+                            href="https://wa.link/ubp14t"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <FlatButton
+                                className="btn-lg hero-primary"
+                                title={t('header.ctaGetStarted')}
+                            />
+                        </a>
+
+
+                        {/* Secondary CTA */}
+
+                        <NavLink
+                            to={`${basePath}/portfolio`}
+                        >
+                            <FlatButton
+                                title={t('view Portfolio')}
+                                className="btnoutline btn-lg hero-secondary"
+                            />
+                        </NavLink>
+
+                    </div>
+
+
+                    {/* Scroll Indicator */}
+
+                    <div className="hero-scroll">
+
+                        <span>
+                            SCROLL TO EXPLORE
+                        </span>
+
+                        <span className="scroll-line"></span>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
-    )
-}
+    );
+};

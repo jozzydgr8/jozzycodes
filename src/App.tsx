@@ -1,9 +1,9 @@
 import { createBrowserRouter, createRoutesFromElements, Navigate, Outlet, Route, RouterProvider } from 'react-router-dom';
 import { Layout } from './Layout';
 import { Home } from './Pages/Home';
-import { Pricing } from './Pages/Pricing';
+
 import { useEffect, useState } from 'react';
-import { globalPricingPlans, pricingPlans } from './shared/PricingData';
+
 import { Loading } from './shared/Loading';
 import { Portfolio } from './Pages/Portfolio';
 import { Main } from './admin/Main';
@@ -18,14 +18,7 @@ import { ProtectedRoutes } from './shared/ProtectedRoutes';
 import { Blog } from './Pages/Blogs';
 import { FeaturedBlog } from './Pages/FeaturedBlog';
 import { UpdateBlog } from './Pages/UpdateBlog';
-import {Lagos} from './Pages/Rank/Lagos'
-import { Nigeria } from './Pages/Rank/Nigeria';
-import { Affordable } from './Pages/Rank/Agency';
-import { Lekki } from './Pages/Rank/Lekki';
-import { Ikeja } from './Pages/Rank/Ikeja';
-import { Starter } from './Pages/ForBusiness/Starter';
-import { Premium } from './Pages/ForBusiness/Premium';
-import { NearMe } from './Pages/Rank/NearMe';
+
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -144,17 +137,8 @@ function App() {
       <Route index element={<Home/>}/>
       {/* <Route path='pricing' element={<Pricing pricingPlans={pricingPlans}/>} /> */}
       <Route path='portfolio' element={<Portfolio/>}/>
-      <Route path='website-developer-in-lagos' element={<Lagos/>}/>
-      <Route path='website-developer-in-nigeria' element={<Nigeria/>}/>
-      <Route path='premium-website-design' element={<Affordable/>}/>
-      <Route path='website-developer-in-lekki' element={<Lekki/>}/>
-      <Route path='website-developer-in-ikeja' element={<Ikeja/>}/>
-      <Route path='website-developer-near-me' element={<NearMe/>}/>
-      <Route path='website-for-your-business' element={<Outlet/>}>
-        <Route index element= {<Navigate to={'premium'}/>}/>
-        <Route path='starter' element={<Starter/>}/>
-        <Route path='premium' element={<Premium/>}/>
-      </Route>
+      
+  
       
       <Route path='blog' element={<Outlet/>}>
         <Route index element={<Blog/>}/>
@@ -168,18 +152,14 @@ function App() {
 
     <Route path='/gb' element={<Layout setLoading={setLoading}/>}>
     <Route index element={<Home/>}/>
-    <Route path='pricing' element={ <Pricing pricingPlans={globalPricingPlans}/>}/>
+
     <Route path='portfolio' element={<Portfolio/>} />
-    <Route path='website-developer-near-me' element={<NearMe/>}/>
+  
     <Route path='blog' element={<Outlet/>}>
         <Route index element={<Blog/>}/>
         <Route path=':slug' element={<FeaturedBlog/>}/>
     </Route>
-    <Route path='website-for-your-business' element={<Outlet/>}>
-        <Route index element= {<Navigate to={'premium'}/>}/>
-        <Route path='starter' element={<Starter/>}/>
-        <Route path='premium' element={<Premium/>}/>
-    </Route>
+ 
 
     </Route>
 

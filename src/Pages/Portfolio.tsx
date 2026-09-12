@@ -33,14 +33,14 @@ export const Portfolio = () => {
         </Helmet>
         <section className="linearbackground">
             <div className="container-fluid">
-                <h1 style={{ fontSize: "30px", color: '#577BC1' }}>
+                <h1 style={{ fontSize: "30px", textAlign: "left", margin:'0',color: '#577BC1' }}>
                     {t("portfolio.heading")}
                 </h1>
 
                 <LoopText
                     loopTexts={loopTexts}
                     as="h1"
-                    style={{ fontSize: "30px", textAlign: "left" }}
+                    style={{ fontSize: "30px", textAlign: "left", margin:'0' }}
                 />
 
                 <br />

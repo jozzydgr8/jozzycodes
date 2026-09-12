@@ -35,7 +35,7 @@ export const LoopText = ({
         style={{
           textAlign: "center",
           fontWeight: "bold",
-          // marginTop: "2rem",
+         
           ...style,
         }}
       >

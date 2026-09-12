@@ -28,8 +28,9 @@ export const Home = ()=>{
         <PortfolioMarquee/>
         <Reason/>
         <GoogleReviews/>
+          <Help/>
         <Logo/>
-        <Help/>
+      
         <Footer/>
        
         </>
