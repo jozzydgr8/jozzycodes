@@ -19,7 +19,7 @@ export const Navbar = () => {
        
 
         <button
-          className={`jozzy-toggler ${isOpen ? "active" : ""}`}
+          className={`jozzy-toggler navbar-toggler ${isOpen ? "active" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
           type="button"
           data-bs-toggle="collapse"
