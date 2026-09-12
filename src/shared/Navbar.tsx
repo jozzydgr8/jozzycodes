@@ -14,7 +14,7 @@ export const Navbar = () => {
         <img className='navbar-brand' src={darkLogo} alt='logo' />
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler jozzy-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -32,17 +32,7 @@ export const Navbar = () => {
                 {t("nav.home")}
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to={`${basePath}/website-for-your-business`} className="nav-link">
-                {t("nav.yourBusiness")}
-              </NavLink>
-            </li>
-
-            {/* <li className="nav-item">
-              <NavLink to={`${basePath}/pricing`} className="nav-link">
-                {t("nav.pricing")}
-              </NavLink>
-            </li> */}
+          
 
             <li className="nav-item">
               <NavLink to={`${basePath}/portfolio`} className="nav-link">

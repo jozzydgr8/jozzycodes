@@ -118,6 +118,42 @@ nav{
     
 }
 
+
+
+.jozzy-toggler {
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border: 1px solid rgba(24, 36, 77, 0.15);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.jozzy-toggler:focus {
+    box-shadow: none;
+}
+
+
+.jozzy-toggler span {
+    display: block;
+
+    width: 17px;
+    height: 1.5px;
+
+    background: #18244d;
+
+    transition: transform 0.3s ease;
+}
+
 /* Header Section */
 .linearbackground {
     background:
@@ -371,7 +407,7 @@ nav{
 
 /* Footer Section */
 .footer-section {
-    background: #454047;
+    background: var(--text-color);
     color: white;
 }
 
@@ -387,33 +423,26 @@ footer small{
     width: 30%;
 }
 
-/* .centerDiv {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-} */
 
-/* Logo Grid */
 
 
 .logo-display {
-    margin-bottom: 15px;
-    margin-right: 20px;
+    margin: 20px 40px;
+    flex-shrink: 0;
     height: 150px;
-    width:150px;
+    width:180px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 @media (max-width:750px) {
-    .logo-grid {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    }
+  
     .logo-display {
-        height: 50px;
+        height: 100px;
     }
 }
+
 
 /* =========================================================
    HELP / CTA SECTION

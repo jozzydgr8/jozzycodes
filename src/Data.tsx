@@ -3,6 +3,10 @@ import dewhynoLogo from './assets/dewhynoLogo.png';
 import blossomCakes from './assets/Blossom-cake-logo.png';
 import grandeurLogo from './assets/grandeur-tech-logo.png';
 import googleLogo from './assets/google.png';
+import ynuxLogo from './assets/ynux.png';
+import magsresidence from './assets/magsresidence.png';
+import blossomdelight from './assets/blossomdelightlogo.png';
+import trinityLogo from './assets/trinityarms.png';
 
 import jozzycodes from './assets/white-logo.png'
 
@@ -10,7 +14,7 @@ import taycleanLogo from './assets/Tayclean_logo.png'
 import taycleanPortfolio from './assets/portfoliotayclean.png';
 import blossomcakePortfolio from './assets/portfolioblossomcakes.png';
 import dewhynoconstructionportfolio from './assets/portfoliodewhyno.png';
-// import kingsAgroMineralsPortfolio from './assets/portfoliokingsgrominerals.png';
+
 import arkcityImage from './assets/portfolioarkcity.png';
 import arkcityLogo from './assets/arkcitylogo.png';
 
@@ -27,8 +31,22 @@ export const Logos = [
       image:greenCitylogo,
       url:'https://greenenergyinstallation.com/'
     },
-    
-    
+    {
+        image:ynuxLogo,
+        url:'https://ynuxconstruction.com/'
+    },
+    {
+        image:magsresidence,
+        url:'https://magsresidence.com/'
+    },
+    {
+        image:blossomdelight,
+        url:'https://blossomdelightrestaurant.com/'
+    },
+    {
+        image:trinityLogo,
+        url:'https://trinityarmsfoundation.com/'
+    },
     {
         image:googleLogo,
         url:'https://www.google.com/?zx=1775891596430'

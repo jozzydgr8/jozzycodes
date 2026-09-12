@@ -49,8 +49,7 @@ export const Footer = () => {
 
             <div className="col-md-3" style={{ display: 'flex', gap: '10px', flexDirection: 'column' }}>
               <small className="heading">{t('footer.quotes.heading')}</small>
-              <NavLink to={`${basePath}pricing`}>{t('footer.quotes.ecommerce')}</NavLink>
-              <NavLink to={`${basePath}pricing`}>{t('footer.quotes.business')}</NavLink>
+            
             </div>
           </div>
           <hr />
