@@ -2,8 +2,12 @@ import { NavLink, useLocation } from 'react-router-dom'
 import darkLogo from '../assets/logo-black.png'
 import { getBasePath } from './getBasePath'
 import { useTranslation } from 'react-i18next'
+import {useState} from 'react'
 
 export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+
   const location = useLocation()
   const basePath = getBasePath(location.pathname)
   const { t } = useTranslation()
@@ -12,9 +16,11 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg" data-bs-theme='light'>
       <div className="container-fluid">
         <img className='navbar-brand' src={darkLogo} alt='logo' />
+       
 
         <button
-          className="navbar-toggler jozzy-toggler"
+          className={`jozzy-toggler ${isOpen ? "active" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -22,6 +28,7 @@ export const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          <span className="navbar-toggler-icon"></span>
           <span className="navbar-toggler-icon"></span>
         </button>
 
