@@ -132,14 +132,14 @@ nav{
             var(--background-color)
         );
 
-    min-height: calc(100vh - 80px);
+   
     position: relative;
     overflow: hidden;
 }
 
 
 .hero-content {
-    min-height: calc(100vh - 80px);
+  
     padding-bottom: 70px;
     text-align: center;
 }
