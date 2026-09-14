@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import lightIcon from '../assets/white-logo.png';
 import { getBasePath } from './getBasePath';
+import {PhoneOutlined, EnvironmentOutlined} from '@ant-design/icons'
 
 import { useTranslation } from 'react-i18next';
 
@@ -42,16 +43,25 @@ export const Footer = () => {
             <div className="col-md-3" style={{ display: 'flex', gap: '10px', flexDirection: 'column' }}>
               <small className="heading">{t('footer.quickLinks.heading')}</small>
               <a href="/#philosophy">{t('footer.quickLinks.about')}</a>
-              <NavLink to={`${basePath}pricing`}>{t('footer.quickLinks.development')}</NavLink>
-              <NavLink to={`${basePath}pricing`}>{t('footer.quickLinks.services')}</NavLink>
+              <a href={`${basePath}#pricing`}>{t('footer.quickLinks.development')}</a>
+              <a href={`${basePath}#services`}>{t('footer.quickLinks.services')}</a>
+              <small className="heading">{t('footer.quotes.heading')}</small>
               <br />
             </div>
 
-            <div className="col-md-3" style={{ display: 'flex', gap: '10px', flexDirection: 'column' }}>
-              <small className="heading">{t('footer.quotes.heading')}</small>
-            
+            <div className="col-md-3 d-flex flex-column gap-2">
+              <div className="d-flex align-items-center gap-1">
+                <PhoneOutlined />
+                <span>+234 811 3828 486</span>
+              </div>
+
+              <div className="d-flex align-items-center gap-1">
+                <EnvironmentOutlined />
+                <span>Lagos, Nigeria</span>
+              </div>
             </div>
           </div>
+          
           <hr />
           <small>
             <a href="https://jozzycodes.com" target="_blank" rel="noreferrer">

@@ -7,6 +7,7 @@ import ynuxLogo from './assets/ynux.png';
 import magsresidence from './assets/magsresidence.png';
 import blossomdelight from './assets/blossomdelightlogo.png';
 import trinityLogo from './assets/trinityarms.png';
+import bilinguaschule from './assets/bilinguaschule.png';
 
 import jozzycodes from './assets/white-logo.png'
 
@@ -34,6 +35,10 @@ export const Logos = [
     {
         image:ynuxLogo,
         url:'https://ynuxconstruction.com/'
+    },
+    {
+      image:bilinguaschule,
+      url:'https://bilinguaschule.com/'
     },
     {
         image:magsresidence,
