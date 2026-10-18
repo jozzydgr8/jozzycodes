@@ -8,7 +8,11 @@ import magsresidence from './assets/magsresidence.png';
 import blossomdelight from './assets/blossomdelightlogo.png';
 import trinityLogo from './assets/trinityarms.png';
 import bilinguaschule from './assets/bilinguaschule.png';
-
+import bilinguaschulehome from './assets/bilinguaschulehome.png';
+import dewhynohome from './assets/dewhynohome.png';
+import trinityhome from './assets/trinityhome.png';
+import ynuxhome from './assets/ynuxhome.png';
+import magshome from './assets/magshome.png';
 import jozzycodes from './assets/white-logo.png'
 
 import taycleanLogo from './assets/Tayclean_logo.png'
@@ -22,6 +26,55 @@ import arkcityLogo from './assets/arkcitylogo.png';
 import blossomDelight from './assets/portfolioblossomdelight.png';
 import greencity from './assets/portfoliogreencity.png';
 import greenCitylogo from './assets/greeninverterlogo.jpg';
+
+import {
+  DesktopOutlined,
+  GlobalOutlined,
+  CloudUploadOutlined,
+  SafetyCertificateOutlined,
+  SearchOutlined,
+  ToolOutlined,
+} from "@ant-design/icons";
+
+
+export const offerings = [
+  {
+    title: "Website Design & Development",
+    description:
+      "Custom, mobile-first websites designed around your business and your customers, with a professional look that fits your brand.",
+    icon: <DesktopOutlined className="icon-style" />,
+  },
+  {
+    title: "Domain Setup & Management",
+    description:
+      "We register or connect your domain, configure it correctly, and help manage renewals so your website address stays active.",
+    icon: <GlobalOutlined className="icon-style" />,
+  },
+  {
+    title: "Hosting & Deployment",
+    description:
+      "We set up your hosting and deploy your website, taking care of the technical steps needed to get it live.",
+    icon: <CloudUploadOutlined className="icon-style" />,
+  },
+  {
+    title: "Security & SSL",
+    description:
+      "We configure HTTPS and SSL certificates to help protect connections between your website and its visitors.",
+    icon: <SafetyCertificateOutlined className="icon-style" />,
+  },
+  {
+    title: "Basic SEO Foundation",
+    description:
+      "We set up page titles, metadata, site structure, and Google indexing to help search engines discover and understand your website.",
+    icon: <SearchOutlined className="icon-style" />,
+  },
+  {
+    title: "Ongoing Management",
+    description:
+      "We handle website updates, maintenance, and monitoring so you can focus on running your business without managing the technical details.",
+    icon: <ToolOutlined className="icon-style" />,
+  },
+];
 export const Logos = [
     
     {
@@ -89,20 +142,14 @@ export const portfolioData = [
     title: 'Arkcity',
     description: 'A purpose-built LPG distribution website featuring smooth refill requests, helpful customer support options, and a modern interface designed for clarity and efficiency.'
   },
-  {
-    id:'dewhyno',
-    image: dewhynoconstructionportfolio,
-    link:'https://dewhynoconstruction.com',
-    title:'Dewhyno construction',
-    description:'A modern construction website featuring project highlights, service offerings, and a structured design that builds trust and enhances user engagement.',
-  },
-  {
-    id: 'tayclean',
-    image: taycleanPortfolio,
-    link: 'https://taycleaningsservices.com',
-    title: 'Taycleaningservices',
-    description: 'A streamlined cleaning-service website offering clear service listings, easy booking options, and a clean, professional user experience.'
-  },
+
+  // {
+  //   id: 'tayclean',
+  //   image: taycleanPortfolio,
+  //   link: 'https://taycleaningsservices.com',
+  //   title: 'Taycleaningservices',
+  //   description: 'A streamlined cleaning-service website offering clear service listings, easy booking options, and a clean, professional user experience.'
+  // },
   {
     id: 'blossomdelight',
     image: blossomDelight,
@@ -117,13 +164,43 @@ export const portfolioData = [
     title: 'Theblossomcakes',
     description: 'A custom bakery website showcasing personalized Custom cakes & rich visual galleries.'
   },
+  
   {
-    id: 'greencityenergy',
-    image: greencity,
-    link: 'https://greenenergyinstallation.com/',
-    title: 'GreenCity',
-    description: 'A solar-energy solutions website presenting inverter options, installation services, and sustainability-focused offerings through a clean, modern layout.'
+    id: 'bilinguaschule',
+    image: bilinguaschulehome,
+    link: 'https://bilinguaschule.com/',
+    title: 'Bilinguaschule',
+    description: 'A language school website presenting language learning opportunities in a clear, welcoming layout that helps prospective students explore available programmes.'
   },
+  {
+    id: 'dewhyno',
+    image: dewhynohome,
+    link: 'https://dewhynoconstruction.com',
+    title: 'Dewhyno Construction',
+    description: 'A construction company website showcasing its services and capabilities through a professional presentation designed to communicate credibility and expertise.'
+  },
+  {
+    id: 'trinityarmsfoundation',
+    image: trinityhome,
+    link: 'https://trinityarmsfoundation.com/',
+    title: 'Trinity Arms Foundation',
+    description: 'A foundation website presenting its mission, initiatives, and impact through a clear and accessible layout that helps visitors understand its work.'
+  },
+  {
+    id: 'ynuxconstruction',
+    image: ynuxhome,
+    link: 'https://ynuxconstruction.com/',
+    title: 'Ynux Construction',
+    description: 'A construction company website highlighting its services and business identity through a modern, structured design built to present the company professionally.'
+  },
+  {
+    id: 'magsresidence',
+    image: magshome,
+    link: 'https://magsresidence.com/',
+    title: 'Mags Residence',
+    description: 'A hospitality website showcasing accommodation and guest amenities through an inviting layout, with booking functionality to help visitors plan their stay.'
+  }
+
   // {
   //   id: 'kingagrominerals',
   //   image: kingsAgroMineralsPortfolio,

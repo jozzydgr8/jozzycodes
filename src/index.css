@@ -39,7 +39,7 @@ h1{
   
   color: var(--bold-color);
    max-width: 1050px;
-    margin: 0 auto;
+    
 
     font-size: clamp(3.5rem, 7vw, 7rem);
     line-height: 0.95;
@@ -57,10 +57,40 @@ h2,h3,h4,h5{
     font-size:35px;
   }
 }
-
-h2{
-    text-align: center;
+.homeBadge{
+  
+  text-transform: uppercase;
+  font-size: 0.77rem;   
+  white-space: nowrap;
+  font-weight:bold;
 }
+.sub-heading{
+    color: var(--bold-color);
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.icon-style {
+  font-size: 34px;
+background: var(--faint-color);
+  color: var(--background-color);
+  padding: 15px ;
+  border-radius: 10px;
+  display: inline-flex; /* ensures icon stays centered if needed */
+  align-items: center;
+  justify-content: center;
+}
+
+p.subtopic {
+    font-size: 20px; /* bigger than body text */
+    font-weight: 300; /* slightly bolder, optional */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
 
 
 
@@ -391,6 +421,20 @@ nav{
         display: none;
     }
 }
+
+
+/* offering--offering--offering */
+.offeringCard{
+  background: var(--different-background);
+  padding: 18px 32px ;
+  border-radius: 10px;
+ box-shadow: 0 2px 3px var(--bold-color);
+
+  cursor: pointer;
+ 
+}
+
+
 
 /* Service Section */
 .servicecontainer{
@@ -726,8 +770,8 @@ footer small{
 
   .advertGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    gap: 7px;
   }
 .advertDisplay {
   margin-bottom: 15px;

@@ -35,11 +35,11 @@ export const Blog = ()=>{
 
         <section className="linearbackground">
             <div className="container-fluid">
-              <h1 style={{fontSize:"30px", color:'#577BC1'}}>
-                              Articles
-                              </h1>
-                              <LoopText loopTexts={loopTexts} as="h1" style={{fontSize:"30px",textAlign:"left"}}/>
-                              <br/>
+              <h1 className='text-left' style={{fontSize:"30px", color:'#577BC1'}}>
+                Articles
+                </h1>
+                <LoopText loopTexts={loopTexts} as="h1" style={{fontSize:"30px",textAlign:"left"}}/>
+                <br/>
                 {
                     blog && blog.map(blog=>(
                         <div key={blog._id} className="blogcontent">

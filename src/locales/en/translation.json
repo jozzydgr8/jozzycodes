@@ -1,87 +1,5 @@
 {
-  "ikejaHeader": {
-    "loopTexts": [
-      "Affordable Website Design in Ikeja",
-      "Budget-Friendly Web Development in Ikeja",
-      "Professional Website Developer in Ikeja",
-      "High-Quality Website Design at Accessible Prices"
-    ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "Get a clean, modern, and fully responsive website built to strengthen your brand ideal for businesses, startups, and entrepreneurs in Ikeja.",
-    "wantToGiveShot": "We create high-performing, visually stunning websites designed to help your business stand out online. From corporate websites to portfolios and e-commerce stores, our development process delivers exceptional design, fast performance, and reliable functionality all tailored to fit your budget.",
-    "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View process"
-  },
-
-  "lekkiHeader": {
-    "loopTexts": [
-      "Affordable Website Design in Lekki",
-      "Budget-Friendly Web Development in Lekki",
-      "Professional Web Developer in Lekki",
-      "High-Quality Website Design at Accessible Prices"
-    ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "Get a clean, modern, and fully responsive website built to enhance your brand thoughtfully crafted for businesses, startups, and entrepreneurs in Lekki.",
-    "wantToGiveShot": "We deliver premium quality websites that are fast, visually impressive, and built to help your business stand out online. Whether you need a corporate website, portfolio, or e-commerce store, our development process ensures top-tier performance and design all at a price that works for your budget.",
-    "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View Process"
-  },
-
-  "agencyHeader": {
-    "loopTexts": [
-      "High-Performance Website Design",
-      "Websites Built for Scale and Reliability",
-      "Strategic Website Design and Development",
-      "Modern Web Platforms Focused on Performance"
-    ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "We design and develop fast, scalable websites with a focus on clarity, performance, and long-term reliability.",
-    "wantToGiveShot": "We are a digital agency designing and building websites with a strong emphasis on performance, structure, and execution.",
-    "ctaGetStarted": "Start a Project",
-    "ctaViewPricing": "Our Process"
-  },
-
-  "nearMeHeader": {
-    "loopTexts": [
-      "Professional Website Developer Near You",
-      "Modern & Responsive Web Design Nearby",
-      "Custom Website Development for Businesses",
-      "Trusted Local Web Developer for Your Brand"
-    ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "Get a fast, responsive, and high-converting website built by an experienced local website developer focused on helping businesses grow in your area.",
-    "wantToGiveShot": "Whether you’re a startup, small business, or established company, we create custom websites that look professional, load quickly, and help you attract more customers nearby. Our goal is to deliver a website that strengthens your local online presence and drives real business results in your community.",
-    "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View process"
-  },
-
-  "nigeriaHeader": {
-    "loopTexts": [
-      "Professional Website Developer in Nigeria",
-      "Modern & Responsive Web Design in Nigeria",
-      "Custom Website Development for Nigerian Businesses",
-      "Trusted Nigerian Web Developer for Your Brand"
-    ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "Get a fast, responsive, and high-converting website built by an experienced Nigerian website developer focused on helping businesses grow online.",
-    "wantToGiveShot": "Whether you’re a startup, small business, or established company, We create custom websites that look professional, load quickly, and help you attract more customers across Nigeria. Our goal is to deliver a website that strengthens your online presence and drives real business results nationwide.",
-    "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View process"
-  },
-
-  "lagosHeader": {
-    "loopTexts": [
-      "Professional Website Developer in Lagos",
-      "Modern & High-Performance Website Design",
-      "Custom Web Development for Lagos Businesses",
-      "Trusted Website Developer for Your Brand"
-    ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "Get a fast, modern, and high-converting website crafted by an experienced Lagos-based developer that understands how to help businesses grow online.",
-    "wantToGiveShot": "Whether you’re a startup, small business, or established company, we build custom websites that look exceptional, load quickly, and help you attract more customers. Our focus is on creating a website that strengthens your online presence and delivers measurable results for your business in Lagos and beyond.",
-    "ctaGetStarted": "Get Started",
-    "ctaViewPricing": "View process"
-  },
+  
 
   "header": {
     "loopTexts": [
@@ -89,8 +7,8 @@
       "Design, Develop, Deliver",
       "Build, Brand, Breakthrough"
     ],
-    "title": "Need a website? we make it easy.",
-    "subtitle": "Search no more, Let's take it from here. professional websites seamless, stress-free, and perfect first time, every time.",
+    "title": "Your business website, built, launched and managed for you.",
+    "subtitle": "From design and development to domain setup, hosting and ongoing management, we handle the entire process so you can focus on running your business.",
     "ctaGetStarted": "Get Started Now",
     "ctaViewPricing": "View process",
     "wantToGiveShot": "Want to give us a shot?"
@@ -111,38 +29,37 @@
     }
   },
 
-  "reasonData": [
-    {
-      "title": "Custom from day one",
-      "description": "We don’t use templates. Every site is built from scratch to reflect your unique brand, ensuring speed, clarity, and full customization."
-    },
-    {
-      "title": "Punctual Project Delivery",
-      "description": "We value your time and ours. That’s why we set clear timelines and stick to them—delivering your project as promised, without delays."
-    },
-    {
-      "title": "Budget-Friendly Brilliance",
-      "description": "High-quality websites at transparent prices. We deliver premium design and performance without breaking your budget or hiding fees."
-    },
-    {
-      "title": "Client-Focused. Goal-Driven.",
-      "description": "We listen first, then build. Our websites are tailored to your goals, designed to support your business growth from the ground up."
-    },
-    {
-      "title": "Design Minded & Performance-Focused",
-      "description": "Looks matter—and so does speed. We create beautiful, responsive, SEO-ready sites that work perfectly across all devices and platforms."
-    },
-    {
-      "title": "End-to-End Service. Real Support.",
-      "description": "From domain to launch and beyond, we manage it all and stay available with responsive support whenever you need help or updates."
-    }
-  ],
-
-  "googleReviews": {
-    "label": "Customer Satisfaction",
-    "title": "Hear from Our Happy Customers",
-    "buttonText": "Review us on"
+"reasonData": [
+  {
+    "title": "Built Around Your Business",
+    "description": "Every website is custom built to reflect your business, present your services clearly, and give your customers a professional experience."
   },
+  {
+    "title": "Clear Timelines. Reliable Delivery.",
+    "description": "We agree on the scope and timeline before work begins, keeping you informed throughout the process and working towards the agreed delivery date."
+  },
+  {
+    "title": "Clear Pricing. No Surprises.",
+    "description": "Know what you're paying for before we begin. We explain the scope, costs, and ongoing requirements so you can make an informed decision."
+  },
+  {
+    "title": "Your Business Comes First",
+    "description": "We take time to understand your business and what you need your website to achieve, then build around those priorities."
+  },
+  {
+    "title": "Professional Design That Works",
+    "description": "Your website should look professional, work across devices, and make it easy for visitors to understand what you offer."
+  },
+  {
+    "title": "From Setup to Ongoing Support",
+    "description": "We handle the essential technical setup, launch your website, and remain available for updates and ongoing management, so you're not left figuring things out alone."
+  }
+],
+  "googleReviews": {
+  "label": "Client Feedback",
+  "title": "What Our Clients Say",
+  "buttonText": "Review us on"
+},
 
   "help": {
     "label": "let's help you",

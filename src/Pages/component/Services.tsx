@@ -17,7 +17,7 @@ export const Services = () => {
   return (
     <section id="services">
       <div className="container-fluid">
-        <h2>{t('services.title')}</h2><br />
+        {/* <h2>{t('services.title')}</h2><br /> */}
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className="servicecontainer">
             <div>
@@ -31,7 +31,7 @@ export const Services = () => {
           </div>
         </div>
         <br />
-        <LoopText loopTexts={loopTexts} as="h1" />
+        <LoopText loopTexts={loopTexts} as="h1"  style={{margin: "0 auto"}}/>
         <FallingText />
       </div>
     </section>
