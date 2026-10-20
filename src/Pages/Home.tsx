@@ -19,7 +19,7 @@ export const Home = ()=>{
         <>
         <Helmet>
             <meta name="description"
-            content=" Websites built to perform - anywhere in the world"/>
+            content="Your business website, built, launched, and managed for you. We handle everything from design to ongoing maintenance." />
             <link rel="canonical" href={`https://jozzycodes.com${basePath}`}/>
             <title>Jozzycodes</title>
         </Helmet>
